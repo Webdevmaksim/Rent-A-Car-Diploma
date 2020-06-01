@@ -1,0 +1,22 @@
+{
+  "name": "rent-a-car-diploma",
+  "version": "1.0.0",
+  "description": "Аренда авто в Пятигорске.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webdevmaksim/Rent-A-Car-Diploma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webdevmaksim/Rent-A-Car-Diploma/issues"
+  },
+  "homepage": "https://github.com/Webdevmaksim/Rent-A-Car-Diploma#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
