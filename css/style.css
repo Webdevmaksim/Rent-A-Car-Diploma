@@ -318,12 +318,17 @@ template {
   outline: none; }
 
 html {
-  font-size: 14px;
+  font-size: 12px;
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Futura Book', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size: 1rem; }
 
 img {
   max-width: 100%; }
+
+.container {
+  width: 85%;
+  max-width: 1140px;
+  margin: auto; }
