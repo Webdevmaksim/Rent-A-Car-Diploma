@@ -336,7 +336,7 @@ img {
 
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
-  min-height: 100vh;
+  min-height: 83rem;
   padding-top: 13rem;
   padding-left: 3.5rem; }
   .hero__title {
@@ -375,7 +375,10 @@ img {
   font-weight: bold;
   max-width: 18rem;
   line-height: 0.8;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  transition: 0.5s; }
+  .logo__link:hover {
+    transform: scale(1.1); }
   .logo__link small {
     font-size: 1.5rem;
     color: #dddddd;
@@ -404,3 +407,24 @@ img {
         transform: scale(1); }
     .nav__item:last-child {
       margin-right: 0; }
+
+.places {
+  min-height: 65.25rem;
+  background: #f7f4f2; }
+
+.video {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 83rem;
+  min-height: 42rem;
+  background: url("../img/video/video-bg.webp") center no-repeat;
+  transform: translateY(-60%); }
+  .video__play {
+    position: relative;
+    cursor: pointer;
+    transition: 0.6s; }
+    .video__play:hover {
+      transform: scale(1.1); }
