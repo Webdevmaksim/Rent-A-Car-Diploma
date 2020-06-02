@@ -319,7 +319,8 @@ template {
 
 html {
   font-size: 12px;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  padding: 0; }
 
 body {
   font-family: 'Myriad Pro', sans-serif;
@@ -336,20 +337,60 @@ img {
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
   min-height: 100vh;
-  padding: 6rem 9.5rem 0 9.5rem; }
+  padding-top: 13rem;
+  padding-left: 3.5rem; }
+  .hero__title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 7.25rem;
+    max-width: 26rem;
+    line-height: 1; }
+  .hero__text {
+    color: #dddddd;
+    font-size: 2.37rem;
+    max-width: 23rem;
+    line-height: 1.2; }
+
+.header {
+  padding: 5rem 9.5rem 0 9.5rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0; }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between; }
   .menu__logo {
-    display: flex; }
+    display: flex;
+    align-items: center; }
   .menu img {
     margin-right: 1.8rem; }
 
 .logo__link {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 2.9rem;
+  font-weight: bold;
+  max-width: 18rem;
+  line-height: 0.8;
+  letter-spacing: 0.2rem; }
+  .logo__link small {
+    font-size: 1.5rem;
+    color: #dddddd;
+    letter-spacing: normal; }
 
 .nav {
   display: flex; }
+  .nav__item {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 4.3rem;
+    min-height: 3rem;
+    transition: 0.6s ease-in-out; }
+    .nav__item:hover {
+      border-bottom: 2px solid #dddddd; }
+    .nav__item:last-child {
+      margin-right: 0; }
