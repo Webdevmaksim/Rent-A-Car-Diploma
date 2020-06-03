@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аренда авто в Пятигорске</title>
     <link rel="shortcut icon" href="./img/icon/rent-a-car.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -45,14 +46,63 @@
        <!-- /.hero -->
        <section class="places">
            <div class="container">
+
                <div class="places__video video" id="player">
                 <script src="https://www.youtube.com/iframe_api"></script>
                     <img loading="lazy" src="./img/video/play.svg" alt="воспроизведение" class="video__play">
+                    <div class="video__text">
+                        <h3 class="video__title">
+                            Красоты Ставрополья
+                        </h3>
+                        <span class="video__subtitle">
+                            Надежный автомобиль — залог лучших впечатлений!
+                        </span>
+                    </div>
                </div>
+               <div class="places__content content">
+                    <div class="content__text">
+                        <p class="content__title">
+                            Интересные места Ставропольского края 
+                            <span>эксклюзивно для вас!</span>
+                        </p>
+                        <button class="button content__button">
+                            Все видео
+                        </button>
+                    </div>
+                    <!-- /.content__text -->
+                    <div class="content__slider">
+                        <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">Slide 1
+                                        <img src="./img/content/img-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide"><img src="./img/content/img-2.png" alt=""></div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    ...
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                    </div>
+                    <!-- /.content__slider -->
+               </div>
+               <!-- /.places__content -->
            </div>
+           <!-- container -->
        </section>
     </main>
-    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
