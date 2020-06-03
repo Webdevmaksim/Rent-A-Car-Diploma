@@ -470,4 +470,6 @@ img {
       margin-left: 1.4rem; }
 
 .swiper-container {
-  max-width: 58.5rem; }
+  max-width: 57rem;
+  width: 100%;
+  height: 100%; }
