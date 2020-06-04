@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Myriad Pro';
   src: url("../font/MyriadPro-Regular.woff2") format("woff2"), url("../font/MyriadPro-Regular.woff") format("woff");
@@ -652,6 +653,10 @@ img {
     width: 100%;
     max-width: 58.5rem; }
 
+.col {
+  display: flex;
+  flex-direction: column; }
+
 .enlarge {
   background: #222222;
   min-height: 80rem;
@@ -662,9 +667,72 @@ img {
   .enlarge__title {
     margin-top: 0;
     color: #ffffff;
-    font-size: 4rem; }
+    font-size: 7rem;
+    margin-bottom: 1rem; }
+  .enlarge__subtitle {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 2.35rem;
+    margin-bottom: 7rem; }
   .enlarge__bg {
     position: absolute;
     z-index: -11;
     max-height: 80rem;
     width: 100%; }
+  .enlarge .gearbox {
+    min-height: 17.25rem;
+    max-width: 19.5rem;
+    position: relative;
+    margin-bottom: 3.8rem; }
+    .enlarge .gearbox__img {
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      min-width: rem;
+      height: 100%; }
+    .enlarge .gearbox__type {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 3.1rem;
+      position: absolute;
+      font-weight: bold;
+      bottom: 4.2rem;
+      right: 5.9rem; }
+      .enlarge .gearbox__type::after {
+        content: '5 ст.';
+        display: block;
+        color: #777777;
+        font-size: 1rem;
+        position: absolute;
+        bottom: -1.5rem;
+        right: 0rem; }
+    .enlarge .gearbox__text {
+      display: inline-block;
+      color: #ffffff;
+      margin-top: 2.6rem;
+      margin-left: 2.7rem;
+      vertical-align: center;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 4.41rem;
+      position: relative; }
+      .enlarge .gearbox__text::after {
+        position: absolute;
+        content: '';
+        display: block;
+        background: url("../img/footer/gearbox.svg") center no-repeat;
+        width: 3.2rem;
+        height: 3.5rem;
+        top: 0;
+        left: 8rem; }
+
+.milage {
+  min-height: 17.25rem;
+  max-width: 19.5rem;
+  position: relative; }
+  .milage__img {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    min-width: rem;
+    height: 100%; }
