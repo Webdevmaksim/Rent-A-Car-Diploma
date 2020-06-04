@@ -334,6 +334,19 @@ img {
   max-width: 1140px;
   margin: auto; }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px; } }
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px; } }
+
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
   min-height: 83rem;
