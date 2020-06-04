@@ -35,7 +35,7 @@
     display: flex
     align-items: center
     &__slider   
-        margin-top: 3rem
+        margin-top: 4.5rem
         position: relative
     &__text
         max-width: 24rem
@@ -74,17 +74,27 @@
     display: flex
     flex-direction: column  
     min-height: 14.5rem
+    & span
+        font-size: 1.25rem
+        line-height: 1.5
     & img
         margin-bottom: 2rem
         width: 25rem
+    &:hover
+        .swiper__img
+            background: $l-g    
+        & span
+            color: $l-g
 .swiper
     &__play
         width: 4.5rem
         height: 4.5rem
         position: absolute
-        top: 40%
+        top: 7rem
         transform: translate(-50%,-50%)
         left: 50%   
+        &:hover
+            cursor: pointer 
     &-button
         &-prev, &-next
             background-size: 42px 

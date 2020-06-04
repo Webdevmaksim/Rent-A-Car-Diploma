@@ -447,7 +447,7 @@ img {
   display: flex;
   align-items: center; }
   .content__slider {
-    margin-top: 3rem;
+    margin-top: 4.5rem;
     position: relative; }
   .content__text {
     max-width: 24rem;
@@ -487,17 +487,26 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 14.5rem; }
+  .swiper-slide span {
+    font-size: 1.25rem;
+    line-height: 1.5; }
   .swiper-slide img {
     margin-bottom: 2rem;
     width: 25rem; }
+  .swiper-slide:hover .swiper__img {
+    background: #17bebb; }
+  .swiper-slide:hover span {
+    color: #17bebb; }
 
 .swiper__play {
   width: 4.5rem;
   height: 4.5rem;
   position: absolute;
-  top: 40%;
+  top: 7rem;
   transform: translate(-50%, -50%);
   left: 50%; }
+  .swiper__play:hover {
+    cursor: pointer; }
 
 .swiper-button-prev, .swiper-button-next {
   background-size: 42px;
@@ -534,3 +543,60 @@ img {
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 2px 4px #999; }
+
+.clients {
+  min-height: 65.25rem;
+  background: #ffffff;
+  padding-top: 8rem; }
+  .clients__img {
+    position: relative; }
+    .clients__img::before {
+      content: '';
+      display: block;
+      width: 5rem;
+      height: 5rem;
+      color: #ffffff;
+      background: #ffffff url("../img/client/icon-33.webp") no-repeat;
+      background-size: 4.5rem;
+      top: 2.5rem;
+      left: 2.5rem;
+      position: absolute; }
+  .clients__title {
+    margin: 0 auto;
+    display: block;
+    max-width: 32rem;
+    margin-bottom: 14rem;
+    text-align: center; }
+    .clients__title h3 {
+      font-size: 3.1rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #000000; }
+    .clients__title span {
+      font-size: 1.25rem;
+      color: #777777; }
+  .clients__row {
+    display: flex;
+    padding-left: 4rem;
+    flex-wrap: wrap; }
+  .clients__card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10.25rem; }
+    .clients__card:last-child {
+      margin-right: 0; }
+    .clients__card img {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: 2.6rem;
+      position: relative; }
+    .clients__card span {
+      color: #000000;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem; }
+    .clients__card p {
+      color: #777777;
+      max-width: 14.50rem;
+      font-size: 1.23rem;
+      line-height: 1.6; }
