@@ -73,10 +73,18 @@
 .swiper-slide
     display: flex
     flex-direction: column  
+    min-height: 14.5rem
     & img
         margin-bottom: 2rem
         width: 25rem
 .swiper
+    &__play
+        width: 4.5rem
+        height: 4.5rem
+        position: absolute
+        top: 40%
+        transform: translate(-50%,-50%)
+        left: 50%   
     &-button
         &-prev, &-next
             background-size: 42px 

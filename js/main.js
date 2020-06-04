@@ -17,6 +17,29 @@ $(document).ready(function() {
       function videoPlay(event){
         event.target.playVideo();
       }
+      //swiper-player-0
+      $('.swiper__play--0').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player-0', {
+          width: '100%',
+          height: '125%',
+          videoId: 'sAyQIjL0DMo',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
+      //swiper-plaer-1
+      $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player-1', {
+          width: '100%',
+          height: '125%',
+          videoId: '35uUBsRS2Kw',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
+      
       //slider
       var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
