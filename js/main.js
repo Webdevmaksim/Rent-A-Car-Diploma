@@ -41,7 +41,7 @@ $(document).ready(function() {
       });
       
       //slider
-      var mySwiper = new Swiper ('.swiper-container', {
+      var mySwiper = new Swiper ('.swiper1', {
         // Optional parameters
             loop: true,
             pagination: {
