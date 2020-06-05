@@ -71,6 +71,37 @@ $(document).ready(function() {
           },
       });
 
+      //slider-about the car
+      var mySwiper2 = new Swiper ('.swiper2', {
+        // Optional parameters
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination2',
+            type: 'fraction',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // breakpoints: {
+          //   // when window width is >= 320px
+          //   320: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 20
+          //   },
+          //   // when window width is >= 480px
+          //   480: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 30
+          //   },
+          //   // when window width is >= 640px
+          //   640: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 80
+          //   }
+          // },
+      });
+
       //Кнопка прокрутки наверх
       $(window).scroll(function () {
         // Если отступ сверху больше 50px то показываем кнопку "Наверх"

@@ -10,11 +10,15 @@
     &__wrapper
         padding-top: 16.75rem
         // border: 2px solid red
+        display: flex
     &__title
         margin-top: 0
         color: $light
         font-size: 7rem
         margin-bottom: 1rem
+        &--2
+            color: $light
+            font-size: 7rem
     &__subtitle 
         display: inline-block
         color: $light
@@ -35,7 +39,7 @@
             position:   absolute
             top: 0
             left: -2rem
-            min-width: rem
+            min-width: 19.5rem
             height: 100%
         &__type
             color: $light
@@ -44,7 +48,7 @@
             position: absolute
             font-weight: bold
             bottom: 4.2rem
-            right: 5.9rem
+            right: 2.5rem
             &::after
                 content: '5 ст.'
                 display: block
@@ -77,11 +81,44 @@
     // border: 2px solid red
     max-width: 19.5rem
     position: relative
-
     &__img
         position:   absolute
         top: 0
         left: -2rem
-        min-width: rem
+        min-width: 19.5rem
         height: 100%
-
+    &__type
+        color: $light
+        text-transform: uppercase
+        font-size: 3.1rem
+        position: absolute
+        font-weight: bold
+        bottom: 4.5rem
+        right: 2rem
+        &::after
+            content: '2020 г.'
+            display: block
+            color: #777777
+            font-size: 1rem
+            position: absolute
+            bottom: -1.5rem
+            right: 0rem
+    &__text
+        display: inline-block
+        color: $light
+        margin-top: 2.6rem
+        margin-left: 2.7rem 
+        vertical-align: center
+        font-size: 1.2rem
+        line-height: 1.6
+        max-width: 4.41rem
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: block   
+            background: url('../img/footer/milage.svg') center no-repeat
+            width: 3.2rem
+            height: 3.0rem
+            top: 0
+            left: 8.5rem

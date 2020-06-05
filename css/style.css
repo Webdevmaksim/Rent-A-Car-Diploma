@@ -335,10 +335,6 @@ img {
   max-width: 1140px;
   margin: auto; }
 
-@media (max-width: 1199px) {
-  .container {
-    max-width: 960px; } }
-
 @media screen and (max-width: 991px) {
   .container {
     max-width: 750px; } }
@@ -648,7 +644,8 @@ img {
       max-width: 25.5rem;
       line-height: 1.5; }
   .about__img {
-    min-width: 58.5rem; }
+    min-width: 58.5rem;
+    max-height: 32rem; }
   .about__swiper {
     width: 100%;
     max-width: 58.5rem; }
@@ -663,12 +660,16 @@ img {
   position: relative;
   z-index: 111; }
   .enlarge__wrapper {
-    padding-top: 16.75rem; }
+    padding-top: 16.75rem;
+    display: flex; }
   .enlarge__title {
     margin-top: 0;
     color: #ffffff;
     font-size: 7rem;
     margin-bottom: 1rem; }
+    .enlarge__title--2 {
+      color: #ffffff;
+      font-size: 7rem; }
   .enlarge__subtitle {
     display: inline-block;
     color: #ffffff;
@@ -688,7 +689,7 @@ img {
       position: absolute;
       top: 0;
       left: -2rem;
-      min-width: rem;
+      min-width: 19.5rem;
       height: 100%; }
     .enlarge .gearbox__type {
       color: #ffffff;
@@ -697,7 +698,7 @@ img {
       position: absolute;
       font-weight: bold;
       bottom: 4.2rem;
-      right: 5.9rem; }
+      right: 2.5rem; }
       .enlarge .gearbox__type::after {
         content: '5 ст.';
         display: block;
@@ -734,5 +735,40 @@ img {
     position: absolute;
     top: 0;
     left: -2rem;
-    min-width: rem;
+    min-width: 19.5rem;
     height: 100%; }
+  .milage__type {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3.1rem;
+    position: absolute;
+    font-weight: bold;
+    bottom: 4.5rem;
+    right: 2rem; }
+    .milage__type::after {
+      content: '2020 г.';
+      display: block;
+      color: #777777;
+      font-size: 1rem;
+      position: absolute;
+      bottom: -1.5rem;
+      right: 0rem; }
+  .milage__text {
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 2.6rem;
+    margin-left: 2.7rem;
+    vertical-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 4.41rem;
+    position: relative; }
+    .milage__text::after {
+      position: absolute;
+      content: '';
+      display: block;
+      background: url("../img/footer/milage.svg") center no-repeat;
+      width: 3.2rem;
+      height: 3.0rem;
+      top: 0;
+      left: 8.5rem; }
