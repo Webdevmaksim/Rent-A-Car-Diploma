@@ -1,12 +1,52 @@
 .col
     display: flex
     flex-direction: column
+    margin-right: 17rem
+    &:last-child
+        margin-right: 0
 .enlarge
     background: $footer
     min-height: 80rem
     position: relative
     // opacity: 1
     z-index: 111
+    &__heart
+        width: 4.5rem
+        height: 4.5rem
+    &__block
+        &--info
+            max-width: 17rem
+            & h4
+                color: $light
+            & p 
+                color: #777777
+        &--img
+            margin-right: 3.9rem
+            &:last-child
+                margin-right: 0
+        &--3
+            display: flex
+            margin-bottom: 7rem
+    &__text
+        &--middle   
+            color: $light
+            font-size: 1.6rem
+            max-width: 17.5rem
+            line-height: 1.5
+            & span
+                color: $orange
+    &__img
+        &--middle   
+            width: 4.5rem
+            height: 4.5rem
+            margin-bottom: 1.5rem
+    &__list
+        color: $light
+        list-style: none
+        padding: 0
+        font-size: 1.6rem
+        line-height: 1.5    
+        margin-bottom: 6rem
     &__wrapper
         padding-top: 16.75rem
         // border: 2px solid red
@@ -16,9 +56,40 @@
         color: $light
         font-size: 7rem
         margin-bottom: 1rem
-        &--2
+        &--wrapper
+            display: flex
+            // border: 2px solid red
+           
+            & span
+                font-size: 2rem
+                color: $l-g
+                margin-top: 10rem
+                margin-left: 3.3rem
+                &::after
+                    content: '+'
+                    display: block
+                    color: #777777
+                    font-size: 3rem
+        &--3
             color: $light
             font-size: 7rem
+            padding-top: 2rem
+            position: relative
+            margin-bottom: 2.5rem
+            &::after
+                content: 'Н.В.'
+                color: $l-g
+                font-size: 2.2rem
+                top: 3rem
+                right: 0.7rem
+                position: absolute
+
+        &--2
+            padding-top: 2rem
+            color: $light
+            font-size: 7rem
+            margin-bottom: 0
+            
     &__subtitle 
         display: inline-block
         color: $light

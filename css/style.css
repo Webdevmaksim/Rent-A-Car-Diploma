@@ -321,7 +321,8 @@ template {
 html {
   font-size: 12px;
   scroll-behavior: smooth;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Myriad Pro', sans-serif; }
 
 body {
   font-family: 'Myriad Pro', sans-serif;
@@ -652,13 +653,50 @@ img {
 
 .col {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-right: 17rem; }
+  .col:last-child {
+    margin-right: 0; }
 
 .enlarge {
   background: #222222;
   min-height: 80rem;
   position: relative;
   z-index: 111; }
+  .enlarge__heart {
+    width: 4.5rem;
+    height: 4.5rem; }
+  .enlarge__block--info {
+    max-width: 17rem; }
+    .enlarge__block--info h4 {
+      color: #ffffff; }
+    .enlarge__block--info p {
+      color: #777777; }
+  .enlarge__block--img {
+    margin-right: 3.9rem; }
+    .enlarge__block--img:last-child {
+      margin-right: 0; }
+  .enlarge__block--3 {
+    display: flex;
+    margin-bottom: 7rem; }
+  .enlarge__text--middle {
+    color: #ffffff;
+    font-size: 1.6rem;
+    max-width: 17.5rem;
+    line-height: 1.5; }
+    .enlarge__text--middle span {
+      color: #ff6600; }
+  .enlarge__img--middle {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 1.5rem; }
+  .enlarge__list {
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 6rem; }
   .enlarge__wrapper {
     padding-top: 16.75rem;
     display: flex; }
@@ -667,9 +705,36 @@ img {
     color: #ffffff;
     font-size: 7rem;
     margin-bottom: 1rem; }
-    .enlarge__title--2 {
+    .enlarge__title--wrapper {
+      display: flex; }
+      .enlarge__title--wrapper span {
+        font-size: 2rem;
+        color: #17bebb;
+        margin-top: 10rem;
+        margin-left: 3.3rem; }
+        .enlarge__title--wrapper span::after {
+          content: '+';
+          display: block;
+          color: #777777;
+          font-size: 3rem; }
+    .enlarge__title--3 {
       color: #ffffff;
-      font-size: 7rem; }
+      font-size: 7rem;
+      padding-top: 2rem;
+      position: relative;
+      margin-bottom: 2.5rem; }
+      .enlarge__title--3::after {
+        content: 'Н.В.';
+        color: #17bebb;
+        font-size: 2.2rem;
+        top: 3rem;
+        right: 0.7rem;
+        position: absolute; }
+    .enlarge__title--2 {
+      padding-top: 2rem;
+      color: #ffffff;
+      font-size: 7rem;
+      margin-bottom: 0; }
   .enlarge__subtitle {
     display: inline-block;
     color: #ffffff;
