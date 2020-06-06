@@ -332,8 +332,7 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 85%;
-  max-width: 1140px;
+  max-width: 1100px;
   margin: auto; }
 
 @media screen and (max-width: 991px) {
@@ -348,8 +347,7 @@ img {
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
   min-height: 83rem;
-  padding-top: 13rem;
-  padding-left: 3.5rem; }
+  padding-top: 13rem; }
   .hero__title {
     color: #ffffff;
     margin: 0;
@@ -454,7 +452,6 @@ img {
 .content {
   color: #000000;
   margin-top: -16.5rem;
-  padding-left: 1.7rem;
   display: flex;
   align-items: center; }
   .content__slider {
@@ -588,7 +585,6 @@ img {
       color: #777777; }
   .clients__row {
     display: flex;
-    padding-left: 4rem;
     flex-wrap: wrap; }
   .clients__card {
     display: flex;
@@ -664,7 +660,7 @@ img {
   position: relative;
   z-index: 111; }
   .enlarge__hr {
-    border: 1px solid #ff6600; }
+    border: 1px solid #444444; }
   .enlarge__heart {
     width: 4.5rem;
     height: 4.5rem;
@@ -708,7 +704,8 @@ img {
     margin-bottom: 6rem; }
   .enlarge__wrapper {
     padding-top: 16.75rem;
-    display: flex; }
+    display: flex;
+    padding-bottom: 16.5rem; }
   .enlarge__title {
     margin-top: 0;
     color: #ffffff;
@@ -849,7 +846,8 @@ img {
 
 .order {
   background: #222222;
-  min-height: 58.3rem; }
+  min-height: 58.3rem;
+  padding-top: 15.5rem; }
   .order__wrapper {
     display: flex; }
   .order__title {
@@ -919,3 +917,26 @@ img {
     font-size: 2rem;
     top: -3rem;
     color: #777777; }
+
+.footer {
+  background: #222222; }
+  .footer__title {
+    margin-top: 0;
+    color: #ffffff; }
+  .footer__wrapper {
+    display: flex; }
+  .footer__info {
+    display: flex; }
+  .footer__list {
+    list-style: none;
+    padding: 0; }
+    .footer__list a {
+      color: #777777;
+      text-decoration: none; }
+      .footer__list a:hover {
+        color: #17bebb;
+        text-decoration: underline; }
+  .footer__about {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem; }
