@@ -1,7 +1,7 @@
 .col
     display: flex
     flex-direction: column
-    margin-right: 17rem
+    margin-right: 13rem
     &:last-child
         margin-right: 0
 .enlarge
@@ -10,16 +10,25 @@
     position: relative
     // opacity: 1
     z-index: 111
+    &__hr
+        border: 1px solid $orange
     &__heart
         width: 4.5rem
         height: 4.5rem
+        margin-bottom: 3rem
     &__block
         &--info
-            max-width: 17rem
-            & h4
+            max-width: 22rem
+            & span
+                display: block
                 color: $light
+                font-size: 1.57rem
+                margin-bottom: 1.8rem
             & p 
                 color: #777777
+                font-size: 1.26rem
+                max-width: 19.6rem
+                line-height: 1.6
         &--img
             margin-right: 3.9rem
             &:last-child
