@@ -38,3 +38,20 @@
     &__swiper
         width: 100%
         max-width: 58.5rem
+.swiper
+    &-button
+        &-prev2, &-next2
+            background-size: 42px 
+            border-radius: 50px
+            width: 4rem
+            height: 4rem    
+            top: 40%
+            &::after
+                display: none   
+        &-next2
+            background: $light url('../img/content/right.svg') no-repeat center
+            transform: translateX(60%)
+        &-prev2
+            left: 0
+            background: $light url('../img/content/left.svg') no-repeat center
+            transform: translateX(-70%)

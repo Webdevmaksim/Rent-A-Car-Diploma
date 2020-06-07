@@ -49,8 +49,8 @@ $(document).ready(function() {
             type: 'bullets',
           },
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
           },
           breakpoints: {
             // when window width is >= 320px
@@ -82,6 +82,37 @@ $(document).ready(function() {
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+          },
+          // breakpoints: {
+          //   // when window width is >= 320px
+          //   320: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 20
+          //   },
+          //   // when window width is >= 480px
+          //   480: {
+          //     slidesPerView: 1,
+          //     spaceBetween: 30
+          //   },
+          //   // when window width is >= 640px
+          //   640: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 80
+          //   }
+          // },
+      });
+      //footer-slider
+      //slider-about the car
+      var mySwiper3 = new Swiper ('.swiper3', {
+        // Optional parameters
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination3',
+            type: 'fraction',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next3',
+            prevEl: '.swiper-button-prev3',
           },
           // breakpoints: {
           //   // when window width is >= 320px
