@@ -346,6 +346,7 @@ img {
 
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
+  background-attachment: fixed;
   min-height: 83rem;
   padding-top: 13rem; }
   .hero__title {
@@ -652,7 +653,7 @@ img {
   border-radius: 50px;
   width: 4rem;
   height: 4rem;
-  top: 40%; }
+  top: 45%; }
   .swiper-button-prev2::after, .swiper-button-next2::after {
     display: none; }
 
@@ -966,7 +967,8 @@ img {
     max-width: 44.6rem;
     position: relative;
     min-height: 16rem;
-    max-height: 16rem; }
+    max-height: 16rem;
+    margin-top: -2.3rem; }
   .footer__cr {
     color: #444444;
     font-size: 1.25rem;
@@ -1000,7 +1002,7 @@ img {
       margin-bottom: 3rem; }
   .footer__wrapper {
     display: flex;
-    padding-bottom: 9.41rem; }
+    padding-bottom: 7.31rem; }
   .footer__info {
     display: flex;
     margin-right: auto; }
@@ -1046,21 +1048,51 @@ img {
       color: #17bebb; }
 
 .swiper3 {
-  padding-left: 3rem;
-  padding-top: 5rem; }
+  padding-left: 3rem; }
 
 .swiper-slide3__header {
   color: #ffffff;
-  font-size: 1.5rem; }
+  font-size: 1.55rem;
+  max-width: 21rem;
+  line-height: 1.5;
+  margin-top: 2.3rem;
+  margin-left: 1.2rem; }
 
 .swiper-slide3__text {
-  color: #777777; }
+  color: #777777;
+  font-size: 1.25rem;
+  max-width: 18rem;
+  line-height: 1.5;
+  margin-left: 1.2rem; }
   .swiper-slide3__text strong {
     color: #ffffff; }
 
 .swiper-pagination3 {
-  color: #ffffff;
+  color: #777777;
   top: 2rem;
-  left: 0;
+  left: 80%;
+  font-size: 2rem;
   position: absolute;
-  font-size: 2em; }
+  max-width: 5rem; }
+
+.swiper-button-prev3, .swiper-button-next3 {
+  background-size: 42px;
+  border-radius: 50px;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  z-index: 1;
+  cursor: pointer; }
+  .swiper-button-prev3::after, .swiper-button-next3::after {
+    display: none; }
+
+.swiper-button-next3 {
+  background: url("../img/footer/footer-a-r.svg") no-repeat center;
+  background-size: 1.2rem;
+  margin-right: 3rem; }
+
+.swiper-button-prev3 {
+  background: url("../img/footer/footer-a-l.svg") no-repeat center;
+  margin-right: 5rem; }
