@@ -12,6 +12,15 @@
 <body>
     <header class="header">
         <div class="menu">
+
+            <ul class="menu__m">
+                <li class="menu__close">&times;</li>
+                <li><a href="#about" class="menu__mobile-link">Условия</a></li>
+                <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
+                <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
+                <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
+            </ul>
+
             <div class="logo menu__logo">
                 <img src="./img/hero/logo.svg" alt="лого" class="logo__img">
 
@@ -19,7 +28,10 @@
                     <small>на ладони</small>
             </a>
             </div>
-            
+            <a href="#" class="menu__mobile-link">
+				<i class="fa fa-bars"></i>
+			</a>
+
             <nav class="nav menu__nav">
                 <a href="#about" class="nav__item">Условия</a>
                 <a href="#enlarge" class="nav__item">Комплектация автомобиля</a>
@@ -295,9 +307,9 @@
                 <!-- /.col -->
                 <div class="col">
                     <form action="" class="order__form form">
-                        <select class="form__select select" name="option" id="">
-                            <option id="333" class="form__option" value="0"> 10 Дней </option> 
-                            <option class="form__option" value="1">-30%</option>
+                        <select class="form__select select" name="option" >
+                            <option class="form__option" value="0"> 10 Дней <option> 
+                            <option label="8 дней" class="form__option" value="1">-30%<option>
                             <option class="form__option" value="2">-40%</option>
                         </select>
                         <input class="form__input" type="text" placeholder="Ваш телефон">

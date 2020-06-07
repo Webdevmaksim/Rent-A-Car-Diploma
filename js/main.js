@@ -150,5 +150,21 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
+
+    $(function() {
+      var link = $('.menu__mobile-link');
+      var close = $('.menu__close');
+      var menu = $('.menu__m');
+    
+      link.on('click', function(event) {
+        menu.toggleClass('menu__m--active');
+      });
+    
+      close.on('click', function(event) {
+        event.preventDefault();
+        menu.toggleClass('menu__m--active');
+      });
+    });
     
 });
+

@@ -344,6 +344,12 @@ img {
     max-width: 100%;
     padding: 0 20px; } }
 
+@media screen and (max-width: 991px) {
+  .menu__nav {
+    display: none !important; }
+  .menu__mobile-link {
+    display: block !important; } }
+
 .hero {
   background: #222222 url("../img/hero/main-bg.webp") no-repeat center/cover;
   background-attachment: fixed;
@@ -372,11 +378,48 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .menu__close {
+    position: fixed;
+    right: 7rem;
+    top: 7rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #dddddd;
+    transition: 0.4s; }
+  .menu__m {
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: #222222;
+    z-index: 9999;
+    transform: translateX(-100%);
+    opacity: 0.7;
+    transition: 0.3s; }
+    .menu__m--active {
+      transform: translateX(0%); }
+    .menu__m--link {
+      color: #dddddd;
+      text-decoration: none;
+      border-bottom: 1px solid #dddddd; }
   .menu__logo {
     display: flex;
     align-items: center; }
   .menu img {
     margin-right: 1.8rem; }
+  .menu__mobile-link {
+    color: #ffffff;
+    font-size: 3rem;
+    display: none; }
 
 .logo__link {
   text-decoration: none;
