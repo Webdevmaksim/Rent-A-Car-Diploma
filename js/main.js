@@ -109,6 +109,10 @@ $(document).ready(function() {
             pagination: {
             el: '.swiper-pagination3',
             type: 'fraction',
+            bulletActiveClass: 'swiper-pagination-bullet-active3',
+            currentClass: 'swiper-pagination-current3',
+            progressbarOpposite: 'true',
+            
           },
           navigation: {
             nextEl: '.swiper-button-next3',
@@ -165,6 +169,19 @@ $(document).ready(function() {
         menu.toggleClass('menu__m--active');
       });
     });
+
+        
+    //form price set up
+    $(function(){
+      $('#options').change(function(){
+        var tps = 0.20;
+       color = $('#options :selected').val();
+       color1 = $('#options :selected').val() /100 * 20 +1900 ;
+   document.getElementById('result').innerHTML = color;
+   document.getElementById('discount' ).innerHTML = color1;
+  });
+});
+
     
 });
 

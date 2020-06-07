@@ -13,13 +13,7 @@
     <header class="header">
         <div class="menu">
 
-            <ul class="menu__m">
-                <li class="menu__close">&times;</li>
-                <li><a href="#about" class="menu__mobile-link">Условия</a></li>
-                <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
-                <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
-                <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul>
+            
 
             <div class="logo menu__logo">
                 <img src="./img/hero/logo.svg" alt="лого" class="logo__img">
@@ -28,7 +22,14 @@
                     <small>на ладони</small>
             </a>
             </div>
-            <a href="#" class="menu__mobile-link">
+            <ul class="menu__m">
+                <li class="menu__close">&times;</li>
+                <li><a href="#about" class="menu__mobile-link">Условия</a></li>
+                <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
+                <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
+                <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
+            </ul>
+            <a href="#" class="menu__mobile-link burger">
 				<i class="fa fa-bars"></i>
 			</a>
 
@@ -305,25 +306,28 @@
                     </h3>
                 </div>
                 <!-- /.col -->
-                <div class="col">
-                    <form action="" class="order__form form">
-                        <select class="form__select select" name="option" >
-                            <option class="form__option" value="0"> 10 Дней <option> 
-                            <option label="8 дней" class="form__option" value="1">-30%<option>
-                            <option class="form__option" value="2">-40%</option>
+                <div class="col сol-form">
+                    <form action="POST" class="order__form form">
+                        <select id="options" class="form__select select" name="option" >
+                            <option value="1900">10 дней</option>
+                            <option value="2200"> 14 дней  </option>
+                            <option value="3000">30 дней</option>
                         </select>
                         <input class="form__input" type="text" placeholder="Ваш телефон">
                         <button class="form__button">Заказать</button>
-                        <span class="form__promo">А у меня есть промокод!</span>
+                        
+                        <input type="text" class="form__promo" placeholder="А у меня есть промокод!"> 
                     </form>
                 </div>
                 <!-- /.col -->
                 <div class="col">
                     <div class="order__price price">
-                        <h3 class="price__title">
-                            1 900
-                            <sup>руб</sup>
-                        </h3>
+                        <div id="result" class="price__title">
+                            
+                        </div>
+                        <span class="order__discount" id="discount">
+
+                        </span>
                     </div>
                 </div>
                 <!-- /.col -->
@@ -373,9 +377,24 @@
                                         Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
                                     </p>
                                 </div>
-                                <div class="swiper-slide swiper-slide3">Slide 2</div>
-                                <div class="swiper-slide swiper-slide3">Slide 3</div>
-                                <div class="swiper-slide swiper-slide3">Slide 4</div>
+                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
+                                        А как осуществляется доставка	и сдача автомобиля?
+                                    </p>
+                                    <p class="swiper-slide3__text">
+                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
+                                    </p></div>
+                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
+                                        А как осуществляется доставка	и сдача автомобиля?
+                                    </p>
+                                    <p class="swiper-slide3__text">
+                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
+                                    </p></div>
+                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
+                                        А как осуществляется доставка	и сдача автомобиля?
+                                    </p>
+                                    <p class="swiper-slide3__text">
+                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
+                                    </p></div>
                             </div>
                             <!-- Add Pagination -->
                             
@@ -393,10 +412,10 @@
             <!-- /.footer__wrapper -->
             <div class="footer__socials">
                 <div class="footer__social-block">
-                    <a class="footer__link" href="https://vk.com/feed" target="_blank"><i class="fab fa-vk"></i></a>
-                    <a class="footer__link" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a class="footer__link" href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a class="footer__link" href="mailto:info@mail.ru" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a class="footer__link footer__link--vk" href="https://vk.com/feed" target="_blank"></a>
+                    <a class="footer__link footer__link--youtube" href="https://www.youtube.com/" target="_blank"></a>
+                    <a class="footer__link footer__link--whatsapp" href="https://www.whatsapp.com/" target="_blank"></a>
+                    <a class="footer__link footer__link--email" href="mailto:info@mail.ru" target="_blank"></a>
                 </div>
                 <span class="footer__cr">
                     © 2020 Все права защищены

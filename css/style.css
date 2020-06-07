@@ -335,16 +335,17 @@ img {
   max-width: 1100px;
   margin: auto; }
 
-@media screen and (max-width: 991px) {
-  .container {
-    max-width: 750px; } }
-
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 20px; } }
 
 @media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px; }
+  .header {
+    padding: 0;
+    margin-left: -7rem; }
   .menu__nav {
     display: none !important; }
   .menu__mobile-link {
@@ -368,7 +369,9 @@ img {
     line-height: 1.2; }
 
 .header {
-  padding: 5rem 9.5rem 0 9.5rem;
+  padding-left: 9.5rem;
+  padding-top: 5rem;
+  padding-right: 9.5rem;
   position: absolute;
   width: 100%;
   left: 0;
@@ -935,6 +938,10 @@ img {
     max-width: 13rem;
     line-height: 1.25;
     margin-top: 0; }
+  .order__discount {
+    color: #17bebb;
+    font-size: 1.5rem;
+    text-decoration: line-through; }
 
 .form {
   display: flex;
@@ -943,7 +950,9 @@ img {
     color: #ffffff;
     text-align: center;
     font-size: 1.25rem;
-    color: #777777; }
+    color: #777777;
+    background: #222222;
+    border: none; }
   .form__button {
     font-size: 1.5rem;
     color: #ffffff;
@@ -962,6 +971,7 @@ img {
   .form__input {
     background: #222222;
     border-right: none;
+    border: none;
     border-bottom: 2px solid #444444;
     padding-bottom: 1.2rem;
     padding-top: 1rem;
@@ -984,21 +994,33 @@ img {
       font-size: 1.55rem; }
   .form__select {
     background: #222222;
-    color: #777777;
+    color: #ffffff;
     border: 1px solid #444444;
-    padding: 2.7rem 8rem 2.7rem 12rem;
+    padding: 2.3rem 10rem 2.3rem 2.5rem;
     border-radius: 3px;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin-bottom: 4.5rem; }
+
+.swiper-pagination-current3 {
+  color: #ffffff !important;
+  font-size: 2rem !important; }
 
 .price__title {
   color: #ffffff;
   font-size: 7.5rem;
-  margin-top: 0; }
-  .price__title sup {
-    font-size: 2rem;
-    top: -3rem;
-    color: #777777; }
+  margin-top: 0;
+  letter-spacing: 0.9rem;
+  font-weight: bold;
+  position: relative; }
+  .price__title::after {
+    content: 'руб';
+    display: inline-block;
+    color: #777777;
+    font-size: 2.5rem;
+    vertical-align: top;
+    margin-top: 1rem;
+    margin-left: 1.4rem;
+    letter-spacing: normal; }
 
 .footer {
   background: #222222; }
@@ -1029,6 +1051,30 @@ img {
     align-content: center;
     border-radius: 50%;
     margin-right: 1.5rem; }
+    .footer__link--vk {
+      background: url("../img/socials/vk.svg") center no-repeat;
+      background-size: 1.9rem; }
+      .footer__link--vk:hover {
+        background: url("../img/socials/vk-hover.svg") center no-repeat;
+        background-size: 1.9rem; }
+    .footer__link--youtube {
+      background: url("../img/socials/youtube.svg") center no-repeat;
+      background-size: 1.9rem; }
+      .footer__link--youtube:hover {
+        background: url("../img/socials/youtube-hover.svg") center no-repeat;
+        background-size: 1.9rem; }
+    .footer__link--whatsapp {
+      background: url("../img/socials/whatsapp.svg") center no-repeat;
+      background-size: 1.9rem; }
+      .footer__link--whatsapp:hover {
+        background: url("../img/socials/whatsapp-hover.svg") center no-repeat;
+        background-size: 1.9rem; }
+    .footer__link--email {
+      background: url("../img/socials/mail.svg") center no-repeat;
+      background-size: 1.9rem; }
+      .footer__link--email:hover {
+        background: url("../img/socials/mail-hover.svg") center no-repeat;
+        background-size: 1.9rem; }
     .footer__link:last-child {
       margin-right: 0; }
     .footer__link:hover {
