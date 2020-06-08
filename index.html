@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аренда авто в Пятигорске</title>
     <link rel="shortcut icon" href="./img/icon/rent-a-car.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -192,7 +193,7 @@
                             <!-- If we need navigation buttons -->
                             
                         </div>
-                        <div class="swiper-pagination swiper-pagination2"></div>
+                        <div class="swiper-pagination2"></div>
                             <div class="swiper-button-prev swiper-button-prev2"></div>
                             <div class="swiper-button-next swiper-button-next2"></div>
                     </div>
@@ -309,10 +310,11 @@
                 <div class="col сol-form">
                     <form action="./php/question.php" method="POST" class="order__form form">
                         <select id="options" class="form__select select" name="footerName" >
-                            <option value="1900">10 дней</option>
-                            <option value="2200"> 14 дней  </option>
+                            <option value="1900">10 дней </option>
+                            <option selected value="2200"> 14 дней  </option>
                             <option value="3000">30 дней</option>
                         </select>
+                        <span class="discount">-20%</span>
                         <input id="footerPhone" name="footerPhone" class="form__input" type="tel" placeholder="Ваш телефон">
                         <button class="form__button">Заказать</button>
                         
@@ -323,10 +325,10 @@
                 <div class="col">
                     <div class="order__price price">
                         <div id="result" class="price__title">
-                            
+                            1900
                         </div>
                         <span class="order__discount" id="discount">
-
+                            2280
                         </span>
                     </div>
                 </div>
@@ -424,7 +426,15 @@
         </div>
     </footer>
     <div class="button-up"></div>
-
+        <div class="t-modal">
+            <div class="t-modal__dialog"><span class="t-modal__close">&times;</span>
+                <h3 class="t-modal__header"><strong>Спасибо за то что выбрали нас!</strong><br>Наш менеджер
+                    свяжется с вами в ближайшее время!</h3><!-- /.t-modal__header -->
+                <div class="t-modal__content"><span class="t-modal__please">Подписаться на нашу группу в вк: </span><a
+                        href="https://vk.com/glo_academy" target="blank"><img src="./img/vk.svg" alt="вк"
+                            class="t-modal__vk"></a></div><!-- /.t-modal__content -->
+            </div><!-- /.t-modal__dialog -->
+        </div><!-- /.t-modal -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/all.min.js"></script>

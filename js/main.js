@@ -78,6 +78,8 @@ $(document).ready(function() {
             pagination: {
             el: '.swiper-pagination2',
             type: 'fraction',
+            bulletActiveClass: 'swiper-pagination-bullet-active2',
+            currentClass: 'swiper-pagination-current2',
           },
           navigation: {
             nextEl: '.swiper-button-next',
@@ -229,6 +231,30 @@ $('.order__form').validate({
 //phone mask
 $('[type=tel]').mask('+7 (000) 000-00-00');
 
+//thank u
+var 
+        modalBtn = $('[data-toggle=modal]'),
+        closeBtn = $('.modal__close'),
+        //Доп переменные
+        //Модальное окно благодарности
+        tModal = $('.t-modal'),
+        TcloseBtn = $('.t-modal__close');
+
+        TcloseBtn.on('click', function(){
+          tModal.removeClass('t-modal--visible');
+      });
+
+      $(document).keydown(function(event) { 
+        if (event.keyCode == 27) { 
+        $('.t-modal').removeClass('t-modal--visible');
+        }
+        });
+        //Закрытие на клик за пределами поля!!!
+        $('.t-modal').click(function(e) {
+          if ($(e.target).closest('.t-modal__dialog').length == 0){
+            $(this).removeClass('t-modal--visible');					
+          }
+        });
     
 });
 
