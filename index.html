@@ -307,16 +307,16 @@
                 </div>
                 <!-- /.col -->
                 <div class="col сol-form">
-                    <form action="POST" class="order__form form">
-                        <select id="options" class="form__select select" name="option" >
+                    <form action="./php/question.php" method="POST" class="order__form form">
+                        <select id="options" class="form__select select" name="footerName" >
                             <option value="1900">10 дней</option>
                             <option value="2200"> 14 дней  </option>
                             <option value="3000">30 дней</option>
                         </select>
-                        <input class="form__input" type="text" placeholder="Ваш телефон">
+                        <input id="footerPhone" name="footerPhone" class="form__input" type="tel" placeholder="Ваш телефон">
                         <button class="form__button">Заказать</button>
                         
-                        <input type="text" class="form__promo" placeholder="А у меня есть промокод!"> 
+                        <input type="text" class="form__promo" placeholder="А у меня есть промокод!" name="footerQuestion" id="footerQestion"> 
                     </form>
                 </div>
                 <!-- /.col -->
@@ -428,6 +428,8 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/all.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

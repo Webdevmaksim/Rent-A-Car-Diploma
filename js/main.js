@@ -182,6 +182,53 @@ $(document).ready(function() {
   });
 });
 
+//Form
+$('.order__form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    // Строчное правило
+    // Правило-объект(Блок)
+    footerPhone: {
+      required: true,
+      minlength: 18
+    }
+  },  //Сообщения
+  messages: {
+    footerName:{
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+    },
+    footerPolicy:{
+      required: "Лучше согласится !!!"
+    },
+    footerPhone: "Телефон обязателен",
+    minlength: "Телефон не короче 10 цифр",
+    footerQuestion: {
+      required: "Обязательно задайте ваш вопрос"
+      
+    }
+  },
+  submitHandler: function(form) {
+    // $(form).ajaxSubmit();
+    $.ajax({
+      type: "POST",
+      url: "./php/question.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+        tModal.toggleClass('t-modal--visible');
+        $(form)[0].reset();
+      },
+      error: function(response){
+        console.log('Ошибка запроса ' + response);
+      }
+    });
+  }
+});
+//phone mask
+$('[type=tel]').mask('+7 (000) 000-00-00');
+
     
 });
 
