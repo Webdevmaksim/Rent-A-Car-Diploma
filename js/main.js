@@ -39,11 +39,37 @@ $(document).ready(function() {
           }
         });
       });
+
+      //swiper-plaer-3
+      $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player-3', {
+          width: '100%',
+          height: '125%',
+          videoId: '74zyD_ZaZI',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
+
+      //swiper-plaer-4
+      $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player-4', {
+          width: '100%',
+          height: '125%',
+          videoId: 'Kb8CW3axqRE',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
       
       //slider
       var mySwiper = new Swiper ('.swiper1', {
         // Optional parameters
             loop: true,
+            slidesPerView: 2,
+            spaceBetween: 100,
             pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -67,7 +93,7 @@ $(document).ready(function() {
             640: {
               slidesPerView: 2,
               spaceBetween: 80
-            }
+            },
           },
       });
 
@@ -82,8 +108,8 @@ $(document).ready(function() {
             currentClass: 'swiper-pagination-current2',
           },
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next2',
+            prevEl: '.swiper-button-prev2',
           },
           // breakpoints: {
           //   // when window width is >= 320px
@@ -120,23 +146,18 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next3',
             prevEl: '.swiper-button-prev3',
           },
-          // breakpoints: {
-          //   // when window width is >= 320px
-          //   320: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20
-          //   },
-          //   // when window width is >= 480px
-          //   480: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 30
-          //   },
-          //   // when window width is >= 640px
-          //   640: {
-          //     slidesPerView: 2,
-          //     spaceBetween: 80
-          //   }
-          // },
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            }
+          },
       });
 
       //Кнопка прокрутки наверх
@@ -194,22 +215,23 @@ $('.order__form').validate({
     footerPhone: {
       required: true,
       minlength: 18
-    }
+    },
+    footerQuestion: {
+      required: false,
+      maxlength: 4
+    },
   },  //Сообщения
   messages: {
-    footerName:{
+    footerQuestion:{
       required: "Имя обязательно",
-      minlength: "Имя не короче двух букв",
+      maxlength: "Максимум 4 символа",
     },
     footerPolicy:{
       required: "Лучше согласится !!!"
     },
     footerPhone: "Телефон обязателен",
     minlength: "Телефон не короче 10 цифр",
-    footerQuestion: {
-      required: "Обязательно задайте ваш вопрос"
-      
-    }
+    
   },
   submitHandler: function(form) {
     // $(form).ajaxSubmit();
@@ -224,12 +246,14 @@ $('.order__form').validate({
       },
       error: function(response){
         console.log('Ошибка запроса ' + response);
+        ym(64720999, 'reachGoal', 'send'); return true;
       }
     });
   }
 });
 //phone mask
 $('[type=tel]').mask('+7 (000) 000-00-00');
+$('.form__promo').mask('0000');
 
 //thank u
 var 

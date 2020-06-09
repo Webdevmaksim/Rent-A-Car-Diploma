@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Аренда авто в Пятигорске</title>
     <link rel="shortcut icon" href="./img/icon/rent-a-car.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
@@ -10,436 +11,325 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                .insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(64720999, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script><noscript>
+        <div><img src="https://mc.yandex.ru/watch/64720999" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter -->
     <header class="header">
         <div class="menu">
-
-            
-
-            <div class="logo menu__logo">
-                <img src="./img/hero/logo.svg" alt="лого" class="logo__img">
-
-                <a href="./index.html" class="logo__link">Ставрополье
-                    <small>на ладони</small>
-            </a>
-            </div>
+            <div class="logo menu__logo"><img src="./img/hero/logo.svg" alt="лого" class="logo__img"> <a
+                    href="./index.html" class="logo__link">Ставрополье <small>на ладони</small></a></div>
             <ul class="menu__m">
                 <li class="menu__close">&times;</li>
                 <li><a href="#about" class="menu__mobile-link">Условия</a></li>
                 <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
                 <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
                 <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul>
-            <a href="#" class="menu__mobile-link burger">
-				<i class="fa fa-bars"></i>
-			</a>
-
-            <nav class="nav menu__nav">
-                <a href="#about" class="nav__item">Условия</a>
-                <a href="#enlarge" class="nav__item">Комплектация автомобиля</a>
-                <a href="#order" class="nav__item">Договор аренды</a>
-                <a href="#footer" class="nav__item">Контакты</a>
-            </nav>
+            </ul><a href="#" class="menu__mobile-link burger"><i class="fa fa-bars"></i></a>
+            <nav class="nav menu__nav"><a href="#about" class="nav__item">Условия</a> <a href="#enlarge"
+                    class="nav__item">Комплектация автомобиля</a> <a href="#order" class="nav__item">Договор аренды</a>
+                <a href="#footer" class="nav__item">Контакты</a></nav>
         </div>
     </header>
     <main>
-        
-       <section class="hero">
-        
-        <div class="container">
-            <div class="hero__content">
-                <h1 class="hero__title">
-                    Аренда авто в Пятигорске
-                </h1>
-                <p class="hero__text">
-                    Ставропольский край как на ладони
-                </p>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Аренда авто в Пятигорске</h1>
+                    <p class="hero__text">Ставропольский край как на ладони</p>
+                </div><!-- /.hero__content -->
             </div>
-            <!-- /.hero__content -->
-        </div>
-       </section>
-       <!-- /.hero -->
-       <section class="places">
-           <div class="container">
-
-               <div class="places__video video" id="player">
-                <script src="https://www.youtube.com/iframe_api"></script>
-                    <img loading="lazy" src="./img/video/play.svg" alt="воспроизведение" class="video__play">
+        </section><!-- /.hero -->
+        <section class="places">
+            <div class="container">
+                <div class="places__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script><img loading="lazy"
+                        src="./img/video/play.svg" alt="воспроизведение" class="video__play">
                     <div class="video__text">
-                        <h3 class="video__title">
-                            Красоты Ставрополья
-                        </h3>
-                        <span class="video__subtitle">
-                            Надежный автомобиль — залог лучших впечатлений!
-                        </span>
+                        <h3 class="video__title">Красоты Ставрополья</h3><span class="video__subtitle">Надежный
+                            автомобиль — залог лучших впечатлений!</span>
                     </div>
-               </div>
-               <div class="places__content content">
+                </div>
+                <div class="places__content content">
                     <div class="content__text">
-                        <p class="content__title">
-                            Интересные места Ставропольского края 
-                            <span>эксклюзивно для вас!</span>
-                        </p>
-                        <button class="button content__button">
-                            Все видео
-                        </button>
-                    </div>
-                    <!-- /.content__text -->
+                        <p class="content__title">Интересные места Ставропольского края <span>эксклюзивно для
+                                вас!</span></p><button class="button content__button">Все видео</button>
+                    </div><!-- /.content__text -->
                     <div class="content__slider">
                         <!-- Slider main container -->
-                            <div class="swiper-container swiper1">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide" id="player-0">
-                                        <img loading="lazy" src="./img/content/icon-P.svg" alt="воспроизведение" class="swiper__play swiper__play--0">
-                                        <script src="https://www.youtube.com/iframe_api"></script>
-                                        <img src="./img/content/img-1.png" alt="" class="swiper__img">
-                                        <span>
-                                            Цейский заповедник близ Северной Осетии
-                                        </span>
-                                    </div>
-
-                                    <div class="swiper-slide" id="player-1">
-                                        <img loading="lazy" src="./img/content/icon-P.svg" alt="воспроизведение" class="swiper__play swiper__play--1">
-                                        <script src="https://www.youtube.com/iframe_api"></script>
-                                        <img src="./img/content/img-2.png" alt="" class="swiper__img">
-                                        <span>
-                                            Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи
-                                        </span>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img src="./img/content/img-1.png" alt="" class="swiper__img">
-                                        <span>
-                                            Цейский заповедник близ Северной Осетии
-                                        </span>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img src="./img/content/img-1.png" alt="">
-                                        <span>
-                                            Цейский заповедник близ Северной Осетии
-                                        </span>
-                                    </div>
-                                    
+                        <div class="swiper-container swiper1">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper swiper-wrapper1">
+                                <!-- Slides -->
+                                <div class="swiper-slide" id="player-0"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--0">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/content/img-1.webp" alt="" class="swiper1"> <span>Цейский заповедник
+                                        близ Северной Осетии</span>
                                 </div>
-
-                                <!-- If we need navigation buttons -->
-                                
-                            </div>
-                            
-                            <div class="swiper-button-prev swiper-button-prev1"></div>
-                            <div class="swiper-button-next swiper-button-next1"></div>
-                    </div>
-                    <!-- /.content__slider -->
-               </div>
-               <!-- /.places__content -->
-           </div>
-           <!-- container -->
-       </section>
-       <section class="clients">
-           <div class="container">
-            <div class="clients__title">
-                <h3>Впечатления клиентов</h3>
-                <span>Ваши впечатления — наша мотивация</span>
-            </div>
-            <div class="clients__row">
-                <div class="clients__card">
-                    <div class="clients__img">
-                    <img src="./img/client/client-1.webp" alt="Чат">
-                    </div>
-                    <span>Большаков О.В.</span>
-                    <p>Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы не состоялось!</p>
+                                <div class="swiper-slide" id="player-1"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--1">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/content/img-2.webp" alt="" class="swiper__img swiper1">
+                                    <span>Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</span>
+                                </div>
+                                <div class="swiper-slide" id="player-3"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--3">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/content/img-1.webp" alt="" class="swiper__img"> <span>Цейский
+                                        заповедник близ Северной Осетии</span>
+                                </div>
+                                <div class="swiper-slide" id="player-4"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--4">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/content/img-2.webp" alt="" class="swiper__img"> <span>Незабываемый
+                                        маршрут в Ингушский заповедник: Боевые башни Эрзи</span>
+                                </div>
+                            </div><!-- If we need navigation buttons -->
+                        </div>
+                        <div class="swiper-button-prev swiper-button-prev1"></div>
+                        <div class="swiper-button-next swiper-button-next1"></div>
+                    </div><!-- /.content__slider -->
+                </div><!-- /.places__content -->
+            </div><!-- container -->
+        </section>
+        <section class="clients">
+            <div class="container">
+                <div class="clients__title">
+                    <h3>Впечатления клиентов</h3><span>Ваши впечатления — наша мотивация</span>
                 </div>
-                <div class="clients__card"><div class="clients__img">
-                    <img src="./img/client/client-2.webp" alt="Чат">
-                    </div><span>Волков Н.Б.</span>
-                <p>Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше отношение - РЕСПЕКТ!</p></div>
-                <div class="clients__card"><div class="clients__img">
-                    <img src="./img/client/client-3.webp" alt="Чат">
-                    </div><span>Новиков К.Ф.</span>
-                <p>Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда путешествуешь «дикарем».. РЕКОМЕНДУЮ!</p></div>
-                <div class="clients__card"><div class="clients__img">
-                    <img src="./img/client/client-4.webp" alt="Чат">
-                    </div><span>Шубин Т.И.</span>
-                <p>Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце - просто на всю жизнь...</p></div>
+                <div class="clients__row">
+                    <div class="clients__card">
+                        <div class="clients__img"><img src="./img/client/client-1.webp" alt="Чат"></div><span>Большаков
+                            О.В.</span>
+                        <p>Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы не
+                            состоялось!</p>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__img"><img src="./img/client/client-2.webp" alt="Чат"></div><span>Волков
+                            Н.Б.</span>
+                        <p>Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше отношение -
+                            РЕСПЕКТ!</p>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__img"><img src="./img/client/client-3.webp" alt="Чат"></div><span>Новиков
+                            К.Ф.</span>
+                        <p>Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда путешествуешь
+                            «дикарем».. РЕКОМЕНДУЮ!</p>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__img"><img src="./img/client/client-4.webp" alt="Чат"></div><span>Шубин
+                            Т.И.</span>
+                        <p>Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце - просто на всю
+                            жизнь...</p>
+                    </div>
+                </div><!-- /.clients__row -->
             </div>
-            <!-- /.clients__row -->
-           </div>
-       </section>
-
-       <section id="about" class="about">
+        </section>
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__swiper">
                         <div class="swiper-container swiper2">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper swiper-wrapper2">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <img class="about__img" src="./img/car-interior/car-interior.webp" alt="салон автомобиля">
-                                </div>
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/2.jpg" alt="салон автомобиля"></div>
-
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/3.jpg" alt="салон автомобиля"></div>
-
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/4.jpg" alt="салон автомобиля"></div>
-
-                            </div>
-                            <!-- If we need pagination -->
-                            
-                        
+                                <div class="swiper-slide"><img class="about__img"
+                                        src="./img/car-interior/car-interior.webp" alt="салон автомобиля"></div>
+                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/2.webp"
+                                        alt="салон автомобиля"></div>
+                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/3.webp"
+                                        alt="салон автомобиля"></div>
+                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/4.webp"
+                                        alt="салон автомобиля"></div>
+                            </div><!-- If we need pagination -->
                             <!-- If we need navigation buttons -->
-                            
                         </div>
                         <div class="swiper-pagination2"></div>
-                            <div class="swiper-button-prev swiper-button-prev2"></div>
-                            <div class="swiper-button-next swiper-button-next2"></div>
-                    </div>
-                    <!-- /.about__swiper -->
-                    
+                        <div class="swiper-button-prev2"></div>
+                        <div class="swiper-button-next2"></div>
+                    </div><!-- /.about__swiper -->
                     <div class="about__text">
-                        <h3 class="about__title">
-                            О нашем автомобиле
-                        </h3>
-                        <span class="about__subtitle">
-                            Чистый салон
-                        </span>
-                        <p class="about__trip">
-                            Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен - наш салон не исключение!
-                        </p>
-                        <span class="about__trip--exception">
-                            (обязательное условие аренды - возвращение автомобиля в чистом виде)
-                        </span>
-                    </div>
-                    <!-- /.about__text -->
+                        <h3 class="about__title">О нашем автомобиле</h3><span class="about__subtitle">Чистый
+                            салон</span>
+                        <p class="about__trip">Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен
+                            - наш салон не исключение!</p><span class="about__trip--exception">(обязательное условие
+                            аренды - возвращение автомобиля в чистом виде)</span>
+                    </div><!-- /.about__text -->
                 </div>
             </div>
-       </section>
-       <!-- /.about -->
-       <section id="enlarge" class="enlarge">
-           <img class="enlarge__bg" src="./img/footer/footer.webp" alt="машина">
-           <div class="container">
-               <div class="enlarge__wrapper">
-                   <div class="col">
-                       <h3 class="enlarge__title">
-                        Авто
-                       </h3>
-                    
-                        <span class="enlarge__subtitle">
-                            в приближении
-                        </span>
-                        <div class="enlarge__gearbox gearbox">
-                            <img class="gearbox__img" src="./img/footer/gearbox-bg.webp" alt="короька передач">
-                            <span class="gearbox__text">
-                                Коробка передач
-                            </span>
-                            <span class="gearbox__type">
-                                AT
-                            </span>
+        </section><!-- /.about -->
+        <section id="enlarge" class="enlarge"><img class="enlarge__bg" src="./img/footer/footer.webp" alt="машина">
+            <div class="container">
+                <div class="enlarge__wrapper">
+                    <div class="col">
+                        <h3 class="enlarge__title">Авто</h3><span class="enlarge__subtitle">в приближении</span>
+                        <div class="enlarge__gearbox gearbox"><img class="gearbox__img"
+                                src="./img/footer/gearbox-bg.webp" alt="короька передач"> <span
+                                class="gearbox__text">Коробка передач </span><span class="gearbox__type">AT</span></div>
+                        <div class="enlarge__milage milage"><img class="milage__img" src="./img/footer/milage.webp"
+                                alt="километраж"> <span class="milage__text">Чистый пробег </span><span
+                                class="milage__type">+100k</span></div><!-- /.enlarge__milage milage -->
+                    </div><!-- /.col -->
+                    <div class="col--2">
+                        <div class="enlarge__title--wrapper">
+                            <h3 class="enlarge__title--2">АИ</h3><span>92</span>
                         </div>
-                        <div class="enlarge__milage milage">
-                            <img class="milage__img" src="./img/footer/milage.webp" alt="километраж">
-                            <span class="milage__text">
-                                Чистый пробег
-                            </span>
-                            <span class="milage__type">
-                                +100k
-                            </span>
+                        <ul class="enlarge__list">
+                            <li class="enlarge__item">Мощность: 123</li>
+                            <li class="enlarge__item">Объем: 1.6</li>
+                            <li class="enlarge__item">Расход: 8.9 / 5.3</li>
+                        </ul><img src="./img/footer/mid-img.webp" alt="договор" class="enlarge__img--middle">
+                        <p class="enlarge__text--middle">Все документы в порядке - единственный собственник за весь
+                            период эксплуатации. <span>Сел и поехал!</span></p>
+                    </div><!-- /.col -->
+                    <div class="col">
+                        <h3 class="enlarge__title--3">2017</h3>
+                        <div class="enlarge__block--3">
+                            <div class="enlarge__block--img"><img src="./img/footer/users.webp" alt="люди"></div>
+                            <div class="enlarge__block--img"><img src="./img/footer/door.webp" alt="двери"></div>
+                            <div class="enlarge__block--img"><img src="./img/footer/snow-flake.webp" alt="холод"></div>
+                        </div><!-- /.enlarge__block-3 --> <img src="./img/footer/heart.webp" alt="сердечко"
+                            class="enlarge__heart">
+                        <div class="enlarge__block--info"><span>Укомплектуем дополнительно</span>
+                            <p>Мы очень любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не
+                                придираемся к каждой незначительной царапинке после возврата авто клиентом</p>
                         </div>
-                        <!-- /.enlarge__milage milage -->
-                       
-                   </div>
-                   <!-- /.col -->
-                   <div class="col">
-                       <div class="enlarge__title--wrapper">
-                        <h3 class="enlarge__title--2">
-                            АИ
-                           </h3>
-                           <span>92</span>
-                       </div>
-                       <ul class="enlarge__list">
-                           <li class="enlarge__item">Мощность: 123</li>
-                           <li class="enlarge__item">Объем: 1.6</li>
-                           <li class="enlarge__item">Расход: 8.9 / 5.3</li>
-                       </ul>
-                       <img src="./img/footer/mid-img.webp" alt="договор" class="enlarge__img--middle">
-                       <p class="enlarge__text--middle">Все документы в порядке - единственный собственник за весь период эксплуатации. <span>Сел и поехал!</span></p>
-                   </div>
-                   <!-- /.col -->
-                   <div class="col">
-                       <h3 class="enlarge__title--3">
-                           2017
-                       </h3>
-                       <div class="enlarge__block--3">
-                           <div class="enlarge__block--img">
-                                <img src="./img/footer/users.webp" alt="люди">
-                           </div>
-                           <div class="enlarge__block--img">
-                            <img src="./img/footer/door.webp" alt="двери">
-                           </div>
-                           <div class="enlarge__block--img">
-                                <img src="./img/footer/snow-flake.webp" alt="холод">
-                           </div>
-                       </div>
-                       <!-- /.enlarge__block-3 -->
-                       <img src="./img/footer/heart.webp" alt="сердечко" class="enlarge__heart">
-                       <div class="enlarge__block--info">
-                           <span>Укомплектуем дополнительно</span>
-                           <p>Мы очень любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не придираемся к каждой незначительной царапинке после возврата авто клиентом</p>
-                       </div>
-                   </div>
-                   <!-- /.col -->
-               </div>
-               <!-- /.enlarge__wrapper -->
-               <div class="enlarge__hr"></div>
-           </div>
-           
-       </section>
-       <!-- /.enlarge -->
-       <section id="order" class="order">
-           <div class="container">
-            <div class="order__wrapper">
-                <div class="col">
-                    <h3 class="order__title">
-                        Заказать автомобиль в аренду
-                    </h3>
-                </div>
-                <!-- /.col -->
-                <div class="col сol-form">
-                    <form action="./php/question.php" method="POST" class="order__form form">
-                        <select id="options" class="form__select select" name="footerName" >
-                            <option value="1900">10 дней </option>
-                            <option selected value="2200"> 14 дней  </option>
-                            <option value="3000">30 дней</option>
-                        </select>
-                        <span class="discount">-20%</span>
-                        <input id="footerPhone" name="footerPhone" class="form__input" type="tel" placeholder="Ваш телефон">
-                        <button class="form__button">Заказать</button>
-                        
-                        <input type="text" class="form__promo" placeholder="А у меня есть промокод!" name="footerQuestion" id="footerQestion"> 
-                    </form>
-                </div>
-                <!-- /.col -->
-                <div class="col">
-                    <div class="order__price price">
-                        <div id="result" class="price__title">
-                            1900
-                        </div>
-                        <span class="order__discount" id="discount">
-                            2280
-                        </span>
-                    </div>
-                </div>
-                <!-- /.col -->
+                    </div><!-- /.col -->
+                </div><!-- /.enlarge__wrapper -->
+                <div class="enlarge__hr"></div>
             </div>
-           </div>
-       </section>
+        </section><!-- /.enlarge -->
+        <section id="order" class="order">
+            <div class="container">
+                <div class="order__wrapper">
+                    <div class="col order1">
+                        <h3 class="order__title">Заказать автомобиль в аренду</h3>
+                    </div><!-- /.col -->
+                    <div class="col сol-form">
+                        <form action="./php/question.php" method="POST" class="order__form form"><select id="options"
+                                class="form__select select" name="footerName">
+                                <option value="1900">10 дней</option>
+                                <option selected="selected" value="2200">14 дней</option>
+                                <option value="3000">30 дней</option>
+                            </select> <span class="discount">-20%</span> <input id="footerPhone" name="footerPhone"
+                                class="form__input" type="tel" placeholder="Ваш телефон"> <button
+                                class="form__button">Заказать</button>
+                            <!-- onclick="ym(64720999, 'reachGoal', 'send'); return true;"  --> <input type="text"
+                                class="form__promo footerQuestion" placeholder="А у меня есть промокод!"
+                                name="footerQuestion" id="footerQestion"></form>
+                    </div><!-- /.col -->
+                    <div class="col order3">
+                        <div class="order__price price">
+                            <div id="result" class="price__title">1900</div><span class="order__discount"
+                                id="discount">2280</span>
+                        </div>
+                    </div><!-- /.col -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                
-                    <div class="footer__info">
-                        <div class="footer__about">
-                            <h3 class="footer__title">
-                                Реквизиты
-                            </h3>
-                            <ul class="footer__list">
-                                <li>ИП Пупкин Василий</li>
-                                <li>ОГРН: 1053601053600</li>
-                                <li>ИНН: 3664036640</li>
-                            </ul>
-                        </div>
-                        <!-- /.footer__about -->
-                        <div class="footer__contacts">
-                            <h3 class="footer__title footer__title--bug">
-                                Контакты 
-                            </h3>
-                            <ul class="footer__list">
-                                <li><a href="mailto:info@mail.ru">pupkinvvv@example.ru</a></li>
-                                <li><a href="#">Договор аренды
-                                </a></li>
-                                <li><a href="#">Условия</a></li>
-                            </ul>
-                        </div>
-                        <!-- /.footer__contacts -->
-                    </div>
-                    <!-- /.footer__info -->
-                    <div class="footer__slider">
-                        <img class="footer__img" src="./img/footer/footer-slider.webp" alt="фон">
-                        <div class="swiper-container swiper3">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide swiper-slide3">
-                                    <p class="swiper-slide3__header">
-                                        А как осуществляется доставка	и сдача автомобиля?
-                                    </p>
-                                    <p class="swiper-slide3__text">
-                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
-                                    </p>
-                                </div>
-                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
-                                        А как осуществляется доставка	и сдача автомобиля?
-                                    </p>
-                                    <p class="swiper-slide3__text">
-                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
-                                    </p></div>
-                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
-                                        А как осуществляется доставка	и сдача автомобиля?
-                                    </p>
-                                    <p class="swiper-slide3__text">
-                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
-                                    </p></div>
-                                <div class="swiper-slide swiper-slide3"><p class="swiper-slide3__header">
-                                        А как осуществляется доставка	и сдача автомобиля?
-                                    </p>
-                                    <p class="swiper-slide3__text">
-                                        Доставка и сдача в аэропорт Минеральных Вод <strong>Бесплатная!</strong>
-                                    </p></div>
+                <div class="footer__info">
+                    <div class="footer__about">
+                        <h3 class="footer__title">Реквизиты</h3>
+                        <ul class="footer__list">
+                            <li>ИП Пупкин Василий</li>
+                            <li>ОГРН: 1053601053600</li>
+                            <li>ИНН: 3664036640</li>
+                        </ul>
+                    </div><!-- /.footer__about -->
+                    <div class="footer__contacts">
+                        <h3 class="footer__title footer__title--bug">Контакты</h3>
+                        <ul class="footer__list">
+                            <li><a href="mailto:info@mail.ru">pupkinvvv@example.ru</a></li>
+                            <li><a href="#">Договор аренды</a></li>
+                            <li><a href="#">Условия</a></li>
+                        </ul>
+                    </div><!-- /.footer__contacts -->
+                </div><!-- /.footer__info -->
+                <div class="footer__slider"><img class="footer__img" src="./img/footer/footer-slider.webp" alt="фон">
+                    <div class="swiper-container swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide3">
+                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
+                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
+                                    <strong>Бесплатная!</strong></p>
                             </div>
-                            <!-- Add Pagination -->
-                            
-                              <!-- If we need navigation buttons -->
-                              
+                            <div class="swiper-slide swiper-slide3">
+                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
+                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
+                                    <strong>Бесплатная!</strong></p>
                             </div>
-                            <div class="swiper-pagination3"></div>
-                        <div class=" swiper-button-prev3"></div>
-                        <div class=" swiper-button-next3"></div>
-                        
+                            <div class="swiper-slide swiper-slide3">
+                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
+                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
+                                    <strong>Бесплатная!</strong></p>
+                            </div>
+                            <div class="swiper-slide swiper-slide3">
+                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
+                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
+                                    <strong>Бесплатная!</strong></p>
+                            </div>
+                        </div><!-- Add Pagination -->
+                        <!-- If we need navigation buttons -->
                     </div>
-                    <!-- /.footer__slider -->
-                
-            </div>
-            <!-- /.footer__wrapper -->
+                    <div class="swiper-pagination3"></div>
+                    <div class="swiper-button-prev3"></div>
+                    <div class="swiper-button-next3"></div>
+                </div><!-- /.footer__slider -->
+            </div><!-- /.footer__wrapper -->
             <div class="footer__socials">
-                <div class="footer__social-block">
-                    <a class="footer__link footer__link--vk" href="https://vk.com/feed" target="_blank"></a>
-                    <a class="footer__link footer__link--youtube" href="https://www.youtube.com/" target="_blank"></a>
-                    <a class="footer__link footer__link--whatsapp" href="https://www.whatsapp.com/" target="_blank"></a>
-                    <a class="footer__link footer__link--email" href="mailto:info@mail.ru" target="_blank"></a>
-                </div>
-                <span class="footer__cr">
-                    © 2020 Все права защищены
-                </span>
+                <div class="footer__social-block"><a class="footer__link footer__link--vk" href="https://vk.com/feed"
+                        target="_blank"></a> <a class="footer__link footer__link--youtube"
+                        href="https://www.youtube.com/" target="_blank"></a> <a
+                        class="footer__link footer__link--whatsapp" href="https://www.whatsapp.com/"
+                        target="_blank"></a> <a class="footer__link footer__link--email" href="mailto:info@mail.ru"
+                        target="_blank"></a></div><span class="footer__cr">© 2020 Все права защищены</span>
             </div>
         </div>
     </footer>
     <div class="button-up"></div>
-        <div class="t-modal">
-            <div class="t-modal__dialog"><span class="t-modal__close">&times;</span>
-                <h3 class="t-modal__header"><strong>Спасибо за то что выбрали нас!</strong><br>Наш менеджер
-                    свяжется с вами в ближайшее время!</h3><!-- /.t-modal__header -->
-                <div class="t-modal__content"><span class="t-modal__please">Подписаться на нашу группу в вк: </span><a
-                        href="https://vk.com/glo_academy" target="blank"><img src="./img/vk.svg" alt="вк"
-                            class="t-modal__vk"></a></div><!-- /.t-modal__content -->
-            </div><!-- /.t-modal__dialog -->
-        </div><!-- /.t-modal -->
+    <div class="t-modal">
+        <div class="t-modal__dialog"><span class="t-modal__close">&times;</span>
+            <h3 class="t-modal__header"><strong>Спасибо за то что выбрали нас!</strong><br>Наш менеджер свяжется с вами
+                в ближайшее время!</h3><!-- /.t-modal__header -->
+            <div class="t-modal__content"><span class="t-modal__please">Подписаться на нашу группу в вк: </span><a
+                    href="https://vk.com/glo_academy" target="blank"><img src="./img/vk.svg" alt="вк"
+                        class="t-modal__vk"></a></div><!-- /.t-modal__content -->
+        </div><!-- /.t-modal__dialog -->
+    </div><!-- /.t-modal -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
+
 </html>

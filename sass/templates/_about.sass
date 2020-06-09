@@ -52,13 +52,17 @@
             border-radius: 50px
             width: 4rem
             height: 4rem    
-            top: 45%
+            top: 35%
+            position: absolute
+            z-index: 999999999999999999999
             &::after
                 display: none   
         &-next2
             background: $light url('../img/content/right.svg') no-repeat center
-            transform: translateX(60%)
+            transform: translateX(80%)
+            right: 0
         &-prev2
             left: 0
             background: $light url('../img/content/left.svg') no-repeat center
-            transform: translateX(-70%)
+            transform: translateX(-90%)
+            z-index: 999999999999999999999

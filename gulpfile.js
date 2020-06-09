@@ -11,7 +11,7 @@ const htmlmin = require('gulp-htmlmin');
 function bs() {
     minсss();
     compress();
-    // minify_h();
+    minify_h();
     serveSass();
     browserSync.init({
         server: {
@@ -36,11 +36,11 @@ function compress(){
     .pipe(dest('js'));
 };
 
-// function minify_h () {
-//     return src(['./*.html', '!./*.min.html'])
-//     .pipe(htmlmin({ collapseWhitespace: true }))
-//     .pipe(dest('./'));
-// ;
+function minify_h () {
+    return src(['./*.html', '!./*.min.html'])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('./'));
+};
 
 
 // Task to minify css using package cleanCSs

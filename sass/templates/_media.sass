@@ -1,27 +1,272 @@
 @media screen and ( max-width: 1300px )
-    html
-        font-size: 10px
-	
-	
-	
+	.hero__content
+		margin-left: 6rem
+	.container	
+		padding: 0 20px
+	html
+    	font-size: 10px
+@media screen and ( max-width: 1100px )
+	.nav__item
+		margin-right: 3rem !important
+	// .about__swiper
+		// max-width: 45rem !important
+		// margin-right: 5rem
+	.enlarge__hr
+		visibility: hidden
 
 @media  (max-width: 768px) 
 	.container
 		max-width: 100%
 		padding: 0 20px
+	.clients__card
+		// flex-basis: 100% !important
+		margin-right: 0 !important
+	.clients__row
+		margin-left: 15rem
+	.about__wrapper
+		flex-direction: column	
+	.enlarge__wrapper
+		flex-direction: column
+		align-items: center
+	.gearbox__type
+		left: 3rem 
+		&::after
+			display: none !important
+	.milage__type
+		left: 3rem
+		&::after
+			display: none !important
+	.order
+		&__wrapper
+			flex-direction: column
+	.сol-form
+		align-self: center
+	.order1
+		align-self: center
+	.order3
+		align-self: center
+
+	.footer
+		&__wrapper
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		
+
 	
 	
 @media screen and ( max-width: 991px )
+	//Disable hover
+	.clients__card
+		flex-basis: 50%
+		margin-right: 0 !important
+	.clients__row
+		margin-left: 15rem
+	.t-modal
+		&__close
+			&:hover
+            font-size: 2rem
+	.nav
+		&__item
+			&:hover
+				color: $primary
+				&::after
+					transform: scale(0)
+	.content
+		&__button
+			&:hover
+				transform: scale(1) !important
+	.footer
+		&__list
+			& a 
+				&:hover
+					color: #444444 !important
+    				text-decoration: none
+	.footer__link
+		&:hover
+            border: 1px solid #444444 !important
+		&--vk
+			&:hover
+				background: url('../img/socials/vk.svg') center no-repeat !important
+				background-size: 1.9rem !important
+		&--youtube
+			&:hover
+				background: url('../img/socials/youtube.svg') center no-repeat !important
+				background-size: 1.9rem !important
+		&--whatsapp
+			&:hover
+				background: url('../img/socials/whatsapp.svg') center no-repeat !important
+				background-size: 1.9rem !important
+		&--email
+			&:hover
+				background: url('../img/socials/mail.svg') center no-repeat !important
+				background-size: 1.9rem !important
+	.places__content
+		flex-direction: column
+	.menu
+		margin-left: 3rem
 	.container  
         max-width: 750px
 	.header
 		padding: 0
 		margin-left: -7rem
+	.hero__title
+		margin-left: 10rem
 	.menu
 		&__nav
 			display: none !important
 		&__mobile-link
 			display: block !important
+	.about__title
+		margin-bottom: 5rem !important
+	.about
+		padding-bottom: 6rem 	!important
+	.enlarge__title--3
+		&::after
+			display: none
+	.swiper-wrapper2
+		width: 100% 
+	.swiper-button-prev3
+		top: 8rem !important
+	.swiper-button-next3
+		top: 8rem !important
+	.enlarge__wrapper
+		padding-bottom: 5rem !important
+	.enlarge__hr
+		display: none
+	.footer__info
+		padding-top: 3rem
+		margin-bottom: 3rem
+	.footer__social-block
+		margin-left: 2.5rem
+	.footer__cr
+		text-align: center
+	.order
+		padding-top: 5rem !important
+	.gearbox__type
+		right: -7rem !important
+	.col--2
+		margin-right: 0
+		margin-left: 6.5rem
+	.milage__type
+		right: -7rem !important
+@media screen and ( max-width: 576px )
+	
+	.clients__card
+		// flex-basis: 100% !important
+		margin-right: 0 !important
+	.clients__row
+		margin-left: 0
+	.hero
+		&__content
+			margin-left: 0
+		&__title
+			font-size: 5.5rem !important
+	.video
+		&__text
+			font-size: 2rem !important
+			left: 3rem !important
+			top: 1rem !important
+	.content
+		&__text
+			margin-left: 7rem	
+
+	.about
+		padding-top: 8rem !important
+		&__wrapper
+			flex-direction: column
+	.enlarge
+		&__wrapper
+			padding-top: 8rem !important
+			flex-direction: column
+		&__title
+			margin-left: 10rem
+		&__subtitle
+			margin-left: 10rem
+	.col
+		align-items: center !important
+	.order3
+		order: -1
+	.order1
+		order: -2
+	.order
+		&__form
+			margin-left: 11rem !important
+			margin-bottom: 5rem
+		&__wrapper
+			flex-direction: column
+	.swiper-slide3__header
+		font-size: 1.3rem !important
+		max-width: 14rem !important
+	.footer
+		&__slider
+			max-width: 25rem !important
+		&__about
+			margin-right: 0 !important
+			margin-left: 9rem
+		&__contacts
+			margin-left: 9rem
+		&__info
+			flex-direction: column
+			margin-right: 0 !important
+			
+		&__socials
+			flex-direction: column
+		&__wrapper
+			flex-direction: column
+	.logo
+		&__link
+			margin-left: -2rem
+			margin-right: 3rem
+		&__img
+			display: none
+	.swiper-wrapper1
+		max-width: 26rem
+	.clients
+		&__title
+			margin-bottom: 9rem !important
+		&__card
+			margin-right: 0 !important
+			margin-bottom: 2rem
+		&__card
+			align-items: center
+	.menu
+		&__mobile-link
+			font-size: 2.5rem !important
+	
 			
 	
+	
+@media screen and ( max-width: 350px )
+	.clients__card
+		flex-basis: 80%
+@media screen and ( max-width: 650px )
+	.video__text
+		left: 13rem !important
+	.swiper1
+		min-width: 100%
+	.swiper__play
+		margin-top: 15%
+
+@media screen and ( max-width: 320px )
+	.swiper-button
+		&-prev2 
+			transform: translateX(-40%) !important
+		&-next2 
+			transform: translateX(40%) !important
+	.footer
+		&__contacts
+			margin-left: 0
+		&__about
+			margin-left: 0 
+	.video
+		&__text
+			left: 2rem !important
+	.swiper
+		&__play
+			top: 20% !important
+
+		
+	
+		
 	

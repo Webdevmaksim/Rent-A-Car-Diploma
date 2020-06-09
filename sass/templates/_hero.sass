@@ -1,5 +1,5 @@
 .hero
-    background:  #222222 url('../img/hero/main-bg.webp') no-repeat center / cover 
+    background:  #222222 url('../img/hero/main-bg-1.webp') no-repeat center / cover 
     background-attachment: fixed
     min-height: 83rem
     padding-top: 13rem
@@ -51,14 +51,16 @@
         background-color: #222222
         z-index: 9999
         transform: translateX(-100%)
-        opacity: 0.7
+        opacity: 0.9
         transition: 0.3s
+        padding-left: 0
         &--active
             transform: translateX(0%)
         &--link
             color: #dddddd
             text-decoration: none
             border-bottom: 1px solid #dddddd
+            
     &__logo
         display: flex
         align-items: center
