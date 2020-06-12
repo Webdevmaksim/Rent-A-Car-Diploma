@@ -3,7 +3,7 @@
     padding-top: 16.5rem
     padding-bottom: 15.8rem
     &__swiper
-        position: relative
+        position: relative 
     &__wrapper  
         display: flex
         justify-content: space-between
@@ -31,13 +31,13 @@
             max-width: 25.5rem
             line-height: 1.5
     &__img
-        min-width: 58.5rem
+        min-width: 54.5rem
         max-height: 32rem
         // max-width: 50rem
         // height: auto
     &__swiper
         width: 100%
-        max-width: 58.5rem
+        max-width: 54.5rem
 .swiper-pagination2
     color: #777777
     top: 2.5rem
@@ -66,3 +66,30 @@
             background: $light url('../img/content/left.svg') no-repeat center
             transform: translateX(-90%)
             z-index: 999999999999999999999
+
+//Счётчик
+.swiper2  
+    position: relative
+    &__total
+        color: #777777
+        font-size: 1.19rem
+        margin-left: 2rem
+    &__devider
+        color: #777777
+        font-size: 1.1rem
+        margin-left: .5rem
+    &__current
+        color: $dark
+        font-size: 2rem
+        margin-left: 3.5rem
+        line-height: 3rem
+        font-weight: bold
+        margin-right: 3.5rem
+    &__pagination 
+        display: flex
+        align-items: center
+        margin-left: 3rem
+        margin-top: 3rem
+        z-index: 99999999
+.swiper1-img
+    max-height: 14.5rem

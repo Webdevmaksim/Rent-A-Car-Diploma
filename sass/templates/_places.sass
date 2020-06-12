@@ -47,14 +47,11 @@
         & span
             color: $orange
     &__button
-        border: none
-        background-color: transparent
         font-size: 1.5rem
         font-weight: bold
+        text-decoration: none
+        color: $dark
         padding: 0
-        transition: 0.5s
-        &:hover
-            transform: scale(1.1)
         &::after
             content: ''
             display: inline-block
@@ -81,10 +78,15 @@
         margin-bottom: 2rem
         width: 25rem
     &:hover
-        .swiper__img
-            background: $l-g    
+        .swiper__play  
+            min-width: 5rem
         & span
             color: $l-g
+.swiper__play   
+    max-width: 4rem 
+    transition: 0.3s
+.swiper__img 
+    max-height: 14.5rem
 .swiper
     &__play
         width: 4.5rem
@@ -96,19 +98,30 @@
         &:hover
             cursor: pointer 
     &-button
-        &-prev1, &-next1
+        &-prev11, &-next11
             background-size: 42px 
             border-radius: 50px
             width: 4rem
             height: 4rem    
-            top: 40%
+            top: 20%
             &::after
                 display: none   
-        &-next1
+        &-next11
             background: $light url('../img/content/right.svg') no-repeat center
             transform: translateX(60%)
-        &-prev1
+            // right: 0 !important
+        &-prev11
             left: 0
             background: $light url('../img/content/left.svg') no-repeat center
             transform: translateX(-70%)
             
+// .swiper-button-next11
+//     background: $light url('../img/content/right.svg') no-repeat center
+//     right: 0
+.swiper-button-prev11
+    background-size: 42px 
+    border-radius: 50px
+    width: 4rem
+    height: 4rem    
+    top: 20%
+    background: $light url('../img/content/right.svg') no-repeat center

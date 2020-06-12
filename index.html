@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="./img/icon/rent-a-car.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -44,7 +43,7 @@
                 <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
                 <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
                 <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul><a href="#" class="menu__mobile-link burger"><i class="fa fa-bars"></i></a>
+            </ul><a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
             <nav class="nav menu__nav"><a href="#about" class="nav__item">Условия</a> <a href="#enlarge"
                     class="nav__item">Комплектация автомобиля</a> <a href="#order" class="nav__item">Договор аренды</a>
                 <a href="#footer" class="nav__item">Контакты</a></nav>
@@ -72,7 +71,8 @@
                 <div class="places__content content">
                     <div class="content__text">
                         <p class="content__title">Интересные места Ставропольского края <span>эксклюзивно для
-                                вас!</span></p><button class="button content__button">Все видео</button>
+                                вас!</span></p><a href="https://www.youtube.com/watch?v=Li4JDSNZP_g" target="_blank"
+                            class="button content__button">Все видео</a>
                     </div><!-- /.content__text -->
                     <div class="content__slider">
                         <!-- Slider main container -->
@@ -84,34 +84,34 @@
                                         src="./img/content/icon-P.svg" alt="воспроизведение"
                                         class="swiper__play swiper__play--0">
                                     <script src="https://www.youtube.com/iframe_api"></script><img
-                                        src="./img/content/img-1.webp" alt="" class="swiper1"> <span>Цейский заповедник
+                                        src="./img/video-fix.webp" alt="" class="swiper1-img"> <span>Цейский заповедник
                                         близ Северной Осетии</span>
                                 </div>
-                                <div class="swiper-slide" id="player-1"><img loading="lazy"
+                                <div class="swiper-slide" id="player1"><img loading="lazy"
                                         src="./img/content/icon-P.svg" alt="воспроизведение"
                                         class="swiper__play swiper__play--1">
-                                    <script src="https://www.youtube.com/iframe_api"></script><img
-                                        src="./img/content/img-2.webp" alt="" class="swiper__img swiper1">
-                                    <span>Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</span>
-                                </div>
-                                <div class="swiper-slide" id="player-3"><img loading="lazy"
-                                        src="./img/content/icon-P.svg" alt="воспроизведение"
-                                        class="swiper__play swiper__play--3">
-                                    <script src="https://www.youtube.com/iframe_api"></script><img
-                                        src="./img/content/img-1.webp" alt="" class="swiper__img"> <span>Цейский
-                                        заповедник близ Северной Осетии</span>
-                                </div>
-                                <div class="swiper-slide" id="player-4"><img loading="lazy"
-                                        src="./img/content/icon-P.svg" alt="воспроизведение"
-                                        class="swiper__play swiper__play--4">
                                     <script src="https://www.youtube.com/iframe_api"></script><img
                                         src="./img/content/img-2.webp" alt="" class="swiper__img"> <span>Незабываемый
                                         маршрут в Ингушский заповедник: Боевые башни Эрзи</span>
                                 </div>
+                                <div class="swiper-slide" id="player3"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--3">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/video-fix.webp" alt="" class="swiper__img"> <span>Цейский заповедник
+                                        близ Северной Осетии</span>
+                                </div>
+                                <!-- <div class="swiper-slide" id="player-4"><img loading="lazy"
+                                        src="./img/content/icon-P.svg" alt="воспроизведение"
+                                        class="swiper__play swiper__play--4">
+                                    <script src="https://www.youtube.com/iframe_api"></script><img
+                                        src="./img/content/img-2.webp" alt="" class="swiper__img swiper1">
+                                    <span>Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</span>
+                                </div> -->
                             </div><!-- If we need navigation buttons -->
                         </div>
-                        <div class="swiper-button-prev swiper-button-prev1"></div>
-                        <div class="swiper-button-next swiper-button-next1"></div>
+                        <div class="swiper-button-prev1"></div>
+                        <div class="swiper-button-next1"></div>
                     </div><!-- /.content__slider -->
                 </div><!-- /.places__content -->
             </div><!-- container -->
@@ -168,7 +168,6 @@
                             </div><!-- If we need pagination -->
                             <!-- If we need navigation buttons -->
                         </div>
-                        <div class="swiper-pagination2"></div>
                         <div class="swiper-button-prev2"></div>
                         <div class="swiper-button-next2"></div>
                     </div><!-- /.about__swiper -->
@@ -180,6 +179,8 @@
                             аренды - возвращение автомобиля в чистом виде)</span>
                     </div><!-- /.about__text -->
                 </div>
+                <div class="swiper2__pagination"><span class="swiper2__current"></span> <span class="swiper2__devider">/
+                    </span><span class="swiper2__total"></span></div>
             </div>
         </section><!-- /.about -->
         <section id="enlarge" class="enlarge"><img class="enlarge__bg" src="./img/footer/footer.webp" alt="машина">
@@ -220,7 +221,7 @@
                         </div>
                     </div><!-- /.col -->
                 </div><!-- /.enlarge__wrapper -->
-                <div class="enlarge__hr"></div>
+                <!-- <div class="enlarge__hr"></div> -->
             </div>
         </section><!-- /.enlarge -->
         <section id="order" class="order">
@@ -298,8 +299,9 @@
                             </div>
                         </div><!-- Add Pagination -->
                         <!-- If we need navigation buttons -->
+                        <div class="swiper3__pagination"><span class="swiper3__total"></span> <span
+                                class="swiper3__devider">/ </span><span class="swiper3__current"></span></div>
                     </div>
-                    <div class="swiper-pagination3"></div>
                     <div class="swiper-button-prev3"></div>
                     <div class="swiper-button-next3"></div>
                 </div><!-- /.footer__slider -->
@@ -310,7 +312,7 @@
                         href="https://www.youtube.com/" target="_blank"></a> <a
                         class="footer__link footer__link--whatsapp" href="https://www.whatsapp.com/"
                         target="_blank"></a> <a class="footer__link footer__link--email" href="mailto:info@mail.ru"
-                        target="_blank"></a></div><span class="footer__cr">© 2020 Все права защищены</span>
+                        target="_blank"></a></div><span class="footer__cr">© Glo Academy 2020 Все права защищены</span>
             </div>
         </div>
     </footer>
@@ -326,10 +328,9 @@
     </div><!-- /.t-modal -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
-    <script src="./js/all.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

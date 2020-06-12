@@ -30,7 +30,7 @@ $(document).ready(function() {
       });
       //swiper-plaer-1
       $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player-1', {
+        player = new YT.Player('player1', {
           width: '100%',
           height: '125%',
           videoId: '35uUBsRS2Kw',
@@ -39,45 +39,52 @@ $(document).ready(function() {
           }
         });
       });
-
-      //swiper-plaer-3
+      //swiper-plaer-1
       $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player-3', {
+        player = new YT.Player('player3', {
           width: '100%',
           height: '125%',
-          videoId: '74zyD_ZaZI',
+          videoId: 'Q8LDBRbLLjU',
           events: {
             'onReady': videoPlay,
           }
         });
       });
 
-      //swiper-plaer-4
-      $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player-4', {
-          width: '100%',
-          height: '125%',
-          videoId: 'Kb8CW3axqRE',
-          events: {
-            'onReady': videoPlay,
-          }
-        });
-      });
+      // //swiper-plaer-3
+      // $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
+      //   player = new YT.Player('player-3', {
+      //     width: '100%',
+      //     height: '125%',
+      //     videoId: '20Ap1kH8wuU',
+      //     events: {
+      //       'onReady': videoPlay,
+      //     }
+      //   });
+      // });
+
+      // //swiper-plaer-4
+      // $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
+      //   player = new YT.Player('player-4', {
+      //     width: '100%',
+      //     height: '125%',
+      //     videoId: 'Kb8CW3axqRE',
+      //     events: {
+      //       'onReady': videoPlay,
+      //     }
+      //   });
+      // });
       
       //slider
-      var mySwiper = new Swiper ('.swiper1', {
+      var mySwiper1 = new Swiper ('.swiper1', {
         // Optional parameters
             loop: true,
-            slidesPerView: 2,
-            spaceBetween: 100,
-            pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-          },
-          navigation: {
-            nextEl: '.swiper-button-next1',
-            prevEl: '.swiper-button-prev1',
-          },
+            slidesPerView: 1,
+            // spaceBetween: 100,
+            navigation: {
+              nextEl: '.swiper-button-next11',
+              prevEl: '.swiper-button-prev11',
+            },
           breakpoints: {
             // when window width is >= 320px
             320: {
@@ -101,12 +108,6 @@ $(document).ready(function() {
       var mySwiper2 = new Swiper ('.swiper2', {
         // Optional parameters
             loop: true,
-            pagination: {
-            el: '.swiper-pagination2',
-            type: 'fraction',
-            bulletActiveClass: 'swiper-pagination-bullet-active2',
-            currentClass: 'swiper-pagination-current2',
-          },
           navigation: {
             nextEl: '.swiper-button-next2',
             prevEl: '.swiper-button-prev2',
@@ -136,11 +137,6 @@ $(document).ready(function() {
             loop: true,
             pagination: {
             el: '.swiper-pagination3',
-            type: 'fraction',
-            bulletActiveClass: 'swiper-pagination-bullet-active3',
-            currentClass: 'swiper-pagination-current3',
-            progressbarOpposite: 'true',
-            
           },
           navigation: {
             nextEl: '.swiper-button-next3',
@@ -159,6 +155,34 @@ $(document).ready(function() {
             }
           },
       });
+      //Обратный отчёт для страниц
+      function addOne(n) {
+        return n > 10 ? n : (+n > 0) ? "0" + n : n;
+      }
+      var swiper3Current = $('.swiper3__current');
+	    var swiper3Total = $('.swiper3__total');
+
+	      mySwiper3.on('slideChange', function () {
+		      swiper3Current.text(addOne(mySwiper3.realIndex + 1));
+		      swiper3Total.text(addOne(mySwiper3.slides.length - 2));
+	      })
+
+	      swiper3Current.text(addOne(mySwiper3.realIndex + 1));
+        swiper3Total.text(addOne(mySwiper3.slides.length - 2));
+
+        var swiper2Current = $('.swiper2__current');
+	      var swiper2Total = $('.swiper2__total');
+
+	      mySwiper2.on('slideChange', function () {
+		      swiper2Current.text(addOne(mySwiper2.realIndex + 1));
+		      swiper2Total.text(addOne(mySwiper2.slides.length - 2));
+	      })
+
+	      swiper2Current.text(addOne(mySwiper2.realIndex + 1));
+        swiper2Total.text(addOne(mySwiper2.slides.length - 2));
+        
+
+
 
       //Кнопка прокрутки наверх
       $(window).scroll(function () {

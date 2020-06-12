@@ -15,6 +15,11 @@
 		visibility: hidden
 
 @media  (max-width: 768px) 
+	.about__wrapper
+		align-items: center !important
+	.swiper2__pagination
+		justify-content: center
+		transform: translate(-17%)
 	.container
 		max-width: 100%
 		padding: 0 20px
@@ -57,9 +62,16 @@
 	
 @media screen and ( max-width: 991px )
 	//Disable hover
+	.swiper-slide
+		&:hover
+			& span
+				color: $dark !important
+			.swiper__play
+				min-width: 4rem !important
+				cursor: unset
 	.clients__card
 		flex-basis: 50%
-		margin-right: 0 !important
+		margin-right: 0 !important	
 	.clients__row
 		margin-left: 15rem
 	.t-modal
@@ -71,7 +83,7 @@
 			&:hover
 				color: $primary
 				&::after
-					transform: scale(0)
+					transform: scale(0) !important
 	.content
 		&__button
 			&:hover
@@ -81,7 +93,10 @@
 			& a 
 				&:hover
 					color: #444444 !important
-    				text-decoration: none
+    				text-decoration: none !important
+	.form__button
+		&:hover
+			transform: scale(1) !important
 	.footer__link
 		&:hover
             border: 1px solid #444444 !important
@@ -179,10 +194,6 @@
 		&__wrapper
 			padding-top: 8rem !important
 			flex-direction: column
-		&__title
-			margin-left: 10rem
-		&__subtitle
-			margin-left: 10rem
 	.col
 		align-items: center !important
 	.order3
@@ -235,14 +246,15 @@
 			font-size: 2.5rem !important
 	
 			
+
 	
-	
+
 @media screen and ( max-width: 350px )
 	.clients__card
 		flex-basis: 80%
 @media screen and ( max-width: 650px )
-	.video__text
-		left: 13rem !important
+	// .video__text
+	// 	left: 13rem !important
 	.swiper1
 		min-width: 100%
 	.swiper__play
@@ -265,6 +277,77 @@
 	.swiper
 		&__play
 			top: 20% !important
+	.discount
+		&::after
+			left: 11.5rem !important
+			top: 0.6rem !important
+@media screen and ( max-width: 1150px )	and ( min-width: 991px )
+	.about__swiper
+		margin-left: 3rem
+@media screen and ( max-width: 991px )	and ( min-width: 768px )
+	.content__text
+		margin-left: 10rem
+	.about__swiper
+		max-width: 48rem !important
+		margin-right: 5rem
+@media screen and ( max-width: 768px ) and ( min-width: 576px )
+	// .about__swiper
+	// 	margin-left: 1.5rem
+	.enlarge__hr	
+		visibility: hidden !important
+	.swiper-button
+		&-prev2 
+			transform: translateX(-40%) !important
+		&-next2 
+			transform: translateX(40%) !important
+	.clients__title
+		margin-bottom: 5rem !important
+	.clients__card
+		margin-bottom: 2rem
+	.content__text
+		margin-left: 10rem
+	.header
+		padding-right: 0rem !important
+	.hero
+		&__content
+			margin-top: 3rem
+	.video
+		&__text
+			margin-left: 5rem !important
+	.order__wrapper
+		padding-bottom: 5rem !important
+@media screen and ( max-width: 576px ) and  (min-width: 320px )
+	.order__wrapper
+		padding-bottom: 5rem !important
+	.enlarge__hr	
+		visibility: hidden !important
+	.swiper-button
+		&-prev2 
+			transform: translateX(-40%) !important
+		&-next2 
+			transform: translateX(30%) !important
+	.about__swiper
+		// padding-left: 1.5rem !important
+	.video
+		&__text
+			margin-left: 2rem !important
+	.enlarge__gearbox
+		margin-left: -10rem
+	.enlarge__milage
+		margin-left: -10rem
+	.order__form
+		margin-left: 0 !important
+	.swiper3__pagination
+		top: 0.4rem !important
+	.burger
+		margin-top: -1.5rem
+	.swiper__play
+		top: 20% !important
+	.content__text
+		margin: 0 !important
+	
+	
+	
 
 		
 	
