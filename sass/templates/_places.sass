@@ -1,6 +1,29 @@
 .places
     min-height: 65.25rem
     background: $places
+    &__slide
+        // min-height: 20rem
+        border: 2px solid black
+    &__slider
+        max-height: 20rem
+    &__slider-refact
+        position: relative 
+        margin-bottom: -6rem
+    &__swiper-container
+        // border: 2px solid red
+        z-index: -1
+        position: relative
+    &__video
+        min-height: 14.5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        &--2
+            background: url('../img/video__refact/img-2.jpg') no-repeat center
+            background-size: cover
+        &--1
+            background: url('../img/video__refact/img-1.jpg') no-repeat center
+            background-size: cover
 .video
     &__text
         position: absolute
@@ -67,61 +90,52 @@
     height: 100%
     z-index: 1
     position: relative
-.swiper-slide
-    display: flex
-    flex-direction: column  
-    min-height: 14.5rem
-    & span
-        font-size: 1.25rem
-        line-height: 1.5
-    & img
-        margin-bottom: 2rem
-        width: 25rem
-    &:hover
-        .swiper__play  
-            min-width: 5rem
-        & span
-            color: $l-g
-.swiper__play   
-    max-width: 4rem 
+.swiper__text
+    font-size: 1.23rem
+    font-weight: 400
+    line-height: 1.5
+.swiper__play
+    width: 5rem
+    height: 5rem
     transition: 0.3s
-.swiper__img 
-    max-height: 14.5rem
-.swiper
-    &__play
-        width: 4.5rem
-        height: 4.5rem
-        position: absolute
-        top: 7rem
-        transform: translate(-50%,-50%)
-        left: 50%   
-        &:hover
-            cursor: pointer 
-    &-button
-        &-prev11, &-next11
-            background-size: 42px 
-            border-radius: 50px
-            width: 4rem
-            height: 4rem    
-            top: 20%
-            &::after
-                display: none   
-        &-next11
-            background: $light url('../img/content/right.svg') no-repeat center
-            transform: translateX(60%)
-            // right: 0 !important
-        &-prev11
-            left: 0
-            background: $light url('../img/content/left.svg') no-repeat center
-            transform: translateX(-70%)
+    background: url('../img/video__refact/video-static.svg') center no-repeat
+    &:hover
+        cursor: pointer
+        width: 8rem 
+        height: 8rem
+        background: url('../img/video__refact/hover.svg') center no-repeat  
+
+    
+
+
             
-// .swiper-button-next11
-//     background: $light url('../img/content/right.svg') no-repeat center
-//     right: 0
-.swiper-button-prev11
+
+
+.places__swiper-button-prev 
     background-size: 42px 
     border-radius: 50px
     width: 4rem
     height: 4rem    
-    top: 20%
+    top: 25%
+    background: $light url('../img/content/left.svg') no-repeat center
+    border: 2px solid $orange
+    position: absolute
+    z-index: 9999999999
+    transform: translateX(-75%)
+    &::after
+        display: none
+    
+.places__swiper-button-next
+    background-size: 42px 
+    border-radius: 50px
+    width: 4rem
+    height: 4rem    
+    top: 25%
+    right: 0
     background: $light url('../img/content/right.svg') no-repeat center
+    border: 2px solid $orange
+    position: absolute
+    z-index: 9999999999
+    transform: translateX(75%)
+    &::after
+        display: none

@@ -14,14 +14,13 @@ $(document).ready(function() {
         });
       });
 
-      function videoPlay(event){
-        event.target.playVideo();
-      }
+      
+
       //swiper-player-0
-      $('.swiper__play--0').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player-0', {
+      $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player__1', {
           width: '100%',
-          height: '125%',
+          height: '150%',
           videoId: 'sAyQIjL0DMo',
           events: {
             'onReady': videoPlay,
@@ -29,79 +28,75 @@ $(document).ready(function() {
         });
       });
       //swiper-plaer-1
-      $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player1', {
+      $('.swiper__play--2').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player__2', {
           width: '100%',
-          height: '125%',
+          height: '200%',
           videoId: '35uUBsRS2Kw',
           events: {
             'onReady': videoPlay,
           }
         });
       });
-      //swiper-plaer-1
+      //swiper-plaer-2
       $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player3', {
+        player = new YT.Player('player__3', {
           width: '100%',
           height: '125%',
-          videoId: 'Q8LDBRbLLjU',
+          videoId: 'H8i8Ewls_Fs',
           events: {
             'onReady': videoPlay,
           }
         });
       });
-
-      // //swiper-plaer-3
-      // $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
-      //   player = new YT.Player('player-3', {
-      //     width: '100%',
-      //     height: '125%',
-      //     videoId: '20Ap1kH8wuU',
-      //     events: {
-      //       'onReady': videoPlay,
-      //     }
-      //   });
-      // });
-
-      // //swiper-plaer-4
-      // $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
-      //   player = new YT.Player('player-4', {
-      //     width: '100%',
-      //     height: '125%',
-      //     videoId: 'Kb8CW3axqRE',
-      //     events: {
-      //       'onReady': videoPlay,
-      //     }
-      //   });
-      // });
+      //swiper-plaer-3
+      $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player__4', {
+          width: '100%',
+          height: '125%',
+          videoId: 'ETUF4Iu0MkQ',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
+      
+      function videoPlay(event){
+        event.target.playVideo();
+      }
       
       //slider
-      var mySwiper1 = new Swiper ('.swiper1', {
+      var mySwiperContent = new Swiper('.places__swiper-container', {
         // Optional parameters
-            loop: true,
-            slidesPerView: 1,
-            // spaceBetween: 100,
-            navigation: {
-              nextEl: '.swiper-button-next11',
-              prevEl: '.swiper-button-prev11',
-            },
-          breakpoints: {
-            // when window width is >= 320px
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20
-            },
-            // when window width is >= 480px
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 80
-            },
+        slidesPerView: 2,
+        loop: true,
+        navigation: {
+          nextEl: '.places__swiper-button-next',
+          prevEl: '.places__swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 570px
+          580: {
+            slidesPerView: 2,
+            spaceBetween: 30
           },
+          // when window width is >= 768px
+          850: {
+            slidesPerView: 3,
+            spaceBetween: 25
+          },
+          // when window width is >= 992px
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 85
+          },
+          // when window width is >= 1100px
+          // 1100: {
+          // 	slidesPerView: 3,
+          // 	spaceBetween: 30
+          // }
+        }
       });
 
       //slider-about the car
@@ -165,7 +160,7 @@ $(document).ready(function() {
 	      mySwiper3.on('slideChange', function () {
 		      swiper3Current.text(addOne(mySwiper3.realIndex + 1));
 		      swiper3Total.text(addOne(mySwiper3.slides.length - 2));
-	      })
+	      });
 
 	      swiper3Current.text(addOne(mySwiper3.realIndex + 1));
         swiper3Total.text(addOne(mySwiper3.slides.length - 2));
@@ -176,7 +171,7 @@ $(document).ready(function() {
 	      mySwiper2.on('slideChange', function () {
 		      swiper2Current.text(addOne(mySwiper2.realIndex + 1));
 		      swiper2Total.text(addOne(mySwiper2.slides.length - 2));
-	      })
+	      });
 
 	      swiper2Current.text(addOne(mySwiper2.realIndex + 1));
         swiper2Total.text(addOne(mySwiper2.slides.length - 2));
