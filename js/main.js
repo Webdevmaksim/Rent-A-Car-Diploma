@@ -64,12 +64,18 @@ $(document).ready(function() {
       function videoPlay(event){
         event.target.playVideo();
       }
+
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       
       //slider
       var mySwiperContent = new Swiper('.places__swiper-container', {
         // Optional parameters
         slidesPerView: 2,
-        loop: true,
+        loop: false,
         navigation: {
           nextEl: '.places__swiper-button-next',
           prevEl: '.places__swiper-button-prev',
