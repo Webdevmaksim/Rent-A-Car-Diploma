@@ -20,7 +20,7 @@ $(document).ready(function() {
       $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
         player = new YT.Player('player__1', {
           width: '100%',
-          height: '150%',
+          height: 'auto%',
           videoId: 'sAyQIjL0DMo',
           events: {
             'onReady': videoPlay,
@@ -74,7 +74,7 @@ $(document).ready(function() {
       //slider
       var mySwiperContent = new Swiper('.places__swiper-container', {
         // Optional parameters
-        slidesPerView: 2,
+        slidesPerView: 1,
         loop: false,
         navigation: {
           nextEl: '.places__swiper-button-next',
@@ -82,21 +82,16 @@ $(document).ready(function() {
         },
         // Responsive breakpoints
         breakpoints: {
-          // when window width is >= 570px
-          580: {
-            slidesPerView: 2,
-            spaceBetween: 30
-          },
-          // when window width is >= 768px
-          850: {
-            slidesPerView: 3,
-            spaceBetween: 25
-          },
+        
           // when window width is >= 992px
           992: {
             slidesPerView: 2,
             spaceBetween: 85
           },
+          767:{
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
           // when window width is >= 1100px
           // 1100: {
           // 	slidesPerView: 3,

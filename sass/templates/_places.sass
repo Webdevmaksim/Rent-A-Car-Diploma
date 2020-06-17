@@ -2,15 +2,16 @@
     min-height: 65.25rem
     background: $places
     &__slide
-        // min-height: 20rem
-        border: 2px solid black
+        min-height: 17.5rem
+        &:hover
+            .swiper__text
+                color: $l-g
     &__slider
         max-height: 20rem
     &__slider-refact
         position: relative 
-        margin-bottom: -6rem
+        margin-bottom: 3rem
     &__swiper-container
-        // border: 2px solid red
         z-index: -1
         position: relative
     &__video
@@ -18,6 +19,14 @@
         display: flex
         justify-content: center
         align-items: center
+        margin-bottom: 2rem
+        z-index: 1
+        &--4
+            background: url('../img/video__refact/4.jpg') no-repeat center
+            background-size: cover
+        &--3
+            background: url('../img/video__refact/3.webp') no-repeat center
+            background-size: cover
         &--2
             background: url('../img/video__refact/img-2.jpg') no-repeat center
             background-size: cover
@@ -94,7 +103,9 @@
     font-size: 1.23rem
     font-weight: 400
     line-height: 1.5
+    margin: 0
 .swiper__play
+    z-index: 99999999
     width: 5rem
     height: 5rem
     transition: 0.3s
@@ -116,9 +127,9 @@
     border-radius: 50px
     width: 4rem
     height: 4rem    
-    top: 25%
+    top: 27%
     background: $light url('../img/content/left.svg') no-repeat center
-    border: 2px solid $orange
+    // border: 2px solid $orange
     position: absolute
     z-index: 9999999999
     transform: translateX(-75%)
@@ -130,10 +141,10 @@
     border-radius: 50px
     width: 4rem
     height: 4rem    
-    top: 25%
+    top: 27%
     right: 0
     background: $light url('../img/content/right.svg') no-repeat center
-    border: 2px solid $orange
+    // border: 2px solid $orange
     position: absolute
     z-index: 9999999999
     transform: translateX(75%)
