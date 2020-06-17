@@ -667,8 +667,6 @@ input.invalid {
     margin: 0 !important; } }
 
 .hero {
-  background: #222222 url("../img/hero/main-bg-1.webp") no-repeat center/cover;
-  background-attachment: fixed;
   min-height: 83rem;
   padding-top: 13rem; }
   .hero__title {
@@ -690,7 +688,8 @@ input.invalid {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 99999999; }
 
 .menu {
   display: flex;

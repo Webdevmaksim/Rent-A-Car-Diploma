@@ -50,7 +50,8 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero"
+         data-vide-bg="vide-bg/nature" >
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">Аренда авто в Пятигорске</h1>
@@ -61,8 +62,7 @@
         <section class="places">
             <div class="container">
                 <div class="places__video video" id="player">
-                    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
-                    <img loading="lazy"
+                    <!-- <script src="https://www.youtube.com/iframe_api"></script> --> <img loading="lazy"
                         src="./img/video/play.svg" alt="воспроизведение" class="video__play">
                     <div class="video__text">
                         <h3 class="video__title">Красоты Ставрополья</h3><span class="video__subtitle">Надежный
@@ -84,55 +84,34 @@
                                 <div class="swiper-slide places__slide" id="player__1">
                                     <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
                                     <div class="places__video places__video--1">
-                                        <div class="swiper__play swiper__play--1">
-                                            
-                                        </div>
+                                        <div class="swiper__play swiper__play--1"></div>
                                     </div>
-                                    <p class="swiper__text">
-                                        Цейский заповедник близ Северной Осетии
-                                    </p>
+                                    <p class="swiper__text">Цейский заповедник близ Северной Осетии</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__2">
                                     <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
                                     <div class="places__video places__video--2">
-                                        <div class="swiper__play swiper__play--2">
-    
-                                        </div>
+                                        <div class="swiper__play swiper__play--2"></div>
                                     </div>
-                                    <p class="swiper__text">
-                                        Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи
-                                    </p>
+                                    <p class="swiper__text">Незабываемый маршрут в Ингушский заповедник: Боевые башни
+                                        Эрзи</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__3">
                                     <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
-                                     <div class="places__video places__video--3">
-                                        <div class="swiper__play swiper__play--3">
-    
-                                        </div>
+                                    <div class="places__video places__video--3">
+                                        <div class="swiper__play swiper__play--3"></div>
                                     </div>
-                                    <p class="swiper__text">
-                                        Озеро Провал и Памятник Остапу Бендеру
-                                    </p>
+                                    <p class="swiper__text">Озеро Провал и Памятник Остапу Бендеру</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__4">
                                     <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
-                                     <div class="places__video places__video--4">
-                                        <div class="swiper__play swiper__play--4">
-    
-                                        </div>
+                                    <div class="places__video places__video--4">
+                                        <div class="swiper__play swiper__play--4"></div>
                                     </div>
-                                    <p class="swiper__text">
-                                        Центральная питьевая галерея
-                                    </p>
+                                    <p class="swiper__text">Центральная питьевая галерея</p>
                                 </div>
-                            </div>
-                            <!-- If we need pagination -->
-                            
-                        
+                            </div><!-- If we need pagination -->
                             <!-- If we need navigation buttons -->
-                            
-                            
-                            
                         </div>
                         <div class="places__swiper-button-prev"></div>
                         <div class="places__swiper-button-next"></div>
@@ -351,10 +330,11 @@
         </div><!-- /.t-modal__dialog -->
     </div><!-- /.t-modal -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.vide.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>
