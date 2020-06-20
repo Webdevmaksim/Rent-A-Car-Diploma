@@ -783,6 +783,10 @@ input.invalid {
   max-width: 2.5rem;
   max-height: 2.5rem; }
 
+.vide-bg {
+  -webkit-filter: brightness(0.6) blur(2px);
+  filter: brightness(0.6) blur(2px); }
+
 .places {
   min-height: 65.25rem;
   background: #f7f4f2; }
