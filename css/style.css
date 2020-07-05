@@ -605,7 +605,7 @@ input.invalid {
   top: 27%;
   background: #ffffff url("../img/content/left.svg") no-repeat center;
   position: absolute;
-  z-index: 9999999999;
+  z-index: 9999;
   transform: translateX(-75%); }
   .places__swiper-button-prev::after {
     display: none; }
@@ -619,7 +619,7 @@ input.invalid {
   right: 0;
   background: #ffffff url("../img/content/right.svg") no-repeat center;
   position: absolute;
-  z-index: 9999999999;
+  z-index: 9999;
   transform: translateX(75%); }
   .places__swiper-button-next::after {
     display: none; }
