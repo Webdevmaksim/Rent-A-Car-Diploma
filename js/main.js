@@ -13,53 +13,6 @@ $(document).ready(function() {
           }
         });
       });
-
-      
-
-      //swiper-player-0
-      $('.swiper__play--1').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player__1', {
-          width: '100%',
-          height: 'auto%',
-          videoId: 'sAyQIjL0DMo',
-          events: {
-            'onReady': videoPlay,
-          }
-        });
-      });
-      //swiper-plaer-1
-      $('.swiper__play--2').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player__2', {
-          width: '100%',
-          height: '200%',
-          videoId: '35uUBsRS2Kw',
-          events: {
-            'onReady': videoPlay,
-          }
-        });
-      });
-      //swiper-plaer-2
-      $('.swiper__play--3').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player__3', {
-          width: '100%',
-          height: '125%',
-          videoId: 'H8i8Ewls_Fs',
-          events: {
-            'onReady': videoPlay,
-          }
-        });
-      });
-      //swiper-plaer-3
-      $('.swiper__play--4').on('click', function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player__4', {
-          width: '100%',
-          height: '125%',
-          videoId: 'ETUF4Iu0MkQ',
-          events: {
-            'onReady': videoPlay,
-          }
-        });
-      });
       
       function videoPlay(event){
         event.target.playVideo();
@@ -75,7 +28,7 @@ $(document).ready(function() {
       var mySwiperContent = new Swiper('.places__swiper-container', {
         // Optional parameters
         slidesPerView: 1,
-        loop: false,
+        loop: true,
         navigation: {
           nextEl: '.places__swiper-button-next',
           prevEl: '.places__swiper-button-prev',
