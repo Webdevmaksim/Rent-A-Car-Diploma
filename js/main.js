@@ -54,30 +54,16 @@ $(document).ready(function() {
       });
 
       //slider-about the car
-      var mySwiper2 = new Swiper ('.swiper2', {
+      var s2r = new Swiper('.s2r__swiper-container', {
         // Optional parameters
-            loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2',
-          },
-          // breakpoints: {
-          //   // when window width is >= 320px
-          //   320: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 20
-          //   },
-          //   // when window width is >= 480px
-          //   480: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 30
-          //   },
-          //   // when window width is >= 640px
-          //   640: {
-          //     slidesPerView: 2,
-          //     spaceBetween: 80
-          //   }
-          // },
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.s2r__swiper-button-next',
+          prevEl: '.s2r__swiper-button-prev',
+        },
       });
       //footer-slider
       //slider-about the car

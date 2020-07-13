@@ -1,0 +1,34 @@
+.s2r {
+  background-color: #f7f4f2;
+  padding-top: 16.5rem;
+  padding-bottom: 15.8rem; }
+  .s2r__wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .s2r__wrapper--extra {
+      position: relative; }
+  .s2r__image {
+    min-height: 33rem; }
+  .s2r__swiper-container {
+    max-width: 58.5rem;
+    margin: 0;
+    position: relative; }
+  .s2r__swiper-slide {
+    width: 58.5rem; }
+  .s2r__swiper-button {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    border: 2px solid red; }
+    .s2r__swiper-button-next {
+      right: -2rem;
+      background: #f7f4f2 url("../img/car-i-refact/right.svg") no-repeat center;
+      background-size: 1.3rem; }
+    .s2r__swiper-button-prev {
+      left: -2rem;
+      background: #f7f4f2 url("../img/car-i-refact/left.svg") no-repeat center;
+      background-size: 1.3rem; }
