@@ -2,19 +2,36 @@
     background-color: #f7f4f2
     padding-top: 16.5rem
     padding-bottom: 15.8rem
+    &__title
+        font-size: 3.2rem
+        font-weight: bolder
+        margin-top: 0
+        margin-bottom: 8.3rem
+        max-width: 16.6rem
+    &__subtitle
+        font-size: 2.4rem
+        margin-bottom: 3rem
+        margin-top: 0
+    &__text
+        font-size: 1.53rem
+        line-height: 1.6
+        &--brackets
+            color: #777777
     &__wrapper
         display: flex
-        justify-content: space-between
+        // justify-content: space-between
+        &--right
+            max-width: 24.6rem
         &--extra
             position: relative
+            margin-right: 15.8rem
     &__image
         min-height: 33rem
     &__swiper-container
         max-width: 58.5rem 
         margin: 0
-        position: relative
     &__swiper-slide
-        width: 58.5rem
+        // width: 58.5rem
     &__swiper-button
         width: 4.5rem
         height: 4.5rem
@@ -23,13 +40,14 @@
         position: absolute
         top: 50%
         z-index: 99
-        border: 2px solid red
+        &:hover
+            cursor: pointer
         &-next
-            right: -2rem
+            right: -3.5rem
             background:#f7f4f2 url('../img/car-i-refact/right.svg')  no-repeat center
             background-size: 1.3rem
         &-prev
-            left: -2rem
+            left: -3.5rem
             background:#f7f4f2 url('../img/car-i-refact/left.svg')  no-repeat center
             background-size: 1.3rem
         

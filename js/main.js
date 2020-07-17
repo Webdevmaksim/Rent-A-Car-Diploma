@@ -58,7 +58,8 @@ $(document).ready(function() {
         // Optional parameters
         slidesPerView: 1,
         loop: true,
-        spaceBetween: 0,
+        spaceBetween: 1,
+        noSwiping: false,
         // Navigation arrows
         navigation: {
           nextEl: '.s2r__swiper-button-next',
@@ -119,24 +120,24 @@ $(document).ready(function() {
 
 
 
-      //Кнопка прокрутки наверх
-      $(window).scroll(function () {
-        // Если отступ сверху больше 50px то показываем кнопку "Наверх"
-        if ($(this).scrollTop() > 50) {
-            $('.button-up').fadeIn();
-        } else {
-            $('.button-up').fadeOut();
-        }
-    });
-    
-    /** При нажатии на кнопку мы перемещаемся к началу страницы */
-    $('.button-up').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-
+     //Кнопка прокрутки наверх
+     $(window).scroll(function () {
+      // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+      if ($(this).scrollTop() > 50) {
+          $('.button-up').fadeIn();
+      } else {
+          $('.button-up').fadeOut();
+      }
+  });
+  
+  /** При нажатии на кнопку мы перемещаемся к началу страницы */
+  $('.button-up').click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
+    // Burger menu
     $(function() {
       var link = $('.menu__mobile-link');
       var close = $('.menu__close');
@@ -160,7 +161,7 @@ $(document).ready(function() {
        color = $('#options :selected').val();
        color1 = $('#options :selected').val() /100 * 20 +1900 ;
    document.getElementById('result').innerHTML = color;
-   document.getElementById('discount' ).innerHTML = color1;
+   document.getElementById('discount').innerHTML = color1;
   });
 });
 
