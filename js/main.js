@@ -54,12 +54,13 @@ $(document).ready(function() {
       });
 
       //slider-about the car
-      var mySwiper2 = new Swiper ('.swiper2', {
+      var mySwiper2 = new Swiper ('.ourCar__slider', {
         // Optional parameters
             loop: true,
+            spaceBetween: 1,
           navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2',
+            nextEl: '.ourCar__button--prev',
+            prevEl: '.ourCar__button--next',
           },
           // breakpoints: {
           //   // when window width is >= 320px
