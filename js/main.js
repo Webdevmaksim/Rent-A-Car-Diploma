@@ -59,8 +59,8 @@ $(document).ready(function() {
             loop: true,
             spaceBetween: 1,
           navigation: {
-            nextEl: '.ourCar__button--prev',
-            prevEl: '.ourCar__button--next',
+            nextEl: '.ourCar__button--next',
+            prevEl: '.ourCar__button--prev',
           },
           // breakpoints: {
           //   // when window width is >= 320px

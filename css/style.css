@@ -706,23 +706,53 @@ input.invalid {
   .ourCar__wrapper {
     position: relative; }
   .ourCar__title {
+    margin-top: 0;
     position: absolute;
     color: #000000;
     max-width: 16.6rem;
     font-size: 3.2rem;
     line-height: 1.2;
-    right: 0; }
+    margin-left: 66.5rem; }
+  .ourCar__subtitle {
+    font-size: 2.35rem;
+    color: #000000; }
+  .ourCar__text {
+    font-size: 1.5rem;
+    color: #444444;
+    line-height: 1.5;
+    max-width: 25rem; }
+  .ourCar__subtext {
+    color: #777777;
+    font-size: 1.2rem;
+    line-height: 1.6; }
+  .ourCar__button {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .ourCar__button--prev {
+      left: 0;
+      margin-left: -3.5rem;
+      background: #f7f4f2 url("../img/ourCar/left.svg") no-repeat center;
+      background-size: 1.6rem; }
+    .ourCar__button--next {
+      margin-left: 57.5rem;
+      background: #f7f4f2 url("../img/ourCar/right.svg") no-repeat center;
+      background-size: 1.6rem; }
   .ourCar__slider {
-    margin: 0;
-    width: 91rem; }
+    margin: 0; }
   .ourCar__slide {
     display: flex; }
   .ourCar__image {
     width: 58.5rem;
     height: 33rem;
-    margin-right: 10rem; }
+    margin-right: 8rem; }
   .ourCar__description {
-    max-width: 25.3rem; }
+    margin-top: 11rem; }
 
 .swiper2 {
   position: relative; }
