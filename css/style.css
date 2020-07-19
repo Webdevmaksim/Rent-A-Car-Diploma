@@ -748,11 +748,11 @@ input.invalid {
   .ourCar__slide {
     display: flex; }
   .ourCar__image {
-    width: 58.5rem;
+    min-width: 58.5rem;
     height: 33rem;
     margin-right: 8rem; }
   .ourCar__description {
-    margin-top: 11rem; }
+    margin-top: 8rem; }
 
 .swiper2 {
   position: relative; }
