@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="lazy">
     <!-- Yandex.Metrika counter -->
     <script>
         (function (m, e, t, r, i, k, a) {
@@ -44,7 +44,8 @@
                 <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
                 <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
                 <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul><a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
+            </ul>
+            <a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
             <nav class="nav menu__nav"><a href="#ourCar" class="nav__item">Условия</a> <a href="#enlarge"
                     class="nav__item">Комплектация автомобиля</a> <a href="#order" class="nav__item">Договор аренды</a>
                 <a href="#footer" class="nav__item">Контакты</a></nav>
@@ -64,7 +65,7 @@
         <section class="places">
             <div class="container">
 
-                <div class="places__video video" id="player">
+                <div class="places__video places__video--main video" id="player">
 
                     
                     
@@ -125,8 +126,8 @@
                             </div><!-- If we need pagination -->
                             <!-- If we need navigation buttons -->
                         </div>
-                        <div class="places__swiper-button-prev"></div>
-                        <div class="places__swiper-button-next"></div>
+                        <div class="places__swiper-button places__swiper-button-prev"></div>
+                        <div class="places__swiper-button places__swiper-button-next"></div>
                     </div>
                 </div><!-- /.places__content -->
             </div><!-- container -->
@@ -389,6 +390,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
