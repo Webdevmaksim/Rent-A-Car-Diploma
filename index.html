@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="lazy">
     <!-- Yandex.Metrika counter -->
     <script>
         (function (m, e, t, r, i, k, a) {
@@ -40,12 +40,13 @@
                     href="./index.html" class="logo__link">Ставрополье <small>на ладони</small></a></div>
             <ul class="menu__m">
                 <li class="menu__close">&times;</li>
-                <li><a href="#about" class="menu__mobile-link">Условия</a></li>
+                <li><a href="#ourCar" class="menu__mobile-link">Условия</a></li>
                 <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
                 <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
                 <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul><a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
-            <nav class="nav menu__nav"><a href="#about" class="nav__item">Условия</a> <a href="#enlarge"
+            </ul>
+            <a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
+            <nav class="nav menu__nav"><a href="#ourCar" class="nav__item">Условия</a> <a href="#enlarge"
                     class="nav__item">Комплектация автомобиля</a> <a href="#order" class="nav__item">Договор аренды</a>
                 <a href="#footer" class="nav__item">Контакты</a></nav>
         </div>
@@ -64,7 +65,7 @@
         <section class="places">
             <div class="container">
 
-                <div class="places__video video" id="player">
+                <div class="places__video places__video--main video" id="player">
 
                     
                     
@@ -92,14 +93,14 @@
                                 <!-- Slides -->
                                 <div class="swiper-slide places__slide" id="player__1">
                                     
-                                    <div class="places__video places__video--1">
+                                    <div class="places__video places__video--hover places__video--1">
                                         <a data-fancybox href="https://www.youtube.com/watch?v=sAyQIjL0DMo"><div class="swiper__play swiper__play--1"></div></a>
                                     </div>
                                     <p class="swiper__text">Цейский заповедник близ Северной Осетии</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__2">
                                     
-                                    <div class="places__video places__video--2">
+                                    <div class="places__video places__video--hover places__video--2">
                                         <a data-fancybox href="https://www.youtube.com/watch?v=35uUBsRS2Kw"><div class="swiper__play swiper__play--2"></div></a>
                                         
                                     </div>
@@ -108,7 +109,7 @@
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__3">
                                     
-                                    <div class="places__video places__video--3">
+                                    <div class="places__video places__video--hover places__video--3">
                                         <a data-fancybox href="https://www.youtube.com/watch?v=H8i8Ewls_Fs"><div class="swiper__play swiper__play--3"></div></a>
                                         
                                     </div>
@@ -116,7 +117,7 @@
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__4">
                                     
-                                    <div class="places__video places__video--4">
+                                    <div class="places__video places__video--hover places__video--4">
                                         <a data-fancybox href="https://www.youtube.com/watch?v=ETUF4Iu0MkQ"><div class="swiper__play swiper__play--4"></div></a>
                                         
                                     </div>
@@ -125,8 +126,8 @@
                             </div><!-- If we need pagination -->
                             <!-- If we need navigation buttons -->
                         </div>
-                        <div class="places__swiper-button-prev"></div>
-                        <div class="places__swiper-button-next"></div>
+                        <div class="places__swiper-button places__swiper-button-prev"></div>
+                        <div class="places__swiper-button places__swiper-button-next"></div>
                     </div>
                 </div><!-- /.places__content -->
             </div><!-- container -->
@@ -164,35 +165,76 @@
                 </div><!-- /.clients__row -->
             </div>
         </section>
-        <section id="about" class="about">
+        <section id="ourCar" class="ourCar">
             <div class="container">
-                <div class="about__wrapper">
-                    <div class="about__swiper">
-                        <div class="swiper-container swiper2">
+                <div class="ourCar__wrapper">
+                    <h2 class="ourCar__title">
+                        О нашем автомобиле
+                    </h2>
+                        <!-- Slider main container -->
+                        <div class="swiper-container ourCar__slider">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper swiper-wrapper2">
+                            <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img class="about__img"
-                                        src="./img/car-interior/car-interior.webp" alt="салон автомобиля"></div>
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/2.webp"
-                                        alt="салон автомобиля"></div>
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/3.webp"
-                                        alt="салон автомобиля"></div>
-                                <div class="swiper-slide"><img class="about__img" src="./img/car-interior/4.webp"
-                                        alt="салон автомобиля"></div>
-                            </div><!-- If we need pagination -->
+                                <div class="swiper-slide ourCar__slide">
+                                    <img src="./img/ourCar/car-i-1.jpg" alt="auto-1" class="ourCar__image">
+                                    <div class="ourCar__description">
+                                        <h3 class="ourCar__subtitle">
+                                            Чистый салон
+                                        </h3>
+                                        <p class="ourCar__text">
+                                            Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен - наш салон не исключение!
+                                        </p>
+                                        <span class="ourCar__subtext">
+                                            (обязательное условие аренды - возвращение автомобиля в чистом виде)
+                                        </span>
+                                    </div>
+                                    <!-- /.ourCar__description -->
+                                </div>
+                                <div class="swiper-slide ourCar__slide">
+                                    <img src="./img/ourCar/2.jpg" alt="auto-1" class="ourCar__image">
+                                    <div class="ourCar__description">
+                                        <h3 class="ourCar__subtitle">
+                                            Настоящий внедорожник
+                                        </h3>
+                                        <p class="ourCar__text">
+                                            Стиль нашего авто отражает его прочность, надежность и проходимость. Дорожный просвет 210 мм, короткие свесы и большие углы преодоления препятствий.
+                                        </p>
+                                    </div>
+                                    <!-- /.ourCar__description -->
+                                </div>
+                                <div class="swiper-slide ourCar__slide">
+                                    <img src="./img/ourCar/3.jpg" alt="auto-1" class="ourCar__image">
+                                    <div class="ourCar__description">
+                                        <h3 class="ourCar__subtitle">
+                                            Мультимедийная система R&GO
+                                        </h3>
+                                        <p class="ourCar__text">
+                                            Мультимедийная система с приложением R&GO. На экране вашего смартфона доступны, навигация и поиск авто на паркинге, также вы можете прослушивать любимую музыку.
+                                        </p>
+                                    
+                                    </div>
+                                    <!-- /.ourCar__description -->
+                                </div>
+                                <div class="swiper-slide ourCar__slide">
+                                    <img src="./img/ourCar/4.jpg" alt="auto-1" class="ourCar__image">
+                                    <div class="ourCar__description">
+                                        <h3 class="ourCar__subtitle">
+                                            Дистанционный запуск
+                                        </h3>
+                                        <p class="ourCar__text">
+                                            Вы можете дистанционно прогреть двигатель к началу поездки, а также отрегулировать заранее температуру воздуха в салоне, используя настройки климатической системы.
+                                        </p>
+                                    
+                                    </div>
+                                    <!-- /.ourCar__description -->
+                                </div>
+                            </div>
                             <!-- If we need navigation buttons -->
+                            
                         </div>
-                        <div class="swiper-button-prev2"></div>
-                        <div class="swiper-button-next2"></div>
-                    </div><!-- /.about__swiper -->
-                    <div class="about__text">
-                        <h3 class="about__title">О нашем автомобиле</h3><span class="about__subtitle">Чистый
-                            салон</span>
-                        <p class="about__trip">Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен
-                            - наш салон не исключение!</p><span class="about__trip--exception">(обязательное условие
-                            аренды - возвращение автомобиля в чистом виде)</span>
-                    </div><!-- /.about__text -->
+                            <div class="ourCar__button ourCar__button--prev"></div>
+                            <div class="ourCar__button ourCar__button--next"></div>
                 </div>
                 <div class="swiper2__pagination"><span class="swiper2__current"></span> <span class="swiper2__devider">/
                     </span><span class="swiper2__total"></span></div>
@@ -298,19 +340,19 @@
                                     <strong>Бесплатная!</strong></p>
                             </div>
                             <div class="swiper-slide swiper-slide3">
-                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
-                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
-                                    <strong>Бесплатная!</strong></p>
+                                <p class="swiper-slide3__header">Застрахован ли автомобиль?</p>
+                                <p class="swiper-slide3__text">Все автомобили застрахованы на условиях
+                                    <strong>“Каско”.</strong></p>
                             </div>
                             <div class="swiper-slide swiper-slide3">
-                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
-                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
-                                    <strong>Бесплатная!</strong></p>
+                                <p class="swiper-slide3__header">Можно ли курить в автомобиле?</p>
+                                <p class="swiper-slide3__text">Курить в автомобиле ЗАПРЕЩЕНО. 
+                                    <strong>Штраф 100 $.</strong></p>
                             </div>
                             <div class="swiper-slide swiper-slide3">
-                                <p class="swiper-slide3__header">А как осуществляется доставка и сдача автомобиля?</p>
-                                <p class="swiper-slide3__text">Доставка и сдача в аэропорт Минеральных Вод
-                                    <strong>Бесплатная!</strong></p>
+                                <p class="swiper-slide3__header">Могу ли я арендовать авто на 0,5 суток?</p>
+                                <p class="swiper-slide3__text">Минимальный срок аренды автомобиля -
+                                    <strong>одни сутки.</strong></p>
                             </div>
                         </div><!-- Add Pagination -->
                         <!-- If we need navigation buttons -->
@@ -348,6 +390,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
+    
 </body>
 
 </html>

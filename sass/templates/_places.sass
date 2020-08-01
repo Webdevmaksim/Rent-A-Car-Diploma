@@ -4,8 +4,17 @@
     &__slide
         min-height: 17.5rem
         &:hover
+            cursor: pointer
             .swiper__text
                 color: $l-g
+            .places__video--hover
+                &::before
+                    opacity: 0.8
+            .swiper__play
+                &::after
+                    background: url('../img/video__refact/hover-1.svg') no-repeat center
+                &::before
+                    opacity: 1
     &__slider
         max-height: 20rem
     &__slider-refact
@@ -14,6 +23,7 @@
     &__swiper-container
         z-index: -1
         position: relative
+        max-width: 59rem
     &__video
         min-height: 14.5rem
         display: flex
@@ -21,6 +31,21 @@
         align-items: center
         margin-bottom: 2rem
         z-index: 1
+        position: relative
+        & a
+            z-index: 9999999
+        &--hover
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                background-color: $l-g
+                opacity: 0
+                transition: 0.9s all
         &--4
             background: url('../img/video__refact/4.jpg') no-repeat center
             background-size: cover
@@ -94,7 +119,6 @@
             margin-left: 1.4rem 
 
 .swiper-container
-    max-width: 59rem
     width: 100%
     height: 100%
     z-index: 1
@@ -105,16 +129,34 @@
     line-height: 1.5
     margin: 0
 .swiper__play
-    z-index: 99999999
+    position: relative
     width: 5rem
     height: 5rem
     transition: 0.3s
-    background: url('../img/video__refact/video-static.svg') center no-repeat
-    &:hover
-        cursor: pointer
-        width: 8rem 
-        height: 8rem
-        background: url('../img/video__refact/hover.svg') center no-repeat  
+    background: $light
+    border-radius: 50%
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 1.7rem
+        height: 1.7rem
+        background: url('../img/video__refact/sTatic.svg') no-repeat center
+        right: 1.6rem
+        top: 1.6rem
+        transition: all 0.3s
+    &::before
+        content: ''
+        position: absolute
+        width: 7.5rem
+        height: 7.5rem
+        display: block
+        border: 1px solid $light
+        border-radius: 50%
+        top: -1.25rem
+        left: -1.25rem
+        opacity: 0  
+        transition: all 0.6s 
 
     
 
@@ -133,6 +175,7 @@
     position: absolute
     z-index: 9999
     transform: translateX(-75%)
+    cursor: pointer
     &::after
         display: none
     
@@ -148,5 +191,6 @@
     position: absolute
     z-index: 9999
     transform: translateX(75%)
+    cursor: pointer
     &::after
         display: none

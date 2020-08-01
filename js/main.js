@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    //lazt loading
+    $(function(){
+      $('.lazy').lazy();
+    });
+
     //First video
     var player;
 
@@ -54,12 +59,13 @@ $(document).ready(function() {
       });
 
       //slider-about the car
-      var mySwiper2 = new Swiper ('.swiper2', {
+      var mySwiper2 = new Swiper ('.ourCar__slider', {
         // Optional parameters
             loop: true,
+            spaceBetween: 1,
           navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2',
+            nextEl: '.ourCar__button--next',
+            prevEl: '.ourCar__button--prev',
           },
           // breakpoints: {
           //   // when window width is >= 320px
@@ -150,7 +156,7 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
+    // Burger
     $(function() {
       var link = $('.menu__mobile-link');
       var close = $('.menu__close');
@@ -165,14 +171,12 @@ $(document).ready(function() {
         menu.toggleClass('menu__m--active');
       });
     });
-
-        
     //form price set up
     $(function(){
       $('#options').change(function(){
         var tps = 0.20;
        color = $('#options :selected').val();
-       color1 = $('#options :selected').val() /100 * 20 +1900 ;
+       color1 = $('#options :selected').val() /100 * 20 +1900;
    document.getElementById('result').innerHTML = color;
    document.getElementById('discount' ).innerHTML = color1;
   });
