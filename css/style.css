@@ -1410,13 +1410,39 @@ input.invalid {
   html {
     font-size: 10px; } }
 
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px; } }
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px; } }
+
 @media screen and (max-width: 992px) {
   .menu__nav {
     display: none; }
+  .menu__m {
+    justify-content: start;
+    padding-top: 10rem; }
   .menu__mobile-link {
     display: flex; }
+  .logo__link:hover {
+    transform: scale(1);
+    cursor: default; }
+  .burger {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: default; }
   .video__text {
     left: inherit; }
+  .video__play:hover {
+    transform: scale(1);
+    cursor: default; }
   .places__content {
     flex-direction: column;
     align-items: center; }
@@ -1424,7 +1450,25 @@ input.invalid {
     min-height: 30rem; }
     .places__video--main {
       min-height: 40rem; }
-  .places__swiper-button {
+  .places__swiper-button:hover {
+    cursor: default; }
+  .places__swiper-button-next {
+    top: 12rem; }
+  .places__swiper-button-prev {
+    top: 12rem; }
+  .places__slide:hover {
+    cursor: default; }
+    .places__slide:hover .swiper__text {
+      color: black; }
+    .places__slide:hover .places__video--hover::before {
+      opacity: 0; }
+    .places__slide:hover .swiper__play::before {
+      opacity: 0; }
+    .places__slide:hover .swiper__play::after {
+      background: url("../img/video__refact/sTatic.svg") no-repeat center; }
+  .swiper__play:hover {
+    cursor: default; }
+  .swiper__swiper-button {
     top: 37%; }
   .content__text {
     margin-bottom: 5rem;
@@ -1450,7 +1494,8 @@ input.invalid {
       flex-direction: column;
       align-items: center;
       margin-top: 0;
-      max-width: 67rem; }
+      max-width: 67rem;
+      margin-bottom: 1rem; }
     .ourCar__text {
       max-width: unset;
       margin-bottom: 0;
@@ -1467,7 +1512,9 @@ input.invalid {
         right: -3rem; }
     .ourCar__image {
       margin-right: 0;
-      height: unset; }
+      height: unset;
+      min-height: 35rem;
+      width: 100%; }
   .swiper2__pagination {
     justify-content: center;
     margin-left: 0;
@@ -1476,7 +1523,60 @@ input.invalid {
     margin-left: 0; }
   .enlarge__wrapper {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-top: 7rem; }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .col--2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+  .enlarge__title-group {
+    width: 100%;
+    text-align: center; }
+  .enlarge__gearbox {
+    flex-basis: 40%;
+    margin-right: 15rem; }
+  .enlarge__milage {
+    flex-basis: 20%;
+    max-height: 17rem; }
+  .enlarge__title--wrapper {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem; }
+  .enlarge__list {
+    flex-basis: 50%;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; }
+  .enlarge__title--3 {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    .enlarge__title--3::after {
+      top: 2.5rem;
+      left: 22rem; }
+  .enlarge__block--3 {
+    margin-right: 15rem;
+    flex-basis: 40%;
+    padding-left: 5rem;
+    align-items: end; }
+  .enlarge__block--img {
+    position: relative; }
+    .enlarge__block--img::after {
+      top: 2.5rem !important;
+      right: 1rem; }
+  .complex__block {
+    flex-basis: 40%; }
+  .gas-block {
+    flex-basis: 30%; }
+  .gearbox__type {
+    right: 5rem !important; }
+  .milage__type {
+    right: -5rem; }
   .order__wrapper {
     padding-top: 5rem;
     flex-direction: column;
@@ -1496,4 +1596,34 @@ input.invalid {
     margin-bottom: 5rem; }
   .footer__socials {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .form__button:hover {
+    transform: scale(1); }
+  .button-up {
+    cursor: default; }
+  .swiper-button-prev3 {
+    cursor: default; }
+  .swiper-button-next3 {
+    cursor: default; }
+  .ourCar__button:hover {
+    cursor: default; }
+  .footer__list a:hover {
+    color: #777777;
+    text-decoration: none;
+    cursor: default; }
+  .footer__link:hover {
+    cursor: default; }
+  .footer__link--email:hover {
+    background: url("../img/socials/mail.svg") center no-repeat;
+    background-size: 1.9rem; }
+  .footer__link--whatsapp:hover {
+    background: url("../img/socials/whatsapp.svg") center no-repeat;
+    background-size: 1.9rem; }
+  .footer__link--youtube:hover {
+    background: url("../img/socials/youtube.svg") center no-repeat;
+    background-size: 1.9rem; }
+  .footer__link--vk:hover {
+    background: url("../img/socials/vk.svg") center no-repeat;
+    background-size: 1.9rem; }
+  .footer__link:hover {
+    border: 1px solid #444444; } }

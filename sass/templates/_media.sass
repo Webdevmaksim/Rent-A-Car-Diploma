@@ -5,7 +5,16 @@
 		padding: 0 20px
 	html
     	font-size: 10px
-
+@media screen and ( max-width: 1199px )
+    .container
+        max-width: 960px
+@media screen and ( max-width: 991px )
+    .container
+        max-width: 750px
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 100%
+        padding: 0 20px
 
 
 @media screen and ( max-width: 992px)
@@ -14,12 +23,28 @@
 	.menu
 		&__nav
 			display: none
+		&__m
+			justify-content: start
+			padding-top: 10rem	
 		&__mobile-link
 			display: flex
+	.logo
+		&__link
+			&:hover
+				transform: scale(1)
+				cursor: default
+	.burger
+		width: 2.5rem
+		height: 2.5rem
+		cursor: default
 	// First video title		
 	.video
 		&__text
 			left: inherit
+		&__play
+			&:hover
+				transform: scale(1)
+				cursor: default
 	//Section places
 	.places
 		&__content
@@ -29,6 +54,32 @@
 			min-height: 30rem
 			&--main
 				min-height: 40rem
+		&__swiper-button
+			&:hover
+				cursor: default
+		&__swiper-button-next
+			top: 12rem
+		&__swiper-button-prev
+			top: 12rem
+			
+		&__slide
+			&:hover
+				cursor: default
+				.swiper__text
+					color: black
+				.places__video--hover
+                &::before
+                    opacity: 0
+				.swiper
+					&__play
+						&::before
+							opacity: 0
+						&::after
+                    		background: url('../img/video__refact/sTatic.svg') no-repeat center
+	.swiper
+		&__play
+			&:hover
+				cursor: default
 		&__swiper-button
 			top: 37%
 	.content
@@ -60,6 +111,7 @@
 			align-items: center
 			margin-top: 0
 			max-width: 67rem
+			margin-bottom: 1rem
 		&__text
 			max-width: unset
 			margin-bottom: 0
@@ -77,6 +129,8 @@
 		&__image
 			margin-right: 0
 			height: unset
+			min-height: 35rem	
+			width: 100%
 			
 	.swiper2
 		&__pagination
@@ -90,6 +144,71 @@
 		&__wrapper
 			flex-direction: column
 			align-items: center
+			padding-top: 7rem
+	.col
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		&--2
+			display: flex
+			flex-direction: row 
+			flex-wrap: wrap
+			
+	.enlarge
+		&__title-group
+			width: 100%
+			text-align: center
+		&__gearbox
+			flex-basis: 40%
+			margin-right: 15rem
+		&__milage
+			flex-basis: 20%
+			max-height: 17rem
+		&__title--wrapper	
+			width: 100%
+			justify-content: center
+			margin-bottom: 2rem
+		&__list
+			flex-basis: 50%
+			// padding-top: 5rem
+			margin-right: 10rem
+			display: flex
+			flex-direction: column
+			justify-content: end
+		&__title--3
+			width: 100%
+			text-align: center
+			position: relative
+			&::after
+				top: 2.5rem
+				left: 22rem
+		&__block--3
+			margin-right: 15rem
+			flex-basis: 40%
+			padding-left: 5rem
+			align-items: end
+		&__block--img
+			position: relative
+
+			&::after
+				top: 2.5rem !important
+				right: 1rem
+
+	.complex__block
+		flex-basis: 40%
+	.gas-block
+		flex-basis: 30%
+	.gearbox
+		&__type
+			right: 5rem !important
+	.milage
+		&__type
+			right: -5rem
+	
+			
+			
+
+		
 	//order
 	.order
 		&__wrapper
@@ -115,6 +234,48 @@
 		&__socials
 			flex-direction: column
 			align-items: center
+	.form
+		&__button
+			&:hover
+				transform: scale(1)
+	.button-up
+		cursor: default
+	.swiper-button-prev3
+		cursor: default
+	.swiper-button-next3
+		cursor: default
+	.ourCar
+		&__button
+			&:hover
+				cursor: default
+	.footer
+		&__list
+			& a
+				&:hover
+					color: #777777
+					text-decoration: none
+					cursor: default
+		&__link
+			&:hover
+				cursor: default
+			&--email
+				&:hover
+					background: url("../img/socials/mail.svg") center no-repeat
+					background-size: 1.9rem
+			&--whatsapp
+				&:hover
+					background: url("../img/socials/whatsapp.svg") center no-repeat
+					background-size: 1.9rem
+			&--youtube
+				&:hover
+					background: url("../img/socials/youtube.svg") center no-repeat
+					background-size: 1.9rem
+			&--vk
+				&:hover
+					background: url("../img/socials/vk.svg") center no-repeat
+					background-size: 1.9rem
+			&:hover
+				border: 1px solid #444444
 		
 
 
