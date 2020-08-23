@@ -1635,7 +1635,7 @@ input.invalid {
   .order1 {
     order: -2; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .menu__mobile-link {
     text-align: center;
       text-align-margin-bottom: 4rem; }
