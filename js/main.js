@@ -1,10 +1,4 @@
 $(document).ready(function() {
-
-    //lazt loading
-    $(function(){
-      $('.lazy').lazy();
-    });
-
     //First video
     var player;
 
@@ -220,10 +214,10 @@ $('.order__form').validate({
         // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
         tModal.toggleClass('t-modal--visible');
         $(form)[0].reset();
+        ym(64720999, 'reachGoal', 'send'); return true;
       },
       error: function(response){
         console.log('Ошибка запроса ' + response);
-        ym(64720999, 'reachGoal', 'send'); return true;
       }
     });
   }

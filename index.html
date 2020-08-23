@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="lazy">
+<body>
     <!-- Yandex.Metrika counter -->
     <script>
         (function (m, e, t, r, i, k, a) {
@@ -40,12 +40,11 @@
                     href="./index.html" class="logo__link">Ставрополье <small>на ладони</small></a></div>
             <ul class="menu__m">
                 <li class="menu__close">&times;</li>
-                <li><a href="#ourCar" class="menu__mobile-link">Условия</a></li>
-                <li><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
-                <li><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
-                <li><a href="#footer" class="menu__mobile-link">Контакты</a></li>
-            </ul>
-            <a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
+                <li class="menu__mobile-link--list-item"><a href="#ourCar" class="menu__mobile-link">Условия</a></li>
+                <li class="menu__mobile-link--list-item"><a href="#enlarge" class="menu__mobile-link">Комплектация автомобиля</a></li>
+                <li class="menu__mobile-link--list-item"><a href="#order" class="menu__mobile-link">Договор аренды</a></li>
+                <li class="menu__mobile-link--list-item"><a href="#footer" class="menu__mobile-link">Контакты</a></li>
+            </ul><a href="#" class="menu__mobile-link burger"><img src="./img/open-menu.svg" alt="меню"></a>
             <nav class="nav menu__nav"><a href="#ourCar" class="nav__item">Условия</a> <a href="#enlarge"
                     class="nav__item">Комплектация автомобиля</a> <a href="#order" class="nav__item">Договор аренды</a>
                 <a href="#footer" class="nav__item">Контакты</a></nav>
@@ -64,25 +63,17 @@
         </section><!-- /.hero -->
         <section class="places">
             <div class="container">
-
-                <div class="places__video places__video--main video" id="player">
-
-                    
-                    
-                    <img loading="lazy"
+                <div class="places__video places__video--main video" id="player"><img loading="lazy"
                         src="./img/video/play.svg" alt="воспроизведение" class="video__play">
-                    
                     <div class="video__text">
                         <h3 class="video__title">Красоты Ставрополья</h3><span class="video__subtitle">Надежный
                             автомобиль — залог лучших впечатлений!</span>
                     </div>
                 </div>
-
                 <div class="places__content content">
                     <div class="content__text">
                         <p class="content__title">Интересные места Ставропольского края <span>эксклюзивно для
-                                вас!</span></p>
-                                <a href="https://www.youtube.com/watch?v=Li4JDSNZP_g" target="_blank"
+                                вас!</span></p><a href="https://www.youtube.com/watch?v=Li4JDSNZP_g" target="_blank"
                             class="button content__button">Все видео</a>
                     </div><!-- /.content__text -->
                     <!-- Slider main container -->
@@ -92,35 +83,32 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide places__slide" id="player__1">
-                                    
-                                    <div class="places__video places__video--hover places__video--1">
-                                        <a data-fancybox href="https://www.youtube.com/watch?v=sAyQIjL0DMo"><div class="swiper__play swiper__play--1"></div></a>
-                                    </div>
+                                    <div class="places__video places__video--hover places__video--1"><a data-fancybox
+                                            href="https://www.youtube.com/watch?v=sAyQIjL0DMo">
+                                            <div class="swiper__play swiper__play--1"></div>
+                                        </a></div>
                                     <p class="swiper__text">Цейский заповедник близ Северной Осетии</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__2">
-                                    
-                                    <div class="places__video places__video--hover places__video--2">
-                                        <a data-fancybox href="https://www.youtube.com/watch?v=35uUBsRS2Kw"><div class="swiper__play swiper__play--2"></div></a>
-                                        
-                                    </div>
+                                    <div class="places__video places__video--hover places__video--2"><a data-fancybox
+                                            href="https://www.youtube.com/watch?v=35uUBsRS2Kw">
+                                            <div class="swiper__play swiper__play--2"></div>
+                                        </a></div>
                                     <p class="swiper__text">Незабываемый маршрут в Ингушский заповедник: Боевые башни
                                         Эрзи</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__3">
-                                    
-                                    <div class="places__video places__video--hover places__video--3">
-                                        <a data-fancybox href="https://www.youtube.com/watch?v=H8i8Ewls_Fs"><div class="swiper__play swiper__play--3"></div></a>
-                                        
-                                    </div>
+                                    <div class="places__video places__video--hover places__video--3"><a data-fancybox
+                                            href="https://www.youtube.com/watch?v=H8i8Ewls_Fs">
+                                            <div class="swiper__play swiper__play--3"></div>
+                                        </a></div>
                                     <p class="swiper__text">Озеро Провал и Памятник Остапу Бендеру</p>
                                 </div>
                                 <div class="swiper-slide places__slide" id="player__4">
-                                    
-                                    <div class="places__video places__video--hover places__video--4">
-                                        <a data-fancybox href="https://www.youtube.com/watch?v=ETUF4Iu0MkQ"><div class="swiper__play swiper__play--4"></div></a>
-                                        
-                                    </div>
+                                    <div class="places__video places__video--hover places__video--4"><a data-fancybox
+                                            href="https://www.youtube.com/watch?v=ETUF4Iu0MkQ">
+                                            <div class="swiper__play swiper__play--4"></div>
+                                        </a></div>
                                     <p class="swiper__text">Центральная питьевая галерея</p>
                                 </div>
                             </div><!-- If we need pagination -->
@@ -168,126 +156,156 @@
         <section id="ourCar" class="ourCar">
             <div class="container">
                 <div class="ourCar__wrapper">
-                    <h2 class="ourCar__title">
-                        О нашем автомобиле
-                    </h2>
-                        <!-- Slider main container -->
-                        <div class="swiper-container ourCar__slider">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide ourCar__slide">
-                                    <img src="./img/ourCar/car-i-1.jpg" alt="auto-1" class="ourCar__image">
-                                    <div class="ourCar__description">
-                                        <h3 class="ourCar__subtitle">
-                                            Чистый салон
-                                        </h3>
-                                        <p class="ourCar__text">
-                                            Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен - наш салон не исключение!
-                                        </p>
-                                        <span class="ourCar__subtext">
-                                            (обязательное условие аренды - возвращение автомобиля в чистом виде)
-                                        </span>
-                                    </div>
-                                    <!-- /.ourCar__description -->
-                                </div>
-                                <div class="swiper-slide ourCar__slide">
-                                    <img src="./img/ourCar/2.jpg" alt="auto-1" class="ourCar__image">
-                                    <div class="ourCar__description">
-                                        <h3 class="ourCar__subtitle">
-                                            Настоящий внедорожник
-                                        </h3>
-                                        <p class="ourCar__text">
-                                            Стиль нашего авто отражает его прочность, надежность и проходимость. Дорожный просвет 210 мм, короткие свесы и большие углы преодоления препятствий.
-                                        </p>
-                                    </div>
-                                    <!-- /.ourCar__description -->
-                                </div>
-                                <div class="swiper-slide ourCar__slide">
-                                    <img src="./img/ourCar/3.jpg" alt="auto-1" class="ourCar__image">
-                                    <div class="ourCar__description">
-                                        <h3 class="ourCar__subtitle">
-                                            Мультимедийная система R&GO
-                                        </h3>
-                                        <p class="ourCar__text">
-                                            Мультимедийная система с приложением R&GO. На экране вашего смартфона доступны, навигация и поиск авто на паркинге, также вы можете прослушивать любимую музыку.
-                                        </p>
-                                    
-                                    </div>
-                                    <!-- /.ourCar__description -->
-                                </div>
-                                <div class="swiper-slide ourCar__slide">
-                                    <img src="./img/ourCar/4.jpg" alt="auto-1" class="ourCar__image">
-                                    <div class="ourCar__description">
-                                        <h3 class="ourCar__subtitle">
-                                            Дистанционный запуск
-                                        </h3>
-                                        <p class="ourCar__text">
-                                            Вы можете дистанционно прогреть двигатель к началу поездки, а также отрегулировать заранее температуру воздуха в салоне, используя настройки климатической системы.
-                                        </p>
-                                    
-                                    </div>
-                                    <!-- /.ourCar__description -->
-                                </div>
+                    <h2 class="ourCar__title">О нашем автомобиле</h2><!-- Slider main container -->
+                    <div class="swiper-container ourCar__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide ourCar__slide"><img src="./img/ourCar/car-i-1.jpg" alt="auto-1"
+                                    class="ourCar__image">
+                                <div class="ourCar__description">
+                                    <h3 class="ourCar__subtitle">Чистый салон</h3>
+                                    <p class="ourCar__text">Любая поездка по Ставрополью всегда комфортнее когда салон
+                                        чист и опрятен - наш салон не исключение!</p><span
+                                        class="ourCar__subtext">(обязательное условие аренды - возвращение автомобиля в
+                                        чистом виде)</span>
+                                </div><!-- /.ourCar__description -->
                             </div>
-                            <!-- If we need navigation buttons -->
-                            
-                        </div>
-                            <div class="ourCar__button ourCar__button--prev"></div>
-                            <div class="ourCar__button ourCar__button--next"></div>
+                            <div class="swiper-slide ourCar__slide"><img src="./img/ourCar/2.jpg" alt="auto-1"
+                                    class="ourCar__image">
+                                <div class="ourCar__description">
+                                    <h3 class="ourCar__subtitle">Настоящий внедорожник</h3>
+                                    <p class="ourCar__text">Стиль нашего авто отражает его прочность, надежность и
+                                        проходимость. Дорожный просвет 210 мм, короткие свесы и большие углы преодоления
+                                        препятствий.</p>
+                                </div><!-- /.ourCar__description -->
+                            </div>
+                            <div class="swiper-slide ourCar__slide"><img src="./img/ourCar/3.jpg" alt="auto-1"
+                                    class="ourCar__image">
+                                <div class="ourCar__description">
+                                    <h3 class="ourCar__subtitle">Мультимедийная система R&GO</h3>
+                                    <p class="ourCar__text">Мультимедийная система с приложением R&GO. На экране вашего
+                                        смартфона доступны, навигация и поиск авто на паркинге, также вы можете
+                                        прослушивать любимую музыку.</p>
+                                </div><!-- /.ourCar__description -->
+                            </div>
+                            <div class="swiper-slide ourCar__slide"><img src="./img/ourCar/4.jpg" alt="auto-1"
+                                    class="ourCar__image">
+                                <div class="ourCar__description">
+                                    <h3 class="ourCar__subtitle">Дистанционный запуск</h3>
+                                    <p class="ourCar__text">Вы можете дистанционно прогреть двигатель к началу поездки,
+                                        а также отрегулировать заранее температуру воздуха в салоне, используя настройки
+                                        климатической системы.</p>
+                                </div><!-- /.ourCar__description -->
+                            </div>
+                        </div><!-- If we need navigation buttons -->
+                    </div>
+                    <div class="ourCar__button ourCar__button--prev"></div>
+                    <div class="ourCar__button ourCar__button--next"></div>
                 </div>
                 <div class="swiper2__pagination"><span class="swiper2__current"></span> <span class="swiper2__devider">/
                     </span><span class="swiper2__total"></span></div>
             </div>
         </section><!-- /.about -->
-        <section id="enlarge" class="enlarge"><img class="enlarge__bg" src="./img/footer/footer.webp" alt="машина">
+        <section id="enlarge" class="enlarge">
+            <img loading="lazy" class="enlarge__bg" src="./img/footer/footer.webp" alt="машина">
             <div class="container">
                 <div class="enlarge__wrapper">
-                    <div class="col">
-                        <div class="enlarge__title-group">
-                            <h3 class="enlarge__title">Авто</h3><span class="enlarge__subtitle">в приближении</span>
+                    <div class="enlarge__specs specs">
+                        <div class="specs__title-block">
+                            <h3 class="enlarge__title">
+                                Авто
+                            </h3>
+                            <span class="enlarge__subtitle ">в приближении</span>
                         </div>
-                        <!-- /.enlarge__title-group -->
-                        <div class="enlarge__gearbox gearbox"><img class="gearbox__img"
-                                src="./img/footer/gearbox-bg.webp" alt="короька передач"> <span
-                                class="gearbox__text">Коробка передач </span><span class="gearbox__type">AT</span></div>
-                        <div class="enlarge__milage milage"><img class="milage__img" src="./img/footer/milage.webp"
-                                alt="километраж"> <span class="milage__text">Чистый пробег </span><span
-                                class="milage__type">+100k</span></div><!-- /.enlarge__milage milage -->
-                    </div><!-- /.col -->
-                    <div class="col--2">
-                        <div class="enlarge__title--wrapper">
-                            <h3 class="enlarge__title--2">АИ</h3><span>92</span>
+                        <!-- /.specs__title-block -->
+
+                       <div class="specs__box">
+                           <img loading="lazy" src="./img/enlarge/frame-bg.png" alt="Обводка" class="specs__bg">
+                            <h5 class="specs__title">
+                                Коробка передач</h5>
+                            <div class="specs__icon">
+                                <img loading="lazy" src="./img/enlarge/gearbox.svg" alt="">
+                            </div>
+                            <span class="specs__numbers">
+                                AT
+                            </span>
+                            <span class="specs__numbers-small">
+                                5 ст.
+                            </span>
+                       </div>
+                       <!-- /.specs__box -->
+                       <div class="specs__box">
+                        <img loading="lazy" src="./img/enlarge/frame-bg.png" alt="Обводка" class="specs__bg specs__bg--reverse">
+                        <h5 class="specs__title">
+                            Чистый пробег
+                        </h5>
+                        <div class="specs__icon">
+                            <img loading="lazy" src="./img/enlarge/milage.svg" alt="">
                         </div>
-                        <ul class="enlarge__list">
-                            <li class="enlarge__item">Мощность: 123</li>
-                            <li class="enlarge__item">Объем: 1.6</li>
-                            <li class="enlarge__item">Расход: 8.9 / 5.3</li>
+                        <span class="specs__numbers">
+                            +100k
+                        </span>
+                        <span class="specs__numbers-small">
+                            2020 г.
+                        </span>
+                       </div>
+                       <!-- /.specs__box -->
+                    </div>
+                    <!-- /.enlarge__specs -->
+                    <div class="enlarge__gas-type gas-type">
+                        <h5 class="enlarge__title gas-type--title">
+                            АИ
+                        </h5>
+                        <!-- /.enlarge__title -->
+                        <ul class="gas-type__list">
+                            <li class="sgas-type__item">Мощность: 123</li>
+                            <li class="sgas-type__item">Объем: 1.6</li>
+                            <li class="sgas-type__item">Расход: 8.9 / 5.3</li>
                         </ul>
-                        <div class="gas-block">
-                            <img src="./img/footer/mid-img.webp" alt="договор" class="enlarge__img--middle">
-                        <p class="enlarge__text--middle">Все документы в порядке - единственный собственник за весь
-                            период эксплуатации. <span>Сел и поехал!</span></p>
+                        <div class="gas-type__info-block">
+                            <div class="gas-type__icon enlarge__icon">
+                                <img loading="lazy" src="./img/enlarge/agreement.svg" alt="договор">
+                            </div>
+                            <p class="gas-type__agreement">
+                                Все документы в порядке - единственный собственник за весь период эксплуатации. <span class="gas-type__agreement--orange">Сел и поехал!</span>
+                            </p>
+                            <!-- /.gas-type__agreement -->
                         </div>
-                        <!-- /.gas-block -->
-                    </div><!-- /.col -->
-                    <div class="col">
-                        <h3 class="enlarge__title--3">2017</h3>
-                        <div class="enlarge__block--3">
-                            <div class="enlarge__block--img"><img src="./img/footer/users.webp" alt="люди"></div>
-                            <div class="enlarge__block--img"><img src="./img/footer/door.webp" alt="двери"></div>
-                            <div class="enlarge__block--img"><img src="./img/footer/snow-flake.webp" alt="холод"></div>
-                        </div><!-- /.enlarge__block-3 --> 
-                        <div class="complex-block">
-                            <img src="./img/footer/heart.webp" alt="сердечко"
-                            class="enlarge__heart">
-                        <div class="enlarge__block--info"><span>Укомплектуем дополнительно</span>
-                            <p>Мы очень любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не
-                                придираемся к каждой незначительной царапинке после возврата авто клиентом</p>
+                        <!-- /.gas-type__info-block -->
+                    </div>
+                    <!-- /.enlarge__gas-type -->
+                    <div class="enlarge__year year">
+                        <h5 class="enlarge__title year__title">
+                            2017
+                        </h5>
+                        <div class="year__icons-block">
+                            <div class="year__icon enlarge__icon">
+                                <img loading="lazy" src="./img/enlarge/passanges.svg" alt="">
+                            </div>
+                            <div class="year__icon enlarge__icon">
+                                <img loading="lazy" src="./img/enlarge/door.svg" alt="">
+                            </div>
+                            <div class="year__icon enlarge__icon">
+                                <img loading="lazy" src="./img/enlarge/tires.svg" alt="">
+                            </div>
                         </div>
+                        <div class="year__info-block">
+                            <div class="year__icon--heart enlarge__icon">
+                                <img loading="lazy" src="./img/enlarge/heart.svg" alt="любовь">
+                            </div>
+                            <h5 class="year__subtitle">
+                                Укомплектуем дополнительно
+                            </h5>
+                            <!-- /.year__subtitle -->
+                            <p class="year__text">
+                                Мы очень любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не придираемся к каждой незначительной царапинке после возврата авто клиентом
+                            </p>
+                            <!-- /.year__text -->
                         </div>
-                        <!-- /.complex-block -->
-                    </div><!-- /.col -->
+                        <!-- /.year__info-block -->
+                    </div>
+                    <!-- /.enlarge__year -->
                 </div><!-- /.enlarge__wrapper -->
                 <!-- <div class="enlarge__hr"></div> -->
             </div>
@@ -357,13 +375,13 @@
                             </div>
                             <div class="swiper-slide swiper-slide3">
                                 <p class="swiper-slide3__header">Можно ли курить в автомобиле?</p>
-                                <p class="swiper-slide3__text">Курить в автомобиле ЗАПРЕЩЕНО. 
-                                    <strong>Штраф 100 $.</strong></p>
+                                <p class="swiper-slide3__text">Курить в автомобиле ЗАПРЕЩЕНО. <strong>Штраф 100
+                                        $.</strong></p>
                             </div>
                             <div class="swiper-slide swiper-slide3">
                                 <p class="swiper-slide3__header">Могу ли я арендовать авто на 0,5 суток?</p>
-                                <p class="swiper-slide3__text">Минимальный срок аренды автомобиля -
-                                    <strong>одни сутки.</strong></p>
+                                <p class="swiper-slide3__text">Минимальный срок аренды автомобиля - <strong>одни
+                                        сутки.</strong></p>
                             </div>
                         </div><!-- Add Pagination -->
                         <!-- If we need navigation buttons -->
@@ -400,8 +418,7 @@
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
-    <script src="./js/main.js"></script>
-    
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>

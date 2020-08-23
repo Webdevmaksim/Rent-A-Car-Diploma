@@ -820,220 +820,161 @@ input.invalid {
     margin-top: 3rem;
     z-index: 99999999; }
 
-.col {
-  display: flex;
-  flex-direction: column; }
-  .col:last-child {
-    margin-right: 0; }
-
 .enlarge {
   background: #222222;
   min-height: 80rem;
   position: relative;
   z-index: 111; }
-  .enlarge__hr {
-    border: 1px solid #444444; }
-  .enlarge__heart {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-bottom: 3rem; }
-  .enlarge__block--info {
-    max-width: 22rem; }
-    .enlarge__block--info span {
-      display: block;
-      color: #ffffff;
-      font-size: 1.57rem;
-      margin-bottom: 1.8rem; }
-    .enlarge__block--info p {
-      color: #777777;
-      font-size: 1.26rem;
-      max-width: 19.6rem;
-      line-height: 1.6; }
-  .enlarge__block--img {
-    margin-right: 3.9rem;
-    position: relative; }
-    .enlarge__block--img:nth-child(2)::after {
-      content: '4';
-      color: #ffffff;
-      font-size: 2.2rem;
-      position: absolute;
-      top: 50%;
-      left: 135%;
-      transform: translate(-50%, -50%); }
-    .enlarge__block--img:nth-child(1)::after {
-      content: '5';
-      color: #ffffff;
-      font-size: 2.2rem;
-      position: absolute;
-      top: 50%;
-      left: 135%;
-      transform: translate(-50%, -50%); }
-    .enlarge__block--img:last-child {
-      margin-right: 0; }
-  .enlarge__block--3 {
-    display: flex;
-    margin-bottom: 7rem; }
-  .enlarge__text--middle {
-    color: #ffffff;
-    font-size: 1.6rem;
-    max-width: 17.5rem;
-    line-height: 1.5; }
-    .enlarge__text--middle span {
-      color: #ff6600; }
-  .enlarge__img--middle {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-bottom: 1.5rem; }
-  .enlarge__list {
-    color: #ffffff;
-    list-style: none;
-    padding: 0;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 6rem; }
-  .enlarge__wrapper {
-    padding-top: 16.75rem;
-    display: flex;
-    padding-bottom: 16.5rem;
-    justify-content: space-between; }
-  .enlarge__title {
-    margin-top: 0;
-    color: #ffffff;
-    font-size: 7rem;
-    margin-bottom: 1rem; }
-    .enlarge__title--wrapper {
-      display: flex; }
-      .enlarge__title--wrapper span {
-        font-size: 2rem;
-        color: #17bebb;
-        margin-top: 10rem; }
-        .enlarge__title--wrapper span::after {
-          content: '+';
-          display: block;
-          color: #777777;
-          font-size: 3rem; }
-    .enlarge__title--3 {
-      color: #ffffff;
-      font-size: 7rem;
-      padding-top: 2rem;
-      position: relative;
-      margin-bottom: 2.5rem;
-      font-family: 'Istok Web', sans-serif; }
-      .enlarge__title--3::after {
-        content: 'Н.В.';
-        color: #17bebb;
-        font-size: 2.2rem;
-        top: 3rem;
-        right: 0.7rem;
-        position: absolute; }
-    .enlarge__title--2 {
-      padding-top: 2rem;
-      color: #ffffff;
-      font-size: 7rem;
-      margin-bottom: 0;
-      margin-right: 3rem; }
-  .enlarge__subtitle {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 2.35rem;
-    margin-bottom: 7rem; }
   .enlarge__bg {
     position: absolute;
     z-index: -11;
     max-height: 80rem;
     width: 100%; }
-  .enlarge .gearbox {
-    min-height: 17.25rem;
-    max-width: 19.5rem;
-    position: relative;
-    margin-bottom: 3.8rem; }
-    .enlarge .gearbox__img {
-      position: absolute;
-      top: 0;
-      left: -2rem;
-      min-width: 19.5rem;
-      height: 100%; }
-    .enlarge .gearbox__type {
-      color: #ffffff;
-      text-transform: uppercase;
-      font-size: 3.1rem;
-      position: absolute;
-      font-weight: bold;
-      bottom: 4.2rem;
-      right: 2.5rem; }
-      .enlarge .gearbox__type::after {
-        content: '5 ст.';
-        display: block;
-        color: #777777;
-        font-size: 1rem;
-        position: absolute;
-        bottom: -1.5rem;
-        right: 0rem; }
-    .enlarge .gearbox__text {
-      display: inline-block;
-      color: #ffffff;
-      margin-top: 2.6rem;
-      margin-left: 2.7rem;
-      vertical-align: center;
-      font-size: 1.2rem;
-      line-height: 1.6;
-      max-width: 4.41rem;
-      position: relative; }
-      .enlarge .gearbox__text::after {
-        position: absolute;
-        content: '';
-        display: block;
-        background: url("../img/footer/gearbox.svg") center no-repeat;
-        width: 3.2rem;
-        height: 3.5rem;
-        top: 0;
-        left: 8rem; }
+  .enlarge__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25rem; }
+  .enlarge__title {
+    color: #ffffff;
+    margin: 0;
+    font-size: 7rem; }
+  .enlarge__subtitle {
+    font-size: 1.75rem;
+    color: #ffffff; }
+  .enlarge__icon {
+    border: 1px solid #444444;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.milage {
-  min-height: 17.25rem;
-  max-width: 19.5rem;
-  position: relative; }
-  .milage__img {
+.specs {
+  color: #ffffff; }
+  .specs__title-block {
+    margin-bottom: 7rem;
+    margin-top: -7rem; }
+  .specs__box {
+    width: 19.41rem;
+    height: 17.25rem;
+    position: relative;
+    margin-bottom: 3.75rem; }
+    .specs__box:last-child {
+      margin-bottom: 0; }
+  .specs__bg {
     position: absolute;
     top: 0;
-    left: -2rem;
-    min-width: 19.5rem;
-    height: 100%; }
-  .milage__type {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 3.1rem;
-    position: absolute;
-    font-weight: bold;
-    bottom: 4.5rem;
-    right: 2rem; }
-    .milage__type::after {
-      content: '2020 г.';
-      display: block;
-      color: #777777;
-      font-size: 1rem;
-      position: absolute;
-      bottom: -1.5rem;
-      right: 0rem; }
-  .milage__text {
-    display: inline-block;
-    color: #ffffff;
-    margin-top: 2.6rem;
-    margin-left: 2.7rem;
-    vertical-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .specs__bg--reverse {
+      transform: rotate(-180deg); }
+  .specs__title {
+    margin: 0;
+    font-size: 1.25rem;
     max-width: 4.41rem;
-    position: relative; }
-    .milage__text::after {
+    line-height: 1.8rem;
+    left: 4.5rem;
+    top: 2.91rem;
+    position: absolute; }
+  .specs__icon {
+    position: absolute;
+    top: 3.5rem;
+    right: 4rem; }
+  .specs__numbers {
+    position: absolute;
+    right: 3.8rem;
+    bottom: 4rem;
+    font-size: 3rem;
+    font-weight: bold; }
+    .specs__numbers-small {
       position: absolute;
-      content: '';
-      display: block;
-      background: url("../img/footer/milage.svg") center no-repeat;
-      width: 3.2rem;
-      height: 3.0rem;
-      top: 0;
-      left: 8.5rem; }
+      color: #777777;
+      right: 4rem;
+      bottom: 2.1rem;
+      font-size: 1.25rem; }
+
+.gas-type--title {
+  position: relative; }
+  .gas-type--title::after {
+    content: '92';
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    font-size: 2rem;
+    color: #17bebb; }
+  .gas-type--title::before {
+    content: '+';
+    color: #777777;
+    font-size: 3rem;
+    right: 4rem;
+    position: absolute;
+    top: 3.5rem; }
+
+.gas-type__list {
+  color: #ffffff;
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.55rem;
+  line-height: 2.3rem;
+  margin-bottom: 6.16rem; }
+
+.gas-type__icon {
+  margin-bottom: 3.58rem; }
+
+.gas-type__agreement {
+  margin: 0;
+  color: #ffffff;
+  max-width: 17.5rem;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+  .gas-type__agreement--orange {
+    color: #ff6600; }
+
+.year__title {
+  position: relative;
+  margin-bottom: 3.83rem; }
+  .year__title::after {
+    content: 'Н.В.';
+    position: absolute;
+    color: #17bebb;
+    font-size: 2rem;
+    right: 1rem;
+    top: 1rem; }
+
+.year__icons-block {
+  display: flex;
+  margin-bottom: 7.5rem; }
+
+.year__icon {
+  margin-right: 3.75rem;
+  position: relative; }
+  .year__icon:nth-child(1)::after {
+    position: absolute;
+    content: '5';
+    color: #ffffff;
+    right: -2.5rem;
+    font-size: 2rem; }
+  .year__icon:nth-child(2)::after {
+    position: absolute;
+    content: '4';
+    color: #ffffff;
+    right: -2.5rem;
+    font-size: 2rem; }
+  .year__icon:last-child {
+    margin-right: 0; }
+
+.year__subtitle {
+  font-size: 1.57rem;
+  margin-bottom: 1.8rem;
+  color: #ffffff; }
+
+.year__text {
+  font-size: 1.26rem;
+  color: #777777;
+  line-height: 1.6;
+  max-width: 19.6rem; }
 
 .order {
   background: #222222;
@@ -1447,15 +1388,15 @@ input.invalid {
     flex-direction: column;
     align-items: center; }
   .places__video {
-    min-height: 30rem; }
+    min-height: 25rem; }
     .places__video--main {
       min-height: 40rem; }
   .places__swiper-button:hover {
     cursor: default; }
   .places__swiper-button-next {
-    top: 12rem; }
+    top: 10rem; }
   .places__swiper-button-prev {
-    top: 12rem; }
+    top: 10rem; }
   .places__slide:hover {
     cursor: default; }
     .places__slide:hover .swiper__text {
@@ -1626,7 +1567,52 @@ input.invalid {
     background: url("../img/socials/vk.svg") center no-repeat;
     background-size: 1.9rem; }
   .footer__link:hover {
-    border: 1px solid #444444; } }
+    border: 1px solid #444444; }
+  .specs {
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 5rem; }
+    .specs__title-block {
+      flex-basis: 100%;
+      text-align: center; }
+    .specs__box {
+      flex-basis: 50%; }
+    .specs__numbers {
+      right: 7rem; }
+      .specs__numbers-small {
+        right: 7rem; }
+    .specs__icon {
+      right: 7rem; }
+  .gas-type {
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 5rem; }
+    .gas-type--title {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 5rem; }
+      .gas-type--title::before {
+        right: 10rem; }
+      .gas-type--title::after {
+        right: 10rem; }
+    .gas-type__list {
+      flex-basis: 50%; }
+    .gas-type__info-block {
+      flex-basis: 50%; }
+  .year {
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 5rem; }
+    .year__title {
+      flex-basis: 100%;
+      text-align: center; }
+      .year__title::after {
+        right: 15rem; }
+    .year__icons-block {
+      flex-basis: 50%; }
+    .year__info-block {
+      flex-basis: 50%; } }
 
 @media screen and (max-width: 768px) {
   .ourCar__image {
@@ -1639,14 +1625,72 @@ input.invalid {
   .clients__card {
     margin-left: 0;
     flex-basis: 55%;
-    align-items: center; }
-  .enlarge__gearbox {
-    flex-basis: 100%;
-    margin-right: 0;
-    margin: 0 auto; }
-  .enlarge__milage {
-    justify-content: center;
-    margin: 0 auto;
+    align-items: center; } }
+
+@media screen and (max-width: 576px) {
+  .ourCar__button {
+    top: 20rem; }
+  .order3 {
+    order: -1; }
+  .order1 {
+    order: -2; } }
+
+@media screen and (max-width: 320px) {
+  .menu__mobile-link {
+    text-align: center;
+      text-align-margin-bottom: 4rem; }
+    .menu__mobile-link--list-item {
+      margin-bottom: 3rem; }
+  .places__video {
+    min-height: 22rem; }
+    .places__video--main {
+      min-height: 30rem; }
+  .ourCar__wrapper {
+    max-width: 90%; }
+  .ourCar__button {
+    top: 26rem; }
+  .ourCar__image {
+    margin-bottom: 3rem; }
+  .specs__box {
+    margin-bottom: 5rem;
     flex-basis: 100%; }
-  .milage__type {
-    right: 5rem; } }
+  .specs__icon {
+    right: 10rem; }
+  .specs__numbers {
+    right: 10rem; }
+    .specs__numbers-small {
+      right: 10rem; }
+  .specs__bg--reverse {
+    left: 1rem; }
+  .gas-type--title::after {
+    right: 6rem; }
+  .gas-type--title::before {
+    right: 6rem; }
+  .gas-type__list {
+    margin-bottom: 5rem;
+    flex-basis: 100%; }
+  .gas-type__info-block {
+    flex-basis: 100%; }
+  .year__title::after {
+    right: 2rem; }
+  .video__text {
+    top: -2rem;
+    text-align: center; }
+  .video__subtitle {
+    display: inline-block;
+    margin-top: 10rem; }
+  .header {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .logo__img {
+    display: none; }
+  .swiper-slide3__header {
+    margin-top: 4rem; }
+  .hero__content {
+    margin-left: 0; }
+  .hero__title {
+    font-size: 4rem; }
+  .footer__info {
+    flex-direction: column; }
+  .footer__slider {
+    max-width: 28rem; } }

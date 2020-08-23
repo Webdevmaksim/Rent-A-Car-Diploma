@@ -51,18 +51,18 @@
 			flex-direction: column
 			align-items: center
 		&__video
-			min-height: 30rem
+			min-height: 25rem
 			&--main
 				min-height: 40rem
 		&__swiper-button
 			&:hover
 				cursor: default
 		&__swiper-button-next
-			top: 12rem
+			top: 10rem
 		&__swiper-button-prev
-			top: 12rem
+			top: 10rem
 			
-		&__slide
+		&__slide 
 			&:hover
 				cursor: default
 				.swiper__text
@@ -276,6 +276,51 @@
 					background-size: 1.9rem
 			&:hover
 				border: 1px solid #444444
+	.specs
+		padding-top: 5rem
+		flex-wrap: wrap
+		display: flex
+		margin-bottom: 5rem
+		&__title-block
+			flex-basis: 100%
+			text-align: center
+		&__box
+			flex-basis: 50%
+		&__numbers
+			right: 7rem
+			&-small
+				right: 7rem
+		&__icon
+			right: 7rem
+	.gas-type
+		flex-wrap: wrap
+		display: flex
+		margin-bottom: 5rem
+		&--title
+			flex-basis: 100%
+			text-align: center
+			margin-bottom: 5rem
+			&::before
+				right: 10rem
+			&::after
+				right: 10rem
+		&__list
+			flex-basis: 50%
+		&__info-block
+			flex-basis: 50%
+	.year
+		flex-wrap: wrap
+		display: flex
+		margin-bottom: 5rem
+		&__title
+			flex-basis: 100%
+			text-align: center
+			&::after
+				right: 15rem
+		&__icons-block
+			flex-basis: 50%
+		&__info-block
+			flex-basis: 50%
 		
 @media screen and ( max-width: 768px )
 	.ourCar
@@ -292,16 +337,92 @@
 			margin-left: 0
 			flex-basis: 55%
 			align-items: center
-	.enlarge
-		&__gearbox
+@media screen and ( max-width: 576px )
+	.ourCar
+		&__button
+			top: 20rem
+	.order3
+		order: -1
+	.order1
+		order: -2
+@media screen and ( max-width: 320px )
+	.menu
+		&__mobile-link
+			text-align: center
+   			margin-bottom: 4rem
+			&--list-item
+				margin-bottom: 3rem
+	.places
+		&__video
+			min-height: 22rem
+			&--main
+				min-height: 30rem
+	.ourCar
+		&__wrapper
+			max-width: 90%
+		&__button
+			top: 26rem
+		&__image
+			margin-bottom: 3rem
+			
+	.specs
+		&__box
+			margin-bottom: 5rem
 			flex-basis: 100%
-			margin-right: 0
-			margin: 0 auto
-		&__milage
-			justify-content: center
-			margin: 0 auto
+		&__icon
+			right: 10rem
+		&__numbers
+			right: 10rem
+			&-small
+				right: 10rem
+		&__bg--reverse
+			left: 1rem
+	.gas-type
+		&--title
+			&::after
+				right: 6rem	
+			&::before
+				right: 6rem	
+		&__list
+			// display: block
+			// margin: 0 auto
+			margin-bottom: 5rem
 			flex-basis: 100%
-	.milage
-		&__type
-			right: 5rem
+		&__info-block
+			// display: block
+			flex-basis: 100%
+			// margin: 0 auto
+	.year
+		&__title
+			&::after
+				right: 2rem
+	.video
+		&__text
+			top: -2rem
+			text-align: center
+		&__subtitle
+			display: inline-block
+			margin-top: 10rem
+	.header
+		padding-left: 20px
+		padding-right: 20px
+	.logo
+		&__img
+			display: none
+	.swiper-slide3__header
+		margin-top: 4rem
+	.hero
+		&__content
+			margin-left: 0
+		&__title
+			font-size: 4rem
+	.footer
+		&__info
+			flex-direction: column
+		&__slider
+			max-width: 28rem
+	
+	
+
+	
 
