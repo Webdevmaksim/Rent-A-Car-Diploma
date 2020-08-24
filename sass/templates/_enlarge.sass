@@ -79,18 +79,20 @@
 .gas-type
     &--title
         position: relative
+        max-width: 10rem
+        
         &::after
             content: '92'
             position: absolute
             top: 1rem
-            right: 4rem
+            right: -3rem
             font-size: 2rem
             color: $l-g
         &::before
             content: '+'
             color: $grey
             font-size: 3rem
-            right: 4rem 
+            right: -3rem 
             position: absolute
             top: 3.5rem
     &__list
@@ -114,12 +116,13 @@
     &__title
         position: relative
         margin-bottom: 3.83rem
+        max-width: 15rem
         &::after
             content: 'Н.В.'
             position: absolute
             color: $l-g
             font-size: 2rem
-            right: 1rem
+            right: -4rem
             top: 1rem
     &__icons-block
         display: flex

@@ -899,19 +899,20 @@ input.invalid {
       font-size: 1.25rem; }
 
 .gas-type--title {
-  position: relative; }
+  position: relative;
+  max-width: 10rem; }
   .gas-type--title::after {
     content: '92';
     position: absolute;
     top: 1rem;
-    right: 4rem;
+    right: -3rem;
     font-size: 2rem;
     color: #17bebb; }
   .gas-type--title::before {
     content: '+';
     color: #777777;
     font-size: 3rem;
-    right: 4rem;
+    right: -3rem;
     position: absolute;
     top: 3.5rem; }
 
@@ -937,13 +938,14 @@ input.invalid {
 
 .year__title {
   position: relative;
-  margin-bottom: 3.83rem; }
+  margin-bottom: 3.83rem;
+  max-width: 15rem; }
   .year__title::after {
     content: 'Н.В.';
     position: absolute;
     color: #17bebb;
     font-size: 2rem;
-    right: 1rem;
+    right: -4rem;
     top: 1rem; }
 
 .year__icons-block {
@@ -1588,13 +1590,10 @@ input.invalid {
     display: flex;
     margin-bottom: 5rem; }
     .gas-type--title {
+      margin: 0 auto; }
+    .gas-type--title-wrapper {
       flex-basis: 100%;
-      text-align: center;
       margin-bottom: 5rem; }
-      .gas-type--title::before {
-        right: 10rem; }
-      .gas-type--title::after {
-        right: 10rem; }
     .gas-type__list {
       flex-basis: 50%; }
     .gas-type__info-block {
@@ -1604,10 +1603,10 @@ input.invalid {
     display: flex;
     margin-bottom: 5rem; }
     .year__title {
-      flex-basis: 100%;
-      text-align: center; }
-      .year__title::after {
-        right: 15rem; }
+      margin: 0 auto; }
+      .year__title--wrapper {
+        flex-basis: 100%;
+        margin-bottom: 5rem; }
     .year__icons-block {
       flex-basis: 50%; }
     .year__info-block {
@@ -1637,7 +1636,7 @@ input.invalid {
   .order1 {
     order: -2; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .menu__mobile-link {
     text-align: center;
       text-align-margin-bottom: 4rem; }
@@ -1656,17 +1655,13 @@ input.invalid {
   .specs__box {
     margin-bottom: 5rem;
     flex-basis: 100%; }
-  .gas-type--title::after {
-    right: 10rem; }
-  .gas-type--title::before {
-    right: 10rem; }
   .gas-type__list {
     margin-bottom: 5rem;
     flex-basis: 100%; }
   .gas-type__info-block {
     flex-basis: 100%; }
-  .year__title::after {
-    right: 5rem; }
+  .year__icons-block {
+    flex-basis: 100%; }
   .video__text {
     top: -2rem;
     text-align: center; }

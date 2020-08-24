@@ -294,13 +294,13 @@
 		display: flex
 		margin-bottom: 5rem
 		&--title
+			// flex-basis: 100%
+			// text-align: center
+			
+			margin: 0 auto
+		&--title-wrapper
 			flex-basis: 100%
-			text-align: center
 			margin-bottom: 5rem
-			&::before
-				right: 10rem
-			&::after
-				right: 10rem
 		&__list
 			flex-basis: 50%
 		&__info-block
@@ -310,10 +310,10 @@
 		display: flex
 		margin-bottom: 5rem
 		&__title
-			flex-basis: 100%
-			text-align: center
-			&::after
-				right: 15rem
+			margin: 0 auto
+			&--wrapper
+				flex-basis: 100%
+				margin-bottom: 5rem
 		&__icons-block
 			flex-basis: 50%
 		&__info-block
@@ -346,7 +346,7 @@
 		order: -1
 	.order1
 		order: -2
-@media screen and ( max-width: 400px )
+@media screen and ( max-width: 500px )
 	.menu
 		&__mobile-link
 			text-align: center
@@ -373,9 +373,9 @@
 	.gas-type
 		&--title
 			&::after
-				right: 10rem	
+				// right: 10rem	
 			&::before
-				right: 10rem	
+				// right: 10rem	
 		&__list
 			// display: block
 			// margin: 0 auto
@@ -386,9 +386,9 @@
 			flex-basis: 100%
 			// margin: 0 auto
 	.year
-		&__title
-			&::after
-				right: 5rem
+		&__icons-block
+			flex-basis: 100%
+			
 	.video
 		&__text
 			top: -2rem
