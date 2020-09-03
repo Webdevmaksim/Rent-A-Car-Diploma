@@ -87,12 +87,12 @@
 			margin-bottom: 5rem 
 			margin-right: 0
 	//Clients
-	.clients 
-		&__card
-			margin-right: 0
-			flex-basis: 30%
-			margin-left: 12rem
-			margin-bottom: 3rem
+	// .clients 
+	// 	&__card
+	// 		margin-right: 0
+	// 		flex-basis: 30%
+	// 		margin-left: 12rem
+	// 		margin-bottom: 3rem
 	//OurCar
 	.ourCar
 		padding-top: 5rem
@@ -330,10 +330,9 @@
 		&__swiper-container
 			width: 90%
 	.clients
-		&__card
-			margin-left: 0
-			flex-basis: 55%
-			align-items: center
+		&__col
+			flex-basis: 50%
+				
 @media screen and ( max-width: 576px )
 	.ourCar
 		&__button
@@ -346,11 +345,15 @@
 		order: -1
 	.order1
 		order: -2
+	.clients
+		&__col
+			flex-basis: 100%
 @media screen and ( max-width: 500px )
 	.menu
 		&__mobile-link
 			text-align: center
    			margin-bottom: 4rem
+			align-self: flex-start
 			&--list-item
 				margin-bottom: 3rem
 	.places
@@ -395,7 +398,9 @@
 			text-align: center
 		&__subtitle
 			display: inline-block
-			margin-top: 10rem
+			margin-top: 15rem
+		&__play
+			z-index: 99999999
 	.header
 		padding-left: 20px
 		padding-right: 20px

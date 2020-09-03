@@ -717,14 +717,14 @@ input.invalid {
       color: #777777; }
   .clients__row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .clients__col {
+    flex-basis: 25%;
+    display: flex;
     justify-content: center; }
   .clients__card {
     display: flex;
-    flex-direction: column;
-    margin-right: 10.25rem; }
-    .clients__card:last-child {
-      margin-right: 0; }
+    flex-direction: column; }
     .clients__card img {
       width: 6rem;
       height: 6rem;
@@ -1419,11 +1419,6 @@ input.invalid {
   .content__text {
     margin-bottom: 5rem;
     margin-right: 0; }
-  .clients__card {
-    margin-right: 0;
-    flex-basis: 30%;
-    margin-left: 12rem;
-    margin-bottom: 3rem; }
   .ourCar {
     padding-top: 5rem;
     padding-bottom: 5rem; }
@@ -1620,10 +1615,8 @@ input.invalid {
     max-width: 90%; }
   .places__swiper-container {
     width: 90%; }
-  .clients__card {
-    margin-left: 0;
-    flex-basis: 55%;
-    align-items: center; } }
+  .clients__col {
+    flex-basis: 50%; } }
 
 @media screen and (max-width: 576px) {
   .ourCar__button {
@@ -1634,12 +1627,15 @@ input.invalid {
   .order3 {
     order: -1; }
   .order1 {
-    order: -2; } }
+    order: -2; }
+  .clients__col {
+    flex-basis: 100%; } }
 
 @media screen and (max-width: 500px) {
   .menu__mobile-link {
     text-align: center;
-      text-align-margin-bottom: 4rem; }
+      text-align-margin-bottom: 4rem;
+    align-self: flex-start; }
     .menu__mobile-link--list-item {
       margin-bottom: 3rem; }
   .places__video {
@@ -1667,7 +1663,9 @@ input.invalid {
     text-align: center; }
   .video__subtitle {
     display: inline-block;
-    margin-top: 10rem; }
+    margin-top: 15rem; }
+  .video__play {
+    z-index: 99999999; }
   .header {
     padding-left: 20px;
     padding-right: 20px; }
