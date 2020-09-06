@@ -6,12 +6,14 @@ const sass  = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
     minсss();
     compress();
     minify_h();
+    tinyPic();
     serveSass();
     browserSync.init({
         server: {
@@ -35,13 +37,22 @@ function compress(){
     }))
     .pipe(dest('js'));
 };
-
+//tiny html
 function minify_h () {
     return src(['./*.html', '!./*.min.html'])
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest('./'));
+    .pipe(minify_h({ collapseWhitespace: true }))
+    .pipe(dest('./dist'));
 };
-
+//tiny pictures
+function tinyPic (){
+    return src(['./img'])
+        .pipe(tinyPic({
+            key: 'API_KEY',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(gulp.dest('dist/img'));
+};
 
 // Task to minify css using package cleanCSs
     function minсss() {
