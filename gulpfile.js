@@ -11,7 +11,8 @@ const htmlmin = require('gulp-htmlmin');
 function bs() {
     minсss();
     compress();
-    minify_h();
+    // minify_h();
+    smallImg();
     serveSass();
     browserSync.init({
         server: {
@@ -40,6 +41,16 @@ function minify_h () {
     return src(['./*.html', '!./*.min.html'])
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('./'));
+};
+//tiny PNG
+function smallImg () {
+    return src(['./img/**/*.{png,jpg,jpeg}'])
+    .pipe(tinypng({
+        key: 'cWbQ2Z7rrw0ZbpF85lKP4jZF6mqC0rdc',
+        // sigFile: 'images/.tinypng-sigs',
+        // log: true
+    }))
+    .pipe(gulp.dest('./dist/img'));
 };
 
 
