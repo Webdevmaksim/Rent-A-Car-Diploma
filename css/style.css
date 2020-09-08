@@ -331,16 +331,6 @@ body {
 img {
   max-width: 100%; }
 
-label.invalid {
-  color: tomato;
-  position: absolute;
-  bottom: -1.3rem;
-  transform: translateX(-50%);
-  left: 50%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
-
 div.invalid {
   position: absolute;
   color: tomato;
@@ -543,7 +533,7 @@ input.invalid {
   align-items: center;
   max-width: 83rem;
   min-height: 42rem;
-  background: url("../img/video/video-bg.webp") center no-repeat;
+  background: url("../img/video/video-bg.png") center no-repeat;
   transform: translateY(-60%); }
   .video__text {
     position: absolute;
@@ -696,7 +686,7 @@ input.invalid {
       width: 5rem;
       height: 5rem;
       color: #ffffff;
-      background: #ffffff url("../img/client/icon-33.webp") no-repeat;
+      background: #ffffff url("../img/client/icon-33.png") no-repeat;
       background-size: 4.5rem;
       top: 2.5rem;
       left: 2.5rem;
@@ -1014,21 +1004,20 @@ input.invalid {
   font-size: 1.6rem;
   left: 12rem;
   top: 3rem; }
-  .discount::after {
-    content: '';
-    display: block;
-    width: 1rem;
-    height: 0.6rem;
-    position: absolute;
-    top: 0.5rem;
-    left: 11.7rem;
-    background: url("../img/footer/drop.svg") center no-repeat;
-    background-size: cover; }
 
 .form {
   display: flex;
   flex-direction: column;
   position: relative; }
+  .form__arrow {
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .form__promo {
     color: #ffffff;
     text-align: center;
@@ -1082,7 +1071,12 @@ input.invalid {
     padding: 2.3rem 10rem 2.3rem 2.5rem;
     border-radius: 3px;
     font-size: 2.3rem;
-    margin-bottom: 4.5rem; }
+    margin-bottom: 4.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .form__select:hover {
+      cursor: pointer; }
 
 .swiper-pagination-current3 {
   color: #ffffff !important;
@@ -1608,6 +1602,12 @@ input.invalid {
       flex-basis: 50%; } }
 
 @media screen and (max-width: 768px) {
+  .vide-bg {
+    display: none; }
+  .hero {
+    background: #222222 url("../img/hero/main-bg-1.png") no-repeat center/cover;
+      background-background-attachment: fixed;
+    background-position: 75% 0%; }
   .ourCar__image {
     min-width: unset;
     min-height: unset; }
@@ -1616,7 +1616,9 @@ input.invalid {
   .places__swiper-container {
     width: 90%; }
   .clients__col {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .clients__card {
+    margin-bottom: 1.5rem; } }
 
 @media screen and (max-width: 576px) {
   .ourCar__button {
@@ -1681,3 +1683,7 @@ input.invalid {
     flex-direction: column; }
   .footer__slider {
     max-width: 28rem; } }
+
+@media screen and (max-width: 375px) {
+  .hero {
+    background-position: 65% 0%; } }

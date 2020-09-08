@@ -200,8 +200,10 @@ $('.order__form').validate({
     footerPolicy:{
       required: "Лучше согласится !!!"
     },
-    footerPhone: "Телефон обязателен",
-    minlength: "Телефон не короче 10 цифр",
+    footerPhone: {
+      required: "Телефон обязателен",
+      minlength: "Телефон не короче 10 цифр",
+    }, 
     
   },
   submitHandler: function(form) {
@@ -223,7 +225,7 @@ $('.order__form').validate({
   }
 });
 //phone mask
-$('[type=tel]').mask('+7 (000) 000-00-00');
+$('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: '+7( __ ) ___-__-__'});
 $('.form__promo').mask('0000');
 
 //thank u

@@ -30,22 +30,19 @@
     font-size: 1.6rem
     left: 12rem
     top: 3rem
-    &::after
-        content: ''
-        display: block
-        // border: 2px solid red
-        width: 1rem
-        height: 0.6rem    
-        position: absolute
-        top: 0.5rem
-        left: 11.7rem    
-        background: url('../img/footer/drop.svg') center no-repeat
-        background-size: cover
-
 .form    
     display: flex
     flex-direction: column  
     position: relative
+    &__arrow
+        position: absolute
+        right: 0
+        top: 1.5rem
+        width: 4.5rem
+        height: 4.5rem
+        display: flex
+        justify-content: center
+        align-items: center
     &__promo
         color: $light
         text-align: center
@@ -91,6 +88,9 @@
         border-radius: 3px
         font-size: 2.3rem
         margin-bottom: 4.5rem
+        appearance: none
+        &:hover
+            cursor: pointer
 .swiper-pagination-current3
     color: $light !important
     font-size: 2.5rem !important   

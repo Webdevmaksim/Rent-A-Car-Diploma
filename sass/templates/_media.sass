@@ -320,6 +320,12 @@
 			flex-basis: 50%
 		
 @media screen and ( max-width: 768px )
+	.vide-bg
+		display: none
+	.hero
+		background:  #222222 url('../img/hero/main-bg-1.png') no-repeat center / cover 
+    	background-attachment: fixed
+		background-position: 75% 0%
 	.ourCar
 		&__image
 			min-width: unset
@@ -332,6 +338,8 @@
 	.clients
 		&__col
 			flex-basis: 50%
+		&__card
+			margin-bottom: 1.5rem
 				
 @media screen and ( max-width: 576px )
 	.ourCar
@@ -419,6 +427,10 @@
 			flex-direction: column
 		&__slider
 			max-width: 28rem
+@media screen and ( max-width: 375px )
+	.hero
+		background-position: 65% 0%
+	
 	
 	
 

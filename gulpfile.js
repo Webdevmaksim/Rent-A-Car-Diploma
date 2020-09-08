@@ -10,10 +10,10 @@ const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
-    minсss();
-    compress();
-    minify_h();
-    tinyPic();
+    // minсss();
+    // compress();
+    // minify_h();
+    // tinyPic();
     serveSass();
     browserSync.init({
         server: {
@@ -40,18 +40,18 @@ function compress(){
 //tiny html
 function minify_h () {
     return src(['./*.html', '!./*.min.html'])
-    .pipe(minify_h({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('./dist'));
 };
 //tiny pictures
 function tinyPic (){
-    return src(['./img'])
-        .pipe(tinyPic({
-            key: 'API_KEY',
+    return src(['./img/**/*.{png,jpg,jpeg,webp}'])
+        .pipe(tinypng({
+            key: 'cWbQ2Z7rrw0ZbpF85lKP4jZF6mqC0rdc',
             sigFile: 'images/.tinypng-sigs',
             log: true
         }))
-        .pipe(gulp.dest('dist/img'));
+        .pipe(dest('./dist/img'));
 };
 
 // Task to minify css using package cleanCSs
@@ -65,7 +65,7 @@ function tinyPic (){
     }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(dest('css'));
+    .pipe(dest('./dist/css'));
 };
 
 function serveSass() {
