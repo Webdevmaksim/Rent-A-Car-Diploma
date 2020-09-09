@@ -30,19 +30,20 @@
     font-size: 1.6rem
     left: 12rem
     top: 3rem
+    pointer-events: none
 .form    
     display: flex
     flex-direction: column  
     position: relative
-    &__arrow
+    &::after
+        content: ''
+        width: 4.5rem   
+        height: 4.5rem 
         position: absolute
-        right: 0
-        top: 1.5rem
-        width: 4.5rem
-        height: 4.5rem
-        display: flex
-        justify-content: center
-        align-items: center
+        right: 0.75rem
+        top: 1.2rem
+        background: url('../img/footer/drop.svg') center no-repeat
+        pointer-events: none
     &__promo
         color: $light
         text-align: center
@@ -84,7 +85,7 @@
         background: #222222
         color: $light
         border: 1px solid #444444
-        padding: 2.3rem 10rem 2.3rem 2.5rem
+        padding: 2.3rem 1rem 2.3rem 2.5rem
         border-radius: 3px
         font-size: 2.3rem
         margin-bottom: 4.5rem

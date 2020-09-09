@@ -516,7 +516,7 @@ input.invalid {
       background: url("../img/video__refact/4.jpg") no-repeat center;
       background-size: cover; }
     .places__video--3 {
-      background: url("../img/video__refact/3.webp") no-repeat center;
+      background: url("../img/video__refact/3.jpg") no-repeat center;
       background-size: cover; }
     .places__video--2 {
       background: url("../img/video__refact/img-2.jpg") no-repeat center;
@@ -1003,21 +1003,22 @@ input.invalid {
   position: absolute;
   font-size: 1.6rem;
   left: 12rem;
-  top: 3rem; }
+  top: 3rem;
+  pointer-events: none; }
 
 .form {
   display: flex;
   flex-direction: column;
   position: relative; }
-  .form__arrow {
-    position: absolute;
-    right: 0;
-    top: 1.5rem;
+  .form::after {
+    content: '';
     width: 4.5rem;
     height: 4.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    position: absolute;
+    right: 0.75rem;
+    top: 1.2rem;
+    background: url("../img/footer/drop.svg") center no-repeat;
+    pointer-events: none; }
   .form__promo {
     color: #ffffff;
     text-align: center;
@@ -1068,7 +1069,7 @@ input.invalid {
     background: #222222;
     color: #ffffff;
     border: 1px solid #444444;
-    padding: 2.3rem 10rem 2.3rem 2.5rem;
+    padding: 2.3rem 1rem 2.3rem 2.5rem;
     border-radius: 3px;
     font-size: 2.3rem;
     margin-bottom: 4.5rem;
@@ -1194,30 +1195,6 @@ input.invalid {
     display: flex;
     flex-direction: column;
     margin-right: 13rem; }
-  .footer .fa-vk {
-    color: #444444;
-    font-size: 1.5rem;
-    margin-top: 1.3rem; }
-    .footer .fa-vk:hover {
-      color: #17bebb; }
-  .footer .fa-youtube {
-    color: #444444;
-    font-size: 2rem;
-    margin-top: 1.1rem; }
-    .footer .fa-youtube:hover {
-      color: #17bebb; }
-  .footer .fa-whatsapp {
-    color: #444444;
-    font-size: 2rem;
-    margin-top: 1.1rem; }
-    .footer .fa-whatsapp:hover {
-      color: #17bebb; }
-  .footer .fa-envelope {
-    color: #444444;
-    font-size: 2rem;
-    margin-top: 1.1rem; }
-    .footer .fa-envelope:hover {
-      color: #17bebb; }
 
 .swiper3 {
   max-width: 90%;

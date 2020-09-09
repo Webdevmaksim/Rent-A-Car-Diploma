@@ -10,9 +10,9 @@ const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
-    // minсss();
-    // compress();
-    // minify_h();
+    minсss();
+    compress();
+    minify_h();
     // tinyPic();
     serveSass();
     browserSync.init({
@@ -35,7 +35,7 @@ function compress(){
         },
         ignoreFiles: ['-min.js']
     }))
-    .pipe(dest('js'));
+    .pipe(dest('./dist/js'));
 };
 //tiny html
 function minify_h () {
